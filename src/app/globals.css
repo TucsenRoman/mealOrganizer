@@ -32,6 +32,13 @@ body {
   scrollbar-width: none;
 }
 
+/* Custom shadow utilities */
+@layer utilities {
+  .shadow-inset-sm   { box-shadow: inset 0 1px 3px rgba(0,0,0,0.15); }
+  .shadow-glow-green { box-shadow: 0 1px 6px rgba(34,197,94,0.6); }
+  .shadow-float      { box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
+}
+
 /* Snap scrolling for carousels */
 .snap-x {
   scroll-snap-type: x mandatory;

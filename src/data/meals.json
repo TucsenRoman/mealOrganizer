@@ -14,7 +14,7 @@
             {
               "id": "bb-sausage",
               "name": "Sausage",
-              "quantity": "3.5 lbs",
+              "quantity": "3x 16 oz rolls (3 lbs)",
               "category": "Meat",
               "notes": "",
               "use": "Crumbled into the egg scramble filling",
@@ -23,26 +23,26 @@
             {
               "id": "bb-eggs",
               "name": "Eggs",
-              "quantity": "1 dozen",
+              "quantity": "12 eggs",
               "category": "Dairy",
-              "notes": "Shared with French Toast",
+              "notes": "Shared with French Toast and Big Breakfast. Kaitlyn bringing 2 dozen from her chickens + 1x18-count carton from store.",
               "use": "Scrambled into the burrito filling",
               "prep": "Crack into a bowl, whisk, season with salt & pepper. Cook in the same pan as sausage over medium-low heat.",
-              "mealQuantity": "1 dozen (keep 1 dozen separate for French Toast)",
+              "mealQuantity": "12 eggs for burritos (6 reserved for French Toast, 24 reserved for Big Breakfast)",
               "bringing": {
-                "who": "Kelsea",
-                "amount": "2 dozen"
+                "who": "Kaitlyn",
+                "amount": "2 dozen (from her chickens)"
               }
             },
             {
               "id": "bb-tortillas",
               "name": "Tortilla Shells",
-              "quantity": "1x20 pack",
+              "quantity": "3x packs (8-count, large size) = 24 total",
               "category": "Dry",
-              "notes": "Shared with Tacos",
+              "notes": "Shared with Tacos. Great Value large-size from Walmart.",
               "use": "Burrito wraps — use the large flour tortillas",
               "prep": "Warm on a dry skillet for 30 seconds per side or microwave wrapped in a damp paper towel for 30s.",
-              "mealQuantity": "~10 tortillas for burritos (10 remaining for Tacos)"
+              "mealQuantity": "~10 tortillas for burritos (10 remaining for Tacos, 4 extra)"
             },
             {
               "id": "bb-onion",
@@ -55,28 +55,37 @@
               "mealQuantity": "~½ onion diced for burritos"
             },
             {
-              "id": "bb-peppers",
-              "name": "Bell Peppers",
-              "quantity": "4 count",
+              "id": "bb-peppers-mixed",
+              "name": "Bell Peppers (mixed colors)",
+              "quantity": "1x3-count pack ($2.97)",
               "category": "Produce",
               "notes": "",
               "use": "Sautéed into the egg filling for color and crunch",
               "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
             },
             {
+              "id": "bb-peppers-green",
+              "name": "Green Bell Pepper",
+              "quantity": "1 count ($0.86)",
+              "category": "Produce",
+              "notes": "",
+              "use": "Sautéed into the egg filling alongside the mixed peppers",
+              "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
+            },
+            {
               "id": "bb-cheese",
-              "name": "Monterey Jack Cheese (sliced)",
-              "quantity": "1 pack",
+              "name": "Great Value Fiesta Blend Shredded Cheese",
+              "quantity": "1x 32 oz bag ($6.92)",
               "category": "Dairy",
-              "notes": "Shared with Tacos",
-              "use": "Melted on top of the filling inside the burrito",
-              "prep": "Lay slices over hot filling before rolling. The residual heat will melt it.",
-              "mealQuantity": "~½ pack for burritos (½ pack reserved for Tacos)"
+              "notes": "Shared with Tacos. Blend of Monterey Jack, cheddar, queso quesadilla, and asadero.",
+              "use": "Sprinkled over the hot filling inside the burrito before rolling",
+              "prep": "Sprinkle generously over filling. The residual heat will melt it.",
+              "mealQuantity": "~2 cups for burritos (~2 cups reserved for Tacos, plenty left over)"
             },
             {
               "id": "bb-hashbrown",
-              "name": "Hashbrowns",
-              "quantity": "2 lbs",
+              "name": "Great Value Shredded Hash Browns",
+              "quantity": "1x 26 oz bag ($3.42)",
               "category": "Frozen",
               "notes": "",
               "use": "Served as a side dish alongside the burritos",
@@ -102,15 +111,15 @@
             {
               "id": "ft-eggs",
               "name": "Eggs",
-              "quantity": "1 dozen",
+              "quantity": "6 eggs",
               "category": "Dairy",
-              "notes": "Shared with Breakfast Burritos",
+              "notes": "Shared with Breakfast Burritos and Big Breakfast. Kaitlyn bringing 2 dozen from her chickens + 1x18-count carton from store.",
               "use": "Combined with milk to make the custard dip",
               "prep": "Whisk eggs with a splash of milk, vanilla, cinnamon, and a pinch of salt. Pour into a shallow dish for dipping.",
-              "mealQuantity": "~6 eggs for French Toast custard (6 eggs reserved for Breakfast Burritos)",
+              "mealQuantity": "6 eggs for French Toast custard (12 reserved for Breakfast Burritos, 24 reserved for Big Breakfast)",
               "bringing": {
-                "who": "Kelsea",
-                "amount": "2 dozen"
+                "who": "Kaitlyn",
+                "amount": "2 dozen (from her chickens)"
               }
             }
           ]
@@ -118,12 +127,12 @@
         {
           "id": "big-breakfast",
           "name": "Big Breakfast",
-          "side": "Cinnamon Rolls",
+          "side": null,
           "ingredients": [
             {
               "id": "bb2-eggs",
               "name": "Eggs",
-              "quantity": "2 dozen",
+              "quantity": "24 eggs (6 leftover from Kaitlyn's 2 dozen + 1x18-count store carton)",
               "category": "Dairy",
               "notes": "Eggs, bacon/sausage, and toast",
               "use": "Scrambled or fried to order for the whole group",
@@ -132,20 +141,20 @@
             {
               "id": "bb2-bacon",
               "name": "Bacon",
-              "quantity": "2 lbs",
+              "quantity": "1x 24 oz pack",
               "category": "Meat",
               "notes": "",
               "use": "Served alongside eggs and toast",
               "prep": "Lay flat in a cold pan, heat to medium. Cook ~4 min per side until crispy. Drain on paper towels. Or bake at 400°F for 18–20 min on a sheet pan."
             },
             {
-              "id": "bb2-sausage",
-              "name": "Sausage Links",
-              "quantity": "2 lbs",
-              "category": "Meat",
+              "id": "bb2-english-muffins",
+              "name": "English Muffins",
+              "quantity": "2x 6-count packs (12 total)",
+              "category": "Dry",
               "notes": "",
-              "use": "Served alongside eggs and toast as an alternative to bacon",
-              "prep": "Cook in a skillet over medium heat, turning occasionally, until browned on all sides and cooked through (~10–12 min). Internal temp should reach 160°F."
+              "use": "Toasted and served alongside eggs and bacon",
+              "prep": "Split and toast until golden. Serve with butter."
             },
             {
               "id": "bb2-bread",
@@ -161,8 +170,8 @@
               "name": "Cinnamon Rolls",
               "quantity": "2 cans",
               "category": "Dairy",
-              "notes": "Side dish",
-              "use": "Baked and served as the sweet side dish",
+              "notes": "Bonus/afterthought — just a little extra on the table",
+              "use": "Baked and set out as a sweet bonus alongside everything else",
               "prep": "Preheat oven to 350°F (or as labeled). Place rolls in a greased pan with space between. Bake 12–15 min until golden. Drizzle included icing while warm."
             }
           ]
@@ -217,8 +226,8 @@
           "ingredients": [
             {
               "id": "cs-croissants",
-              "name": "Croissants",
-              "quantity": "16 count",
+              "name": "Marketside All Butter Whole Baked Croissants",
+              "quantity": "2x 6-count packs = 12 total ($9.96)",
               "category": "Dry",
               "notes": "",
               "use": "The bread base for the sandwiches — slice and fill",
@@ -290,22 +299,22 @@
             {
               "id": "t-tortillas",
               "name": "Tortilla Shells",
-              "quantity": "1x10 pack",
+              "quantity": "3x packs (8-count, large size) = 24 total",
               "category": "Dry",
-              "notes": "Shared with Burritos",
+              "notes": "Shared with Burritos. Great Value large-size from Walmart.",
               "use": "Soft shell option for tacos",
               "prep": "Warm on a dry skillet 30 sec per side or microwave in a stack wrapped in a damp paper towel for 30s.",
-              "mealQuantity": "~10 tortillas for tacos (10 tortillas used for Breakfast Burritos)"
+              "mealQuantity": "~10 tortillas for tacos (10 used for Breakfast Burritos, 4 extra)"
             },
             {
               "id": "t-cheese",
-              "name": "Monterey Jack Cheese (sliced)",
-              "quantity": "1 pack",
+              "name": "Great Value Fiesta Blend Shredded Cheese",
+              "quantity": "1x 32 oz bag ($6.92)",
               "category": "Dairy",
-              "notes": "Shared with Burritos",
-              "use": "Cheese topping for tacos",
-              "prep": "Shred or tear slices into smaller pieces. Add directly to assembled tacos.",
-              "mealQuantity": "~½ pack for tacos (½ pack used in Breakfast Burritos)"
+              "notes": "Shared with Burritos. Same bag — Blend of Monterey Jack, cheddar, queso quesadilla, and asadero.",
+              "use": "Sprinkled over assembled tacos as a topping",
+              "prep": "Sprinkle directly onto tacos. No prep needed.",
+              "mealQuantity": "~2 cups for tacos (~2 cups used in Breakfast Burritos, plenty left over)"
             },
             {
               "id": "t-sour-cream",

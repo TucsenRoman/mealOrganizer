@@ -54,8 +54,7 @@ export default function CookView({ categories, onMealSelect, initialIdx, onIdxCh
             return (
               <div
                 key={cat.id}
-                className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col"
-                style={{ backgroundColor: 'var(--layer-1)' }}
+                className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col bg-[var(--layer-1)]"
               >
                 {/* Card header */}
                 <div className="flex items-center px-4 pt-4 pb-3 gap-2">
@@ -73,7 +72,7 @@ export default function CookView({ categories, onMealSelect, initialIdx, onIdxCh
 
                     return (
                       <div key={meal.id}>
-                        {mealIdx > 0 && <div className="h-px mx-3" style={{ backgroundColor: 'var(--layer-2)' }} />}
+                        {mealIdx > 0 && <div className="h-px mx-3 bg-[var(--layer-2)]" />}
                       <button
                         onClick={() => onMealSelect(catIdx, meal)}
                         className="flex items-center gap-3 w-full text-left px-3 py-3 rounded-xl transition-colors"
@@ -100,7 +99,7 @@ export default function CookView({ categories, onMealSelect, initialIdx, onIdxCh
       </div>
 
       {/* Dot indicators */}
-      <div className="flex justify-center gap-2 pt-3 pb-4">
+      <div className="flex justify-center gap-2 pt-3 pb-24">
         {categories.map((cat, idx) => (
           <button
             key={cat.id}
@@ -109,12 +108,8 @@ export default function CookView({ categories, onMealSelect, initialIdx, onIdxCh
               onIdxChange(idx)
               scrollTo(scrollRef, idx)
             }}
-            className="rounded-full transition-all duration-200"
-            style={{
-              width: idx === activeIdx ? 24 : 8,
-              height: 8,
-              backgroundColor: idx === activeIdx ? cat.color : '#D1D5DB',
-            }}
+            className={`rounded-full transition-all duration-200 h-2 ${idx === activeIdx ? 'w-6' : 'w-2 bg-gray-300'}`}
+            style={idx === activeIdx ? { backgroundColor: cat.color } : undefined}
           />
         ))}
       </div>

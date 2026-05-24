@@ -24,7 +24,7 @@ export default function MealPage() {
 
   if (!foundMeal || !foundCat) {
     return (
-      <main className="flex items-center justify-center h-screen" style={{ backgroundColor: 'var(--layer-0)' }}>
+      <main className="flex items-center justify-center h-screen bg-[var(--layer-0)]">
         <p className="text-gray-400 text-sm">Meal not found.</p>
       </main>
     )

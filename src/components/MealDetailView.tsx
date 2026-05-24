@@ -44,9 +44,9 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
   }
 
   return (
-    <main className="flex flex-col h-screen overflow-hidden" style={{ backgroundColor: 'var(--layer-0)' }}>
+    <main className="flex flex-col h-screen overflow-hidden bg-[var(--layer-0)]">
       {/* Header — your version, untouched */}
-      <div className="relative flex-col items-center gap-4 px-6 pt-8 pb-4 bg-(--layer-1)">
+      <div className="relative flex-col items-center gap-4 px-6 pt-8 pb-4 bg-[var(--layer-1)]">
         <div className='absolute top-0 left-0 px-3 py-2 rounded-lg backdrop-blur-[3px]'>
           <button
             onClick={onBack}
@@ -88,8 +88,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
             return (
               <div
                 key={ing.id}
-                className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col overflow-y-auto"
-                style={{ backgroundColor: 'var(--layer-1)' }}
+                className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col overflow-y-auto bg-[var(--layer-1)]"
               >
                 {/* Top: counter + name + quantity */}
                 <div className="px-5 pt-5 pb-4">
@@ -115,7 +114,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
 
                   {/* Per-meal allocation */}
                   {ing.mealQuantity && (
-                    <div className="mt-2.5 rounded-xl px-3 py-2" style={{ backgroundColor: 'var(--layer-2)' }}>
+                    <div className="mt-2.5 rounded-xl px-3 py-2 bg-[var(--layer-2)]">
                       <p className="text-xs text-gray-500 leading-snug">
                         <span className="font-semibold text-gray-700">For this meal: </span>
                         {ing.mealQuantity}
@@ -125,7 +124,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
                 </div>
 
                 {/* Divider */}
-                <div className="mx-5 h-px" style={{ backgroundColor: 'var(--layer-2)' }} />
+                <div className="mx-5 h-px bg-[var(--layer-2)]" />
 
                 {/* Detail body */}
                 <div className="px-5 py-4 flex flex-col gap-3">
@@ -162,7 +161,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
 
                   {/* Shared with other meals */}
                   {sharedWith.length > 0 && (
-                    <div className="flex items-start gap-2 rounded-xl px-3 py-2.5" style={{ backgroundColor: 'var(--layer-2)' }}>
+                    <div className="flex items-start gap-2 rounded-xl px-3 py-2.5 bg-[var(--layer-2)]">
                       <Info size={14} className="text-gray-400 mt-0.5 flex-shrink-0" />
                       <div className="text-xs text-gray-500">
                         <p className="font-semibold text-gray-600 mb-1">Also used in:</p>
@@ -191,12 +190,8 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
                 setActiveIdx(idx)
                 scrollCarouselTo(scrollRef, idx)
               }}
-              className="rounded-full transition-all duration-200"
-              style={{
-                width: idx === activeIdx ? 20 : 7,
-                height: 7,
-                backgroundColor: idx === activeIdx ? cat.color : '#D1D5DB',
-              }}
+              className={`rounded-full transition-all duration-200 h-[7px] ${idx === activeIdx ? 'w-5' : 'w-[7px] bg-gray-300'}`}
+              style={idx === activeIdx ? { backgroundColor: cat.color } : undefined}
             />
           ))}
         </div>

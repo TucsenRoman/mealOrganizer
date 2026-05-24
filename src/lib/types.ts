@@ -33,4 +33,5 @@ export type ShopItem = {
   name: string
   quantity: string
   meals: string[]
+  mealEntries: { meal: string; quantity: string }[]
 }
