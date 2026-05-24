@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import mealsData from '@/data/meals.json'
 import { getRandomVibe } from '@/data/phrases'
 import type { Category, Meal, StoreCategory } from '@/lib/types'
@@ -8,15 +9,14 @@ import { STORAGE_KEY } from '@/lib/utils'
 import Header from '@/components/Header'
 import CookView from '@/components/CookView'
 import ShopView from '@/components/ShopView'
-import MealDetailView from '@/components/MealDetailView'
 
 export default function Home() {
   const categories: Category[] = mealsData.categories as Category[]
+  const router = useRouter()
 
   const [view, setView] = useState<'cook' | 'shop'>('shop')
   const [activeCategoryIdx, setActiveCategoryIdx] = useState(0)
   const [activeShopIdx, setActiveShopIdx] = useState(0)
-  const [selectedMeal, setSelectedMeal] = useState<{ catIdx: number; meal: Meal } | null>(null)
   const [checked, setChecked] = useState<Record<string, boolean>>({})
   const [vibe, setVibe] = useState<{ title: string; pct: number } | null>(null)
 
@@ -83,28 +83,12 @@ export default function Home() {
     setChecked(prev => ({ ...prev, [id]: !prev[id] }))
   }
 
-  function handleMealSelect(catIdx: number, meal: Meal) {
-    setSelectedMeal({ catIdx, meal })
-  }
-
-  function handleBack() {
-    setSelectedMeal(null)
+  function handleMealSelect(_catIdx: number, meal: Meal) {
+    router.push(`/meal/${meal.id}`)
   }
 
   function handleToggleView() {
     setView(v => v === 'shop' ? 'cook' : 'shop')
-  }
-
-  // Meal detail view
-  if (selectedMeal) {
-    return (
-      <MealDetailView
-        meal={selectedMeal.meal}
-        cat={categories[selectedMeal.catIdx]}
-        categories={categories}
-        onBack={handleBack}
-      />
-    )
   }
 
   // Main view
