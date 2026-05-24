@@ -1,0 +1,261 @@
+{
+  "categories": [
+    {
+      "id": "brunch",
+      "label": "Brunch",
+      "emoji": "🍳",
+      "color": "#F59E0B",
+      "meals": [
+        {
+          "id": "breakfast-burritos",
+          "name": "Breakfast Burritos",
+          "side": "Hashbrowns",
+          "confirmed": false,
+          "ingredients": [
+            { "id": "bb-sausage", "name": "Sausage", "quantity": "3 lbs", "category": "Meat", "notes": "" },
+            { "id": "bb-eggs", "name": "Eggs", "quantity": "1 dozen", "category": "Dairy", "notes": "Shared with French Toast", "bringing": { "who": "Kelsea", "amount": "2 dozen" } },
+            { "id": "bb-tortillas", "name": "Tortilla Shells", "quantity": "2x10 packs", "category": "Dry", "notes": "Shared with Tacos" },
+            { "id": "bb-onion", "name": "White Onion", "quantity": "6 count", "category": "Produce", "notes": "Shared with Burgers, Tacos" },
+            { "id": "bb-peppers", "name": "Bell Peppers", "quantity": "2 count", "category": "Produce", "notes": "" },
+            { "id": "bb-cheese", "name": "Monterey Jack Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "Shared with Tacos" },
+            { "id": "bb-hashbrown", "name": "Hashbrowns", "quantity": "1 lb", "category": "Frozen", "notes": "" }
+          ]
+        },
+        {
+          "id": "french-toast",
+          "name": "French Toast",
+          "side": "Fruit",
+          "confirmed": false,
+          "ingredients": [
+            { "id": "ft-bread", "name": "Bread", "quantity": "5 loaves", "category": "Dry", "notes": "Shared with Sandwiches" },
+            { "id": "ft-eggs", "name": "Eggs", "quantity": "1 dozen", "category": "Dairy", "notes": "Shared with Breakfast Burritos", "bringing": { "who": "Kelsea", "amount": "2 dozen" } }
+          ]
+        },
+        {
+          "id": "big-breakfast",
+          "name": "Big Breakfast",
+          "side": "Cinnamon Rolls",
+          "confirmed": false,
+          "ingredients": [
+            { "id": "bb2-eggs", "name": "Eggs", "quantity": "3 dozen", "category": "Dairy", "notes": "Eggs, bacon/sausage, and toast" },
+            { "id": "bb2-sausage", "name": "Bacon / Sausage", "quantity": "~2 lbs", "category": "Meat", "notes": "" },
+            { "id": "bb2-bread", "name": "Bread (for toast)", "quantity": "1-2 loaves", "category": "Dry", "notes": "" },
+            { "id": "bb2-rolls", "name": "Cinnamon Rolls", "quantity": "1-2 cans", "category": "Dry", "notes": "Side dish" }
+          ]
+        },
+        {
+          "id": "pancakes-waffles",
+          "name": "Pancakes & Waffles",
+          "side": "Fruit",
+          "confirmed": true,
+          "ingredients": [
+            { "id": "pw-mix", "name": "Pancake Mix", "quantity": "1-2 boxes", "category": "Dry", "notes": "" },
+            { "id": "pw-waffles", "name": "Frozen Waffles", "quantity": "2 boxes", "category": "Frozen", "notes": "" },
+            { "id": "pw-fruit", "name": "Fruit (mixed)", "quantity": "2-3 lbs", "category": "Produce", "notes": "Side" },
+            { "id": "pw-syrup", "name": "Maple Syrup", "quantity": "1 bottle", "category": "Dry", "notes": "" }
+          ]
+        },
+        {
+          "id": "croissant-sandwiches",
+          "name": "Croissant Sandwiches",
+          "side": "Fruit",
+          "confirmed": true,
+          "ingredients": [
+            { "id": "cs-croissants", "name": "Croissants", "quantity": "12-16 count", "category": "Dry", "notes": "" },
+            { "id": "cs-ham", "name": "Ham", "quantity": "2-3 packs", "category": "Meat", "notes": "Shared with Sandwiches" },
+            { "id": "cs-cheddar", "name": "Cheddar Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "Shared with Burgers" },
+            { "id": "cs-fruit", "name": "Fruit (mixed)", "quantity": "2 lbs", "category": "Produce", "notes": "Side" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinner",
+      "label": "Dinner",
+      "emoji": "🍽️",
+      "color": "#3B82F6",
+      "meals": [
+        {
+          "id": "tacos",
+          "name": "Tacos",
+          "side": null,
+          "confirmed": true,
+          "ingredients": [
+            { "id": "t-hamburger", "name": "Hamburger", "quantity": "4+ lbs", "category": "Meat", "notes": "Shared with Burgers" },
+            { "id": "t-taco-shells", "name": "Taco Shells", "quantity": "1x10 packs", "category": "Dry", "notes": "" },
+            { "id": "t-tortillas", "name": "Tortilla Shells", "quantity": "2x10 packs", "category": "Dry", "notes": "Shared with Burritos" },
+            { "id": "t-cheese", "name": "Monterey Jack Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "Shared with Burritos" },
+            { "id": "t-sour-cream", "name": "Sour Cream", "quantity": "1x16 oz", "category": "Dairy", "notes": "" },
+            { "id": "t-sauce", "name": "Taco Sauce", "quantity": "Varying spice levels", "category": "Dry", "notes": "" },
+            { "id": "t-lettuce", "name": "Shredded Lettuce", "quantity": "1-2 packs", "category": "Produce", "notes": "Shared with Burgers" },
+            { "id": "t-tomato", "name": "Tomato (whole, raw)", "quantity": "~3 lbs", "category": "Produce", "notes": "Shared with Burgers" },
+            { "id": "t-onion", "name": "White Onion", "quantity": "6 count", "category": "Produce", "notes": "Shared with Burgers, Burritos" }
+          ]
+        },
+        {
+          "id": "steaks",
+          "name": "Steaks",
+          "side": "Mashed Potato",
+          "confirmed": true,
+          "ingredients": [
+            { "id": "s-steak", "name": "Steak", "quantity": "7 count", "category": "Meat", "notes": "" },
+            { "id": "s-potato", "name": "Potato (whole, raw)", "quantity": "3-4 lbs", "category": "Produce", "notes": "For mashed potatoes" },
+            { "id": "s-butter", "name": "Butter", "quantity": "1 stick", "category": "Dairy", "notes": "For mash" },
+            { "id": "s-milk", "name": "Milk", "quantity": "1 qt", "category": "Dairy", "notes": "For mash" }
+          ]
+        },
+        {
+          "id": "burgers",
+          "name": "Burgers",
+          "side": "Fries",
+          "confirmed": true,
+          "ingredients": [
+            { "id": "b-hamburger", "name": "Hamburger", "quantity": "4+ lbs", "category": "Meat", "notes": "Shared with Tacos" },
+            { "id": "b-buns", "name": "Hamburger Buns", "quantity": "2 packs", "category": "Dry", "notes": "" },
+            { "id": "b-pickles", "name": "Pickles", "quantity": "1x? oz jar", "category": "Dry", "notes": "" },
+            { "id": "b-tomato", "name": "Tomato (whole, raw)", "quantity": "~3 lbs", "category": "Produce", "notes": "Shared with Tacos" },
+            { "id": "b-lettuce", "name": "Shredded Lettuce", "quantity": "1-2 packs", "category": "Produce", "notes": "Shared with Tacos" },
+            { "id": "b-ketchup", "name": "Ketchup & Mustard", "quantity": "1 container each", "category": "Dry", "notes": "" },
+            { "id": "b-onion", "name": "White Onion", "quantity": "6 count", "category": "Produce", "notes": "Shared with Tacos, Burritos" },
+            { "id": "b-pepperjack", "name": "Pepperjack Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "" },
+            { "id": "b-cheddar", "name": "Cheddar Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "Shared with Croissant Sandwiches" },
+            { "id": "b-american", "name": "American Cheese (sliced)", "quantity": "1 pack", "category": "Dairy", "notes": "" },
+            { "id": "b-fries", "name": "Frozen Fries", "quantity": "2 bags", "category": "Frozen", "notes": "Side" }
+          ]
+        },
+        {
+          "id": "grilled-cheese",
+          "name": "Grilled Cheese Sandwiches",
+          "side": "Tomato Soup",
+          "confirmed": false,
+          "ingredients": [
+            { "id": "gc-bread", "name": "Bread", "quantity": "2-3 loaves", "category": "Dry", "notes": "" },
+            { "id": "gc-cheddar", "name": "Cheddar Cheese (sliced)", "quantity": "2 packs", "category": "Dairy", "notes": "" },
+            { "id": "gc-butter", "name": "Butter", "quantity": "1 stick", "category": "Dairy", "notes": "" },
+            { "id": "gc-soup", "name": "Tomato Soup", "quantity": "4-6 cans", "category": "Dry", "notes": "Side" }
+          ]
+        },
+        {
+          "id": "chicken-parm",
+          "name": "Chicken Parm",
+          "side": "Bread?",
+          "confirmed": false,
+          "ingredients": [
+            { "id": "cp-chicken", "name": "Breaded Chicken Cutlets", "quantity": "?", "category": "Meat", "notes": "" },
+            { "id": "cp-noodles", "name": "Penne Noodles", "quantity": "1 lb", "category": "Dry", "notes": "" },
+            { "id": "cp-sauce", "name": "Marinara Sauce", "quantity": "3x24 oz", "category": "Dry", "notes": "Shared with Spaghetti" },
+            { "id": "cp-parm", "name": "Parmesan Cheese", "quantity": "?", "category": "Dry", "notes": "Shared with Spaghetti" }
+          ]
+        },
+        {
+          "id": "spaghetti",
+          "name": "Alfredo / Spaghetti / Buttered Noodles",
+          "side": "Garlic Bread",
+          "confirmed": true,
+          "ingredients": [
+            { "id": "sp-noodles", "name": "Spaghetti Noodles", "quantity": "2 lbs", "category": "Dry", "notes": "" },
+            { "id": "sp-sauce", "name": "Marinara Sauce", "quantity": "3x24 oz", "category": "Dry", "notes": "Shared with Chicken Parm" },
+            { "id": "sp-meatballs", "name": "Meat Balls", "quantity": "2 lbs", "category": "Frozen", "notes": "" },
+            { "id": "sp-garlic-bread", "name": "Garlic Bread", "quantity": "2x8 count", "category": "Frozen", "notes": "Side" },
+            { "id": "sp-parm", "name": "Parmesan Cheese", "quantity": "?", "category": "Dry", "notes": "Shared with Chicken Parm" }
+          ]
+        },
+        {
+          "id": "stromboli",
+          "name": "Stromboli",
+          "side": null,
+          "confirmed": false,
+          "ingredients": [
+            { "id": "str-dough", "name": "Pizza Dough", "quantity": "2-3 packs", "category": "Dry", "notes": "" },
+            { "id": "str-ham", "name": "Ham", "quantity": "1-2 packs", "category": "Meat", "notes": "" },
+            { "id": "str-pepperoni", "name": "Pepperoni", "quantity": "1 pack", "category": "Meat", "notes": "" },
+            { "id": "str-cheese", "name": "Mozzarella Cheese", "quantity": "2 packs", "category": "Dairy", "notes": "" },
+            { "id": "str-sauce", "name": "Marinara Sauce (dipping)", "quantity": "2x24 oz", "category": "Dry", "notes": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks",
+      "emoji": "🍿",
+      "color": "#A855F7",
+      "meals": [
+        {
+          "id": "buffalo-sliders",
+          "name": "Buffalo Chicken / BBQ Pork Sliders",
+          "side": null,
+          "confirmed": false,
+          "notes": "Travel snack",
+          "ingredients": [
+            { "id": "bs-rolls", "name": "Hawaiian Rolls", "quantity": "2 packs", "category": "Dry", "notes": "" },
+            { "id": "bs-chicken", "name": "Pulled Chicken", "quantity": "?", "category": "Meat", "notes": "" },
+            { "id": "bs-buffalo", "name": "Buffalo Sauce", "quantity": "?", "category": "Dry", "notes": "" },
+            { "id": "bs-bbq", "name": "BBQ Sauce", "quantity": "?", "category": "Dry", "notes": "" },
+            { "id": "bs-cheese", "name": "Cheese", "quantity": "1-2 packs", "category": "Dairy", "notes": "" }
+          ]
+        },
+        {
+          "id": "sandwiches",
+          "name": "Sandwiches",
+          "side": null,
+          "confirmed": false,
+          "notes": "Hiking snack",
+          "ingredients": [
+            { "id": "sw-bread", "name": "Bread", "quantity": "5 loaves", "category": "Dry", "notes": "Shared with French Toast" },
+            { "id": "sw-ham", "name": "Ham", "quantity": "2-3 packs", "category": "Meat", "notes": "Shared with Croissant Sandwiches" },
+            { "id": "sw-turkey", "name": "Turkey", "quantity": "2-3 packs", "category": "Meat", "notes": "" },
+            { "id": "sw-mustard-mayo", "name": "Mustard & Mayo", "quantity": "1 container each", "category": "Dry", "notes": "" }
+          ]
+        },
+        {
+          "id": "frozen-foods",
+          "name": "Frozen Foods",
+          "side": null,
+          "confirmed": false,
+          "notes": "Munchies",
+          "ingredients": [
+            { "id": "ff-nuggets", "name": "Chicken Nuggets", "quantity": "4 lbs", "category": "Frozen", "notes": "" },
+            { "id": "ff-pizzas", "name": "Pizzas", "quantity": "6 count", "category": "Frozen", "notes": "" },
+            { "id": "ff-pizza-rolls", "name": "Pizza Rolls", "quantity": "1-2 bags", "category": "Frozen", "notes": "" },
+            { "id": "ff-fish-sticks", "name": "Fish Sticks", "quantity": "1 bag", "category": "Frozen", "notes": "" },
+            { "id": "ff-corndogs", "name": "Corndogs", "quantity": "1 box", "category": "Frozen", "notes": "" }
+          ]
+        },
+        {
+          "id": "smores",
+          "name": "S'mores",
+          "side": null,
+          "confirmed": false,
+          "ingredients": [
+            { "id": "sm-marshmallows", "name": "Marshmallows", "quantity": "2 bags", "category": "Dry", "notes": "" },
+            { "id": "sm-chocolate", "name": "Hershey's Chocolate Bars", "quantity": "4-6 bars", "category": "Dry", "notes": "" },
+            { "id": "sm-grahams", "name": "Graham Crackers", "quantity": "2 boxes", "category": "Dry", "notes": "" }
+          ]
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "Hot Chocolate",
+          "side": null,
+          "confirmed": false,
+          "ingredients": [
+            { "id": "hc-mix", "name": "Hot Chocolate Mix", "quantity": "2 boxes", "category": "Dry", "notes": "" },
+            { "id": "hc-marshmallows", "name": "Mini Marshmallows", "quantity": "1 bag", "category": "Dry", "notes": "" }
+          ]
+        },
+        {
+          "id": "icecream",
+          "name": "Ice Cream",
+          "side": null,
+          "confirmed": false,
+          "notes": "Dessert",
+          "ingredients": [
+            { "id": "ic-icecream", "name": "Ice Cream", "quantity": "3-4 pints", "category": "Frozen", "notes": "Assorted flavors" },
+            { "id": "ic-cones", "name": "Cones / Bowls", "quantity": "1 box", "category": "Dry", "notes": "" },
+            { "id": "ic-toppings", "name": "Toppings (sprinkles, hot fudge)", "quantity": "Assorted", "category": "Dry", "notes": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}
