@@ -4,6 +4,9 @@ export type Ingredient = {
   quantity: string
   category: string
   notes: string
+  use?: string        // What this ingredient is for in this specific meal
+  prep?: string       // How to prep it (e.g. "dice", "cook until 165°F")
+  mealQuantity?: string // How much is used for THIS meal (when shared across meals)
   bringing?: { who: string; amount: string }
 }
 
@@ -11,7 +14,6 @@ export type Meal = {
   id: string
   name: string
   side: string | null
-  confirmed: boolean
   notes?: string
   ingredients: Ingredient[]
 }

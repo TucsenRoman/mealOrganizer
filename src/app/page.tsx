@@ -50,22 +50,27 @@ export default function Home() {
   const shopList: Record<StoreCategory, { id: string; name: string; quantity: string; meals: string[] }[]> = {
     Produce: [], Meat: [], Dairy: [], Frozen: [], Dry: [],
   }
-  const seenIngredients = new Map<string, { id: string; name: string; quantity: string; meals: string[]; category: string }>()
+  const seenIngredients = new Map<string, { id: string; name: string; quantities: string[]; meals: string[]; category: string }>()
   categories.forEach(cat => {
     cat.meals.forEach(meal => {
       meal.ingredients.forEach(ing => {
         const key = ing.name.toLowerCase()
         if (seenIngredients.has(key)) {
-          seenIngredients.get(key)!.meals.push(meal.name)
+          const existing = seenIngredients.get(key)!
+          existing.meals.push(meal.name)
+          // Only add quantity if it's distinct (avoids repeating identical strings)
+          if (ing.quantity && !existing.quantities.includes(ing.quantity)) {
+            existing.quantities.push(ing.quantity)
+          }
         } else {
-          seenIngredients.set(key, { id: ing.id, name: ing.name, quantity: ing.quantity, meals: [meal.name], category: ing.category })
+          seenIngredients.set(key, { id: ing.id, name: ing.name, quantities: ing.quantity ? [ing.quantity] : [], meals: [meal.name], category: ing.category })
         }
       })
     })
   })
   seenIngredients.forEach(ing => {
     const cat = ing.category as StoreCategory
-    if (shopList[cat]) shopList[cat].push(ing)
+    if (shopList[cat]) shopList[cat].push({ ...ing, quantity: ing.quantities.join(' + ') })
   })
 
   // Progress calculation for header
@@ -97,7 +102,6 @@ export default function Home() {
         meal={selectedMeal.meal}
         cat={categories[selectedMeal.catIdx]}
         categories={categories}
-        checked={checked}
         onBack={handleBack}
       />
     )
@@ -105,7 +109,7 @@ export default function Home() {
 
   // Main view
   return (
-    <main className="flex flex-col min-h-screen bg-gray-50">
+    <main className="flex flex-col h-screen overflow-hidden" style={{ backgroundColor: 'var(--layer-0)' }}>
       <Header
         view={view}
         onToggle={handleToggleView}
@@ -116,7 +120,6 @@ export default function Home() {
       {view === 'cook' && (
         <CookView
           categories={categories}
-          checked={checked}
           onMealSelect={handleMealSelect}
           initialIdx={activeCategoryIdx}
           onIdxChange={setActiveCategoryIdx}

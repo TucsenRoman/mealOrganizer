@@ -46,11 +46,11 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
 
   return (
     <>
-      <div className="px-4 pt-4">
+      <div className="px-4 pt-4 flex-1 flex flex-col min-h-0">
         <div
           ref={scrollRef}
           onScroll={onScroll}
-          className="flex gap-4 overflow-x-auto snap-x no-scrollbar"
+          className="flex gap-4 overflow-x-auto snap-x no-scrollbar flex-1 min-h-0"
         >
           {shopCategories.map((storeCat, scIdx) => {
             const items = shopList[storeCat]
@@ -61,22 +61,18 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
             return (
               <div
                 key={storeCat}
-                className={`
-                  snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm
-                  rounded-2xl ${style.bg} flex flex-col
-                  transition-all duration-200
-                  ${isActive ? '' : 'opacity-60'}
-                `}
+                className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col"
+                style={{ backgroundColor: 'var(--layer-1)' }}
               >
                 {/* Card header */}
                 <div className="flex items-center justify-between px-4 pt-4 pb-3">
                   <div className="flex items-center gap-2">
                     <span className="text-2xl">{style.emoji}</span>
-                    <span className={`text-lg font-black ${style.text}`}>{storeCat}</span>
+                    <span className="text-lg font-black" style={{ color: style.dot }}>{storeCat}</span>
                   </div>
                   <div className="text-right">
                     <p className="text-xs text-gray-400 font-medium">{doneCount}/{items.length} picked</p>
-                    <div className="w-16 h-1.5 bg-white/70 rounded-full overflow-hidden mt-1">
+                    <div className="w-16 h-1.5 rounded-full overflow-hidden mt-1" style={{ backgroundColor: 'var(--layer-3)' }}>
                       <div
                         className="h-full rounded-full transition-all duration-300"
                         style={{
@@ -89,15 +85,16 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
                 </div>
 
                 {/* Divider */}
-                <div className="mx-4 h-px bg-black/5" />
+                <div className="mx-4 h-px bg-black/6" />
 
                 {/* Items list */}
-                <div className="flex flex-col divide-y divide-black/5 px-1 pb-2 overflow-y-auto max-h-[55vh]">
-                  {items.map(item => {
+                <div className="flex flex-col px-1 pb-2 overflow-y-auto flex-1 min-h-0">
+                  {items.map((item, itemIdx) => {
                     const isChecked = !!checked[item.id]
                     return (
+                      <div key={item.id}>
+                        {itemIdx > 0 && <div className="h-px mx-3" style={{ backgroundColor: 'var(--layer-2)' }} />}
                       <button
-                        key={item.id}
                         onClick={() => onToggle(item.id)}
                         className={`flex items-center gap-3 w-full text-left px-3 py-3 rounded-xl transition-colors active:scale-98 ${
                           isChecked ? 'opacity-50' : ''
@@ -105,9 +102,9 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
                       >
                         {/* Checkbox */}
                         <div
-                          className="flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center transition-all shadow-sm"
+                          className="flex-shrink-0 w-5 h-5 rounded-md flex items-center justify-center transition-all"
                           style={{
-                            backgroundColor: isChecked ? '#E5E7EB' : 'white',
+                            backgroundColor: isChecked ? 'var(--layer-3)' : 'var(--layer-0)',
                             boxShadow: isChecked ? 'none' : `0 0 0 2px ${style.dot}`,
                           }}
                         >
@@ -116,19 +113,22 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
 
                         {/* Name + quantity + shared with */}
                         <div className="flex-1 min-w-0">
-                          <p className={`text-sm font-semibold ${isChecked ? 'line-through text-gray-400' : 'text-gray-800'}`}>
-                            {item.name}
-                          </p>
-                          {item.quantity && (
-                            <p className="text-xs text-gray-400">{item.quantity}</p>
-                          )}
+                          <div className="flex items-baseline justify-between gap-2">
+                            <p className={`text-sm font-semibold truncate ${isChecked ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                              {item.name}
+                            </p>
+                            {item.quantity && (
+                              <p className="text-xs text-gray-400 flex-shrink-0">{item.quantity}</p>
+                            )}
+                          </div>
                           {item.meals.length > 0 && (
-                            <p className="text-xs mt-0.5 truncate text-gray-400">
+                            <p className="text-xs truncate text-gray-400">
                               For {item.meals.join(', ')}
                             </p>
                           )}
                         </div>
                       </button>
+                      </div>
                     )
                   })}
                 </div>

@@ -12,7 +12,7 @@ type Props = {
 
 export default function Header({ view, onToggle, pct, vibe }: Props) {
   return (
-    <div className="bg-white border-b border-gray-100">
+    <div className="border-b border-black/5" style={{ backgroundColor: 'var(--layer-1)' }}>
       <div className="flex items-center gap-3 px-4 py-3">
         {/* Bar */}
         <div className="relative flex-1 flex flex-col justify-center gap-1 h-10">
@@ -58,22 +58,22 @@ export default function Header({ view, onToggle, pct, vibe }: Props) {
         <div className="w-32 flex-shrink-0 flex justify-end">
           <button
             onClick={onToggle}
-            className="flex items-center h-8 bg-gray-100 rounded-xl p-1 gap-1"
+            className="flex items-center h-8 rounded-xl p-1 gap-1" style={{ backgroundColor: 'var(--layer-2)' }}
           >
-            <div className={`flex items-center h-6 rounded-lg text-sm font-semibold transition-all duration-300 ease-in-out overflow-hidden ${view === 'shop' ? 'bg-white text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`}>
+            <div className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${view === 'shop' ? 'text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`} style={view === 'shop' ? { backgroundColor: 'var(--layer-0)' } : {}}>
               <ListTodo size={14} className="flex-shrink-0" />
               <span
-                className="overflow-hidden transition-all duration-300 ease-in-out whitespace-nowrap"
-                style={{ maxWidth: view === 'shop' ? '3rem' : '0px', opacity: view === 'shop' ? 1 : 0, paddingLeft: view === 'shop' ? '6px' : '0px' }}
+                className="overflow-hidden whitespace-nowrap transition-[max-width,opacity,padding-left] duration-300 ease-in-out"
+                style={{ maxWidth: view === 'shop' ? '3rem' : '0px', opacity: view === 'shop' ? 1 : 0, paddingLeft: view === 'shop' ? '6px' : '0px', willChange: 'opacity, max-width' }}
               >
                 Shop
               </span>
             </div>
-            <div className={`flex items-center h-6 rounded-lg text-sm font-semibold transition-all duration-300 ease-in-out overflow-hidden ${view === 'cook' ? 'bg-white text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`}>
+            <div className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${view === 'cook' ? 'text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`} style={view === 'cook' ? { backgroundColor: 'var(--layer-0)' } : {}}>
               <CookingPot size={14} className="flex-shrink-0" />
               <span
-                className="overflow-hidden transition-all duration-300 ease-in-out whitespace-nowrap"
-                style={{ maxWidth: view === 'cook' ? '3rem' : '0px', opacity: view === 'cook' ? 1 : 0, paddingLeft: view === 'cook' ? '6px' : '0px' }}
+                className="overflow-hidden whitespace-nowrap transition-[max-width,opacity,padding-left] duration-300 ease-in-out"
+                style={{ maxWidth: view === 'cook' ? '3rem' : '0px', opacity: view === 'cook' ? 1 : 0, paddingLeft: view === 'cook' ? '6px' : '0px', willChange: 'opacity, max-width' }}
               >
                 Cook
               </span>
