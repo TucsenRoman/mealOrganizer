@@ -2,9 +2,9 @@
   "items": {
     "sausage-roll": {
       "id": "sausage-roll",
-      "name": "Great Value Sausage Roll, 16 oz",
-      "quantity": "3x 16 oz rolls ($2.94 each, $8.82 total)",
-      "price": 8.82,
+      "name": "Signature SELECT Country Style Pork Sausage Roll, 16 oz",
+      "quantity": "3x 16 oz rolls ($3.99 each, $11.97 total)",
+      "price": 11.97,
       "category": "Meat",
       "usedIn": {
         "breakfast-burritos": "all 3 lbs"
@@ -95,9 +95,9 @@
     },
     "hashbrowns": {
       "id": "hashbrowns",
-      "name": "Great Value Shredded Hash Browns, 26 oz",
-      "quantity": "1x 26 oz bag ($3.42)",
-      "price": 3.42,
+      "name": "Signature SELECT Shredded Country Hash Browns, 30 oz",
+      "quantity": "1x 30 oz bag ($3.99)",
+      "price": 3.99,
       "category": "Frozen",
       "usedIn": {
         "breakfast-burritos": "full bag"
@@ -135,8 +135,8 @@
     "eggo-waffles": {
       "id": "eggo-waffles",
       "name": "Eggo Homestyle Waffles, 29.6 oz, 24 Count",
-      "quantity": "1x 24-count box ($5.97)",
-      "price": 5.97,
+      "quantity": "1x 24-count box, 29.6 oz ($6.99)",
+      "price": 6.99,
       "category": "Frozen",
       "usedIn": {
         "pancakes-waffles": "full box"
@@ -147,8 +147,8 @@
     "fruit-mixed": {
       "id": "fruit-mixed",
       "name": "Fruit (mixed)",
-      "quantity": "5 lbs total",
-      "price": null,
+      "quantity": "5 lbs total (2 lb strawberries + 2.25 lb grapes + extras)",
+      "price": 11.29,
       "category": "Produce",
       "usedIn": {
         "pancakes-waffles": "3 lbs",
@@ -209,9 +209,9 @@
     },
     "ground-beef-roll": {
       "id": "ground-beef-roll",
-      "name": "Ground Beef (80/20)",
-      "quantity": "5lb roll",
-      "price": 32.43,
+      "name": "Signature SELECT Ground Beef 80/20 Chub",
+      "quantity": "5 lb chub ($7.49/lb, $37.45 total)",
+      "price": 37.45,
       "category": "Meat",
       "usedIn": {
         "tacos": "~1.5 lbs",
@@ -223,9 +223,9 @@
     },
     "chicken-bag-1": {
       "id": "chicken-bag-1",
-      "name": "Great Value Boneless Skinless Chicken Breasts, 3 lb (Frozen)",
-      "quantity": "1x 3 lb bag ($9.47)",
-      "price": 9.47,
+      "name": "Signature Select Frozen Chicken Breasts Value Pack, 3.5 lb",
+      "quantity": "1x 3.5 lb value pack ($13.97)",
+      "price": 13.97,
       "category": "Meat",
       "usedIn": {
         "tacos": "~1.5 lbs",
@@ -236,9 +236,9 @@
     },
     "chicken-bag-2": {
       "id": "chicken-bag-2",
-      "name": "Great Value Boneless Skinless Chicken Breasts, 3 lb (Frozen)",
-      "quantity": "1x 3 lb bag ($9.47)",
-      "price": 9.47,
+      "name": "Signature Select Frozen Chicken Breasts Value Pack, 3.5 lb",
+      "quantity": "1x 3.5 lb value pack ($13.97)",
+      "price": 13.97,
       "category": "Meat",
       "usedIn": {
         "chicken-parm": "full 3 lb bag"
@@ -261,8 +261,8 @@
     "taco-shells": {
       "id": "taco-shells",
       "name": "Taco Shells (hard)",
-      "quantity": "TBD",
-      "price": null,
+      "quantity": "2x 12-count boxes (5.8 oz each)",
+      "price": 6.66,
       "category": "Dry",
       "usedIn": {
         "tacos": "TBD"
@@ -297,8 +297,8 @@
     "taco-sauce": {
       "id": "taco-sauce",
       "name": "Taco Sauce (mild/medium/hot)",
-      "quantity": "TBD",
-      "price": null,
+      "quantity": "1x 16 oz bottle",
+      "price": 1.97,
       "category": "Dry",
       "usedIn": {
         "tacos": "TBD"
@@ -359,9 +359,9 @@
     },
     "whole-milk": {
       "id": "whole-milk",
-      "name": "Whole Milk",
-      "quantity": "1 gallon ($3.52)",
-      "price": 3.52,
+      "name": "Lucerne Whole Milk, 1 gallon",
+      "quantity": "1 gallon ($3.69)",
+      "price": 3.69,
       "category": "Dairy",
       "usedIn": {
         "steaks": "~1 cup"
@@ -408,8 +408,8 @@
     "ketchup": {
       "id": "ketchup",
       "name": "Great Value Tomato Ketchup",
-      "quantity": "1x bottle (TBD)",
-      "price": null,
+      "quantity": "1x 32 oz bottle",
+      "price": 1.94,
       "category": "Dry",
       "usedIn": {
         "burgers": "full bottle"
@@ -458,8 +458,8 @@
     "seasoned-fries": {
       "id": "seasoned-fries",
       "name": "Checkers & Rally's Famous Seasoned Fries",
-      "quantity": "2x 48 oz bags ($7.42 each, $14.84 total)",
-      "price": 14.84,
+      "quantity": "2x 28 oz bags ($4.99 each, $9.98 total)",
+      "price": 9.98,
       "category": "Frozen",
       "usedIn": {
         "burgers": "full purchase"
@@ -543,9 +543,9 @@
     },
     "garlic-bread": {
       "id": "garlic-bread",
-      "name": "Great Value Garlic Texas Toast, 11.25 oz, 8 Count (Frozen)",
-      "quantity": "2x 8-count boxes ($1.97 each, $3.94 total)",
-      "price": 3.94,
+      "name": "Signature SELECT Garlic Toast, 8-count, 11.25 oz",
+      "quantity": "2x 8-count boxes ($3.79 each, $7.58 total)",
+      "price": 7.58,
       "category": "Frozen",
       "usedIn": {
         "chicken-parm": "1 box",
@@ -556,9 +556,9 @@
     },
     "chicken-nuggets": {
       "id": "chicken-nuggets",
-      "name": "Great Value Breaded Chicken Nuggets, 70 oz",
-      "quantity": "1x 70 oz bag ($11.93)",
-      "price": 11.93,
+      "name": "Foster Farms Chicken Breast Nuggets, 33.6 oz",
+      "quantity": "2x 33.6 oz bags ($6.99 each, $13.98 total)",
+      "price": 13.98,
       "category": "Frozen",
       "usedIn": {
         "frozen-foods": "full bag"
@@ -568,9 +568,9 @@
     },
     "frozen-pizzas": {
       "id": "frozen-pizzas",
-      "name": "Jack's Pepperoni Personal Pizza, 11.7 oz",
-      "quantity": "4x 2-pack ($2.87 each, $11.48 total) — 8 pizzas",
-      "price": 11.48,
+      "name": "Signature SELECT Rising Crust Pepperoni Pizza, 30.5 oz",
+      "quantity": "2x 30.5 oz pizzas ($4.99 each, $9.98 total)",
+      "price": 9.98,
       "category": "Frozen",
       "usedIn": {
         "frozen-foods": "8 pizzas"
@@ -581,8 +581,8 @@
     "pizza-rolls": {
       "id": "pizza-rolls",
       "name": "Totino's Pepperoni Pizza Rolls, 63.5 oz, 130 Count",
-      "quantity": "1x 130-count bag ($10.67 rollback)",
-      "price": 10.67,
+      "quantity": "1x 130-count bag, 63.5 oz ($13.99)",
+      "price": 13.99,
       "category": "Frozen",
       "usedIn": {
         "frozen-foods": "full bag"
@@ -593,8 +593,8 @@
     "corndogs": {
       "id": "corndogs",
       "name": "State Fair Classic Corn Dogs, 58.7 oz, 22 Count",
-      "quantity": "1x 22-count box ($12.48)",
-      "price": 12.48,
+      "quantity": "1x 12-count box ($11.99)",
+      "price": 11.99,
       "category": "Frozen",
       "usedIn": {
         "frozen-foods": "full box"
@@ -689,9 +689,9 @@
     },
     "cinnamon-rolls": {
       "id": "cinnamon-rolls",
-      "name": "Cinnamon Rolls",
-      "quantity": "TBD",
-      "price": null,
+      "name": "Pillsbury Cinnamon Rolls with Icing, 8-count, 12.4 oz",
+      "quantity": "2x 8-count cans ($3.49 each, $6.98 total)",
+      "price": 6.98,
       "category": "Dairy",
       "usedIn": {
         "big-breakfast": "TBD"
@@ -701,9 +701,9 @@
     },
     "salad": {
       "id": "salad",
-      "name": "Salad",
-      "quantity": "TBD",
-      "price": null,
+      "name": "Salad Kit (Caesar, family size)",
+      "quantity": "1x family size salad kit (22 oz)",
+      "price": 4.97,
       "category": "Produce",
       "usedIn": {
         "spaghetti": "side salad"
