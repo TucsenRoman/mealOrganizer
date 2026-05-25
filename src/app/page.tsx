@@ -41,36 +41,33 @@ export default function Home() {
     } catch {}
   }, [checked])
 
+  // Build a mealId -> meal name lookup from categories
+  const mealNameMap: Record<string, string> = {}
+  categories.forEach(cat => {
+    cat.meals.forEach(meal => { mealNameMap[meal.id] = meal.name })
+  })
+
   // Build shopping list from the items dictionary.
-  // Each item appears exactly once regardless of how many meals use it.
-  // We derive the "meals" and "mealEntries" by scanning categories.
+  // Each item appears exactly once. mealEntries comes directly from item.usedIn.
   const shopList: Record<StoreCategory, ShopItem[]> = {
     Produce: [], Meat: [], Dairy: [], Frozen: [], Dry: [],
   }
 
-  // Build a map of itemId -> list of {meal, amount} across all meals
-  const itemMealMap = new Map<string, { meal: string; amount: string }[]>()
-  categories.forEach(cat => {
-    cat.meals.forEach(meal => {
-      meal.ingredients.forEach(ing => {
-        if (!itemMealMap.has(ing.itemId)) itemMealMap.set(ing.itemId, [])
-        itemMealMap.get(ing.itemId)!.push({ meal: meal.name, amount: ing.amount })
-      })
-    })
-  })
-
-  // Add each item to the appropriate store category column
   Object.values(items).forEach(item => {
-    const entries = itemMealMap.get(item.id) ?? []
+    const mealEntries = Object.entries(item.usedIn ?? {}).map(([mealId, amount]) => ({
+      meal: mealNameMap[mealId] ?? mealId,
+      quantity: amount,
+    }))
     const shopItem: ShopItem = {
       id: item.id,
       name: item.name,
       quantity: item.quantity,
       price: item.price,
       category: item.category,
+      store: item.store,
       bringing: item.bringing,
-      meals: entries.map(e => e.meal),
-      mealEntries: entries.map(e => ({ meal: e.meal, quantity: e.amount })),
+      meals: mealEntries.map(e => e.meal),
+      mealEntries,
     }
     if (shopList[item.category]) {
       shopList[item.category].push(shopItem)

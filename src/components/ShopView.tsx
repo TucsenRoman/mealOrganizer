@@ -138,7 +138,16 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
                                 <p className={`text-sm font-semibold leading-snug ${isChecked ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                                   {displayName}
                                 </p>
-                                <p className="text-xs text-gray-400 mt-0.5 tabular-nums">{meta}</p>
+                                <div className="flex items-center gap-1.5 mt-0.5">
+                                  <p className="text-xs text-gray-400 tabular-nums">{meta}</p>
+                                  <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full leading-none ${
+                                    item.store === 'Safeway'
+                                      ? 'bg-red-100 text-red-500'
+                                      : 'bg-blue-100 text-blue-500'
+                                  }`}>
+                                    {item.store}
+                                  </span>
+                                </div>
                               </div>
                             )
                           })()}

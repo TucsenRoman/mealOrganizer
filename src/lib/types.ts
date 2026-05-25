@@ -6,7 +6,9 @@ export type Item = {
   quantity: string   // Full purchase description, e.g. "2x 48 oz bags ($7.42 each, $14.84 total)"
   price: number | null  // Total cost of this purchase (null = TBD)
   category: StoreCategory
+  usedIn: Record<string, string>  // mealId -> amount used in that meal
   notes: string
+  store: 'Walmart' | 'Safeway'
   bringing?: { who: string; amount: string } | null
 }
 
@@ -40,6 +42,7 @@ export type ShopItem = {
   quantity: string
   price: number | null
   category: StoreCategory
+  store: 'Walmart' | 'Safeway'
   bringing?: { who: string; amount: string } | null
   meals: string[]
   mealEntries: { meal: string; quantity: string }[]

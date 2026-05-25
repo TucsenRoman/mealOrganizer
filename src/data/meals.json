@@ -6,7 +6,11 @@
       "quantity": "3x 16 oz rolls ($2.94 each, $8.82 total)",
       "price": 8.82,
       "category": "Meat",
-      "notes": ""
+      "usedIn": {
+        "breakfast-burritos": "all 3 lbs"
+      },
+      "notes": "",
+      "store": "Safeway"
     },
     "eggs": {
       "id": "eggs",
@@ -14,8 +18,17 @@
       "quantity": "1x 18-count store carton ($2.97) + Kaitlyn's 2 dozen",
       "price": 2.97,
       "category": "Dairy",
+      "usedIn": {
+        "breakfast-burritos": "12 eggs",
+        "french-toast": "6 eggs",
+        "big-breakfast": "24 eggs"
+      },
       "notes": "42 eggs total: 12 for Breakfast Burritos, 6 for French Toast, 24 for Big Breakfast.",
-      "bringing": { "who": "Kaitlyn", "amount": "2 dozen (from her chickens)" }
+      "bringing": {
+        "who": "Kaitlyn",
+        "amount": "2 dozen (from her chickens)"
+      },
+      "store": "Walmart"
     },
     "burrito-tortillas": {
       "id": "burrito-tortillas",
@@ -23,7 +36,11 @@
       "quantity": "2x 8-count packs = 16 total ($2.12 each, $4.24 total)",
       "price": 4.24,
       "category": "Dry",
-      "notes": "Burrito size only — separate from taco tortillas."
+      "usedIn": {
+        "breakfast-burritos": "16 total"
+      },
+      "notes": "Burrito size only — separate from taco tortillas.",
+      "store": "Walmart"
     },
     "white-onion": {
       "id": "white-onion",
@@ -31,7 +48,13 @@
       "quantity": "2 onions (~$1.08 each, $2.16 total)",
       "price": 2.16,
       "category": "Produce",
-      "notes": "½ onion for Breakfast Burritos, ½ for Tacos, ½ for Burgers. Buy 2 total."
+      "usedIn": {
+        "breakfast-burritos": "½ onion",
+        "tacos": "½ onion",
+        "burgers": "½ onion"
+      },
+      "notes": "½ onion for Breakfast Burritos, ½ for Tacos, ½ for Burgers. Buy 2 total.",
+      "store": "Walmart"
     },
     "bell-peppers-mixed": {
       "id": "bell-peppers-mixed",
@@ -39,7 +62,11 @@
       "quantity": "1x 3pack ($2.97)",
       "price": 2.97,
       "category": "Produce",
-      "notes": ""
+      "usedIn": {
+        "breakfast-burritos": "all 3 peppers"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "green-bell-pepper": {
       "id": "green-bell-pepper",
@@ -47,7 +74,11 @@
       "quantity": "1 count ($0.86)",
       "price": 0.86,
       "category": "Produce",
-      "notes": ""
+      "usedIn": {
+        "breakfast-burritos": "1 pepper"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "fiesta-blend-cheese": {
       "id": "fiesta-blend-cheese",
@@ -55,7 +86,12 @@
       "quantity": "1x 32 oz bag ($6.92)",
       "price": 6.92,
       "category": "Dairy",
-      "notes": "~2 cups for Breakfast Burritos, ~2 cups for Tacos. One bag covers both meals."
+      "usedIn": {
+        "breakfast-burritos": "~2 cups",
+        "tacos": "~2 cups"
+      },
+      "notes": "~2 cups for Breakfast Burritos, ~2 cups for Tacos. One bag covers both meals.",
+      "store": "Walmart"
     },
     "hashbrowns": {
       "id": "hashbrowns",
@@ -63,15 +99,26 @@
       "quantity": "1x 26 oz bag ($3.42)",
       "price": 3.42,
       "category": "Frozen",
-      "notes": ""
+      "usedIn": {
+        "breakfast-burritos": "full bag"
+      },
+      "notes": "",
+      "store": "Safeway"
     },
     "white-bread": {
       "id": "white-bread",
       "name": "Great Value White Round Top Bread Loaf, 20 oz",
       "quantity": "5 loaves ($1.48 each, $7.40 total)",
-      "price": 7.40,
+      "price": 7.4,
       "category": "Dry",
-      "notes": "1 loaf for French Toast, 1 for Big Breakfast, 1 for Grilled Cheese, 2 for Sandwiches."
+      "usedIn": {
+        "french-toast": "1 loaf",
+        "big-breakfast": "1 loaf",
+        "grilled-cheese": "1 loaf",
+        "sandwiches": "2 loaves"
+      },
+      "notes": "1 loaf for French Toast, 1 for Big Breakfast, 1 for Grilled Cheese, 2 for Sandwiches.",
+      "store": "Walmart"
     },
     "pancake-mix": {
       "id": "pancake-mix",
@@ -79,7 +126,11 @@
       "quantity": "1x 32 oz box ($1.98)",
       "price": 1.98,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "pancakes-waffles": "full box"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "eggo-waffles": {
       "id": "eggo-waffles",
@@ -87,7 +138,11 @@
       "quantity": "1x 24-count box ($5.97)",
       "price": 5.97,
       "category": "Frozen",
-      "notes": ""
+      "usedIn": {
+        "pancakes-waffles": "full box"
+      },
+      "notes": "",
+      "store": "Safeway"
     },
     "fruit-mixed": {
       "id": "fruit-mixed",
@@ -95,7 +150,12 @@
       "quantity": "5 lbs total",
       "price": null,
       "category": "Produce",
-      "notes": "3 lbs for Pancakes & Waffles, 2 lbs for Croissant Sandwiches."
+      "usedIn": {
+        "pancakes-waffles": "3 lbs",
+        "croissant-sandwiches": "2 lbs"
+      },
+      "notes": "3 lbs for Pancakes & Waffles, 2 lbs for Croissant Sandwiches.",
+      "store": "Walmart"
     },
     "maple-syrup": {
       "id": "maple-syrup",
@@ -103,7 +163,11 @@
       "quantity": "1x 24 fl oz bottle ($2.36)",
       "price": 2.36,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "pancakes-waffles": "full bottle"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "croissants": {
       "id": "croissants",
@@ -111,7 +175,11 @@
       "quantity": "2x 6-count packs = 12 total ($9.96)",
       "price": 9.96,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "croissant-sandwiches": "12 total"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "black-forest-ham": {
       "id": "black-forest-ham",
@@ -119,7 +187,12 @@
       "quantity": "1x 32 oz pouch ($9.42)",
       "price": 9.42,
       "category": "Meat",
-      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches."
+      "usedIn": {
+        "croissant-sandwiches": "~½ pouch",
+        "sandwiches": "~½ pouch"
+      },
+      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches.",
+      "store": "Walmart"
     },
     "cheddar-sliced": {
       "id": "cheddar-sliced",
@@ -127,15 +200,26 @@
       "quantity": "1x 8 oz pack, 12 slices ($3.34)",
       "price": 3.34,
       "category": "Dairy",
-      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches."
+      "usedIn": {
+        "croissant-sandwiches": "~6 slices",
+        "sandwiches": "~6 slices"
+      },
+      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches.",
+      "store": "Walmart"
     },
     "ground-beef-roll": {
       "id": "ground-beef-roll",
-      "name": "80% Lean / 20% Fat Ground Beef Chuck, 5 lb Roll",
-      "quantity": "1x 5 lb roll ($32.43)",
+      "name": "Ground Beef (80/20)",
+      "quantity": "5lb roll",
       "price": 32.43,
       "category": "Meat",
-      "notes": "~1.5 lbs for Tacos, ~2 lbs for Burgers, ~1 lb for Spaghetti. 4.5 lbs used, 0.5 lb spare."
+      "usedIn": {
+        "tacos": "~1.5 lbs",
+        "burgers": "~2 lbs",
+        "spaghetti": "~1 lb"
+      },
+      "notes": "~1.5 lbs for Tacos, ~2 lbs for Burgers, ~1 lb for Spaghetti. 4.5 lbs used, 0.5 lb spare.",
+      "store": "Safeway"
     },
     "chicken-bag-1": {
       "id": "chicken-bag-1",
@@ -143,7 +227,12 @@
       "quantity": "1x 3 lb bag ($9.47)",
       "price": 9.47,
       "category": "Meat",
-      "notes": "Split between Tacos (~1.5 lbs) and Spaghetti Alfredo (~1.5 lbs). Separate bag from Chicken Parm."
+      "usedIn": {
+        "tacos": "~1.5 lbs",
+        "spaghetti": "~1.5 lbs"
+      },
+      "notes": "Split between Tacos (~1.5 lbs) and Spaghetti Alfredo (~1.5 lbs). Separate bag from Chicken Parm.",
+      "store": "Safeway"
     },
     "chicken-bag-2": {
       "id": "chicken-bag-2",
@@ -151,7 +240,11 @@
       "quantity": "1x 3 lb bag ($9.47)",
       "price": 9.47,
       "category": "Meat",
-      "notes": "Used entirely for Chicken Parm. Separate bag from Tacos/Alfredo bag."
+      "usedIn": {
+        "chicken-parm": "full 3 lb bag"
+      },
+      "notes": "Used entirely for Chicken Parm. Separate bag from Tacos/Alfredo bag.",
+      "store": "Safeway"
     },
     "taco-seasoning": {
       "id": "taco-seasoning",
@@ -159,7 +252,11 @@
       "quantity": "3x 1 oz packets ($0.47 each, $1.41 total)",
       "price": 1.41,
       "category": "Dry",
-      "notes": "2 packets for beef, 1 packet for chicken."
+      "usedIn": {
+        "tacos": "3 packets"
+      },
+      "notes": "2 packets for beef, 1 packet for chicken.",
+      "store": "Walmart"
     },
     "taco-shells": {
       "id": "taco-shells",
@@ -167,7 +264,11 @@
       "quantity": "TBD",
       "price": null,
       "category": "Dry",
-      "notes": "On hold — 1 person prefers hard shells, group polling in progress."
+      "usedIn": {
+        "tacos": "TBD"
+      },
+      "notes": "On hold — 1 person prefers hard shells, group polling in progress.",
+      "store": "Walmart"
     },
     "taco-tortillas": {
       "id": "taco-tortillas",
@@ -175,7 +276,11 @@
       "quantity": "2x 10-count packs = 20 total ($1.98 each, $3.96 total)",
       "price": 3.96,
       "category": "Dry",
-      "notes": "Taco size only — separate from burrito tortillas."
+      "usedIn": {
+        "tacos": "20 total"
+      },
+      "notes": "Taco size only — separate from burrito tortillas.",
+      "store": "Walmart"
     },
     "sour-cream": {
       "id": "sour-cream",
@@ -183,7 +288,11 @@
       "quantity": "1x 24 oz tub ($3.34 rollback)",
       "price": 3.34,
       "category": "Dairy",
-      "notes": ""
+      "usedIn": {
+        "tacos": "full tub"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "taco-sauce": {
       "id": "taco-sauce",
@@ -191,7 +300,11 @@
       "quantity": "TBD",
       "price": null,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "tacos": "TBD"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "shredded-lettuce": {
       "id": "shredded-lettuce",
@@ -199,7 +312,11 @@
       "quantity": "1x 16 oz bag ($3.97)",
       "price": 3.97,
       "category": "Produce",
-      "notes": ""
+      "usedIn": {
+        "tacos": "full bag"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "slicing-tomatoes": {
       "id": "slicing-tomatoes",
@@ -207,15 +324,12 @@
       "quantity": "2x 3-packs ($1.97 each, $3.94 total)",
       "price": 3.94,
       "category": "Produce",
-      "notes": "1 pack for Tacos, 1 pack for Burgers."
-    },
-    "steak": {
-      "id": "steak",
-      "name": "Steak",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Meat",
-      "notes": "Landon's pick."
+      "usedIn": {
+        "tacos": "1x 3-pack",
+        "burgers": "1x 3-pack"
+      },
+      "notes": "1 pack for Tacos, 1 pack for Burgers.",
+      "store": "Walmart"
     },
     "russet-potatoes": {
       "id": "russet-potatoes",
@@ -223,7 +337,11 @@
       "quantity": "1x 5 lb bag ($2.34)",
       "price": 2.34,
       "category": "Produce",
-      "notes": ""
+      "usedIn": {
+        "steaks": "full 5 lb bag"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "butter-box": {
       "id": "butter-box",
@@ -231,7 +349,13 @@
       "quantity": "1x 4-stick box ($3.06)",
       "price": 3.06,
       "category": "Dairy",
-      "notes": "~2 sticks for Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti. One box covers all three."
+      "usedIn": {
+        "steaks": "~2 sticks",
+        "grilled-cheese": "~2 sticks",
+        "spaghetti": "2-3 tbsp"
+      },
+      "notes": "~2 sticks for Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti. One box covers all three.",
+      "store": "Walmart"
     },
     "whole-milk": {
       "id": "whole-milk",
@@ -239,7 +363,11 @@
       "quantity": "1 gallon ($3.52)",
       "price": 3.52,
       "category": "Dairy",
-      "notes": "~1 cup for mashed potatoes. Remainder available for other uses."
+      "usedIn": {
+        "steaks": "~1 cup"
+      },
+      "notes": "~1 cup for mashed potatoes. Remainder available for other uses.",
+      "store": "Safeway"
     },
     "burger-buns": {
       "id": "burger-buns",
@@ -247,7 +375,11 @@
       "quantity": "2x 8-count packs ($3.97 each rollback, $7.94 total)",
       "price": 7.94,
       "category": "Dry",
-      "notes": "Rollback price."
+      "usedIn": {
+        "burgers": "14 buns"
+      },
+      "notes": "Rollback price.",
+      "store": "Walmart"
     },
     "dill-pickles": {
       "id": "dill-pickles",
@@ -255,7 +387,11 @@
       "quantity": "1x 24 fl oz jar ($2.67 rollback)",
       "price": 2.67,
       "category": "Dry",
-      "notes": "Rollback price — was $3.27."
+      "usedIn": {
+        "burgers": "full jar"
+      },
+      "notes": "Rollback price — was $3.27.",
+      "store": "Walmart"
     },
     "iceberg-lettuce": {
       "id": "iceberg-lettuce",
@@ -263,7 +399,11 @@
       "quantity": "1x head ($2.53)",
       "price": 2.53,
       "category": "Produce",
-      "notes": ""
+      "usedIn": {
+        "burgers": "1 head"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "ketchup": {
       "id": "ketchup",
@@ -271,7 +411,11 @@
       "quantity": "1x bottle (TBD)",
       "price": null,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "burgers": "full bottle"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "yellow-mustard": {
       "id": "yellow-mustard",
@@ -279,7 +423,12 @@
       "quantity": "1x 20 oz bottle ($0.98)",
       "price": 0.98,
       "category": "Dry",
-      "notes": "Shared between Burgers and Hiking Sandwiches."
+      "usedIn": {
+        "burgers": "~half bottle",
+        "sandwiches": "~half bottle"
+      },
+      "notes": "Shared between Burgers and Hiking Sandwiches.",
+      "store": "Walmart"
     },
     "pepper-jack-cheese": {
       "id": "pepper-jack-cheese",
@@ -287,7 +436,11 @@
       "quantity": "1x 8 oz pack, 12 slices ($1.67)",
       "price": 1.67,
       "category": "Dairy",
-      "notes": ""
+      "usedIn": {
+        "burgers": "full pack"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "kraft-singles": {
       "id": "kraft-singles",
@@ -295,7 +448,12 @@
       "quantity": "1x 24-count pack ($4.68)",
       "price": 4.68,
       "category": "Dairy",
-      "notes": "~7 slices for Burgers, ~14 slices for Grilled Cheese. One pack covers both."
+      "usedIn": {
+        "burgers": "~7 slices",
+        "grilled-cheese": "~14 slices"
+      },
+      "notes": "~7 slices for Burgers, ~14 slices for Grilled Cheese. One pack covers both.",
+      "store": "Walmart"
     },
     "seasoned-fries": {
       "id": "seasoned-fries",
@@ -303,7 +461,11 @@
       "quantity": "2x 48 oz bags ($7.42 each, $14.84 total)",
       "price": 14.84,
       "category": "Frozen",
-      "notes": ""
+      "usedIn": {
+        "burgers": "full purchase"
+      },
+      "notes": "",
+      "store": "Safeway"
     },
     "tomato-soup": {
       "id": "tomato-soup",
@@ -311,7 +473,11 @@
       "quantity": "1x 4-pack ($4.78)",
       "price": 4.78,
       "category": "Dry",
-      "notes": "4 cans = ~8 servings for 7 people."
+      "usedIn": {
+        "grilled-cheese": "4 cans"
+      },
+      "notes": "4 cans = ~8 servings for 7 people.",
+      "store": "Walmart"
     },
     "penne-pasta": {
       "id": "penne-pasta",
@@ -319,7 +485,11 @@
       "quantity": "2x 16 oz boxes ($0.98 each, $1.96 total)",
       "price": 1.96,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "chicken-parm": "2 lbs"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "marinara-sauce": {
       "id": "marinara-sauce",
@@ -327,7 +497,12 @@
       "quantity": "2x 23 oz jars ($1.74 each, $3.48 total)",
       "price": 3.48,
       "category": "Dry",
-      "notes": "1 jar for Chicken Parm, 1 jar for Spaghetti."
+      "usedIn": {
+        "chicken-parm": "1 jar",
+        "spaghetti": "1 jar"
+      },
+      "notes": "1 jar for Chicken Parm, 1 jar for Spaghetti.",
+      "store": "Walmart"
     },
     "parmesan-shaker": {
       "id": "parmesan-shaker",
@@ -335,7 +510,12 @@
       "quantity": "1x 8 oz shaker ($2.98)",
       "price": 2.98,
       "category": "Dry",
-      "notes": "~4 oz for Chicken Parm, ~4 oz for Spaghetti. One shaker covers both."
+      "usedIn": {
+        "chicken-parm": "~4 oz",
+        "spaghetti": "~4 oz"
+      },
+      "notes": "~4 oz for Chicken Parm, ~4 oz for Spaghetti. One shaker covers both.",
+      "store": "Walmart"
     },
     "spaghetti-pasta": {
       "id": "spaghetti-pasta",
@@ -343,7 +523,11 @@
       "quantity": "1x 4-count pack ($3.97)",
       "price": 3.97,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "spaghetti": "4 lbs"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "alfredo-sauce": {
       "id": "alfredo-sauce",
@@ -351,7 +535,11 @@
       "quantity": "1x 22 oz jar ($2.48)",
       "price": 2.48,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "spaghetti": "full jar"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "garlic-bread": {
       "id": "garlic-bread",
@@ -359,7 +547,12 @@
       "quantity": "2x 8-count boxes ($1.97 each, $3.94 total)",
       "price": 3.94,
       "category": "Frozen",
-      "notes": "1 box for Chicken Parm, 1 box for Spaghetti."
+      "usedIn": {
+        "chicken-parm": "1 box",
+        "spaghetti": "1 box"
+      },
+      "notes": "1 box for Chicken Parm, 1 box for Spaghetti.",
+      "store": "Safeway"
     },
     "chicken-nuggets": {
       "id": "chicken-nuggets",
@@ -367,7 +560,11 @@
       "quantity": "1x 70 oz bag ($11.93)",
       "price": 11.93,
       "category": "Frozen",
-      "notes": ""
+      "usedIn": {
+        "frozen-foods": "full bag"
+      },
+      "notes": "",
+      "store": "Safeway"
     },
     "frozen-pizzas": {
       "id": "frozen-pizzas",
@@ -375,7 +572,11 @@
       "quantity": "4x 2-pack ($2.87 each, $11.48 total) — 8 pizzas",
       "price": 11.48,
       "category": "Frozen",
-      "notes": "One per person, one spare."
+      "usedIn": {
+        "frozen-foods": "8 pizzas"
+      },
+      "notes": "One per person, one spare.",
+      "store": "Safeway"
     },
     "pizza-rolls": {
       "id": "pizza-rolls",
@@ -383,7 +584,11 @@
       "quantity": "1x 130-count bag ($10.67 rollback)",
       "price": 10.67,
       "category": "Frozen",
-      "notes": "Rollback price — was $11.87."
+      "usedIn": {
+        "frozen-foods": "full bag"
+      },
+      "notes": "Rollback price — was $11.87.",
+      "store": "Safeway"
     },
     "corndogs": {
       "id": "corndogs",
@@ -391,47 +596,11 @@
       "quantity": "1x 22-count box ($12.48)",
       "price": 12.48,
       "category": "Frozen",
-      "notes": "Out of stock online — check in-store."
-    },
-    "hawaiian-rolls": {
-      "id": "hawaiian-rolls",
-      "name": "Hawaiian Rolls",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Dry",
-      "notes": ""
-    },
-    "pulled-chicken": {
-      "id": "pulled-chicken",
-      "name": "Pulled Chicken",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Meat",
-      "notes": ""
-    },
-    "buffalo-sauce": {
-      "id": "buffalo-sauce",
-      "name": "Buffalo Sauce",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Dry",
-      "notes": ""
-    },
-    "bbq-sauce": {
-      "id": "bbq-sauce",
-      "name": "BBQ Sauce",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Dry",
-      "notes": ""
-    },
-    "slider-cheese": {
-      "id": "slider-cheese",
-      "name": "Cheese (for sliders)",
-      "quantity": "TBD",
-      "price": null,
-      "category": "Dairy",
-      "notes": ""
+      "usedIn": {
+        "frozen-foods": "full box"
+      },
+      "notes": "Out of stock online — check in-store.",
+      "store": "Safeway"
     },
     "turkey-breast": {
       "id": "turkey-breast",
@@ -439,7 +608,12 @@
       "quantity": "1x 16 oz bag ($4.47 rollback)",
       "price": 4.47,
       "category": "Meat",
-      "notes": "Rollback price. Shared between Croissant Sandwiches and Hiking Sandwiches."
+      "usedIn": {
+        "croissant-sandwiches": "~½ bag",
+        "sandwiches": "~½ bag"
+      },
+      "notes": "Rollback price. Shared between Croissant Sandwiches and Hiking Sandwiches.",
+      "store": "Walmart"
     },
     "mayonnaise": {
       "id": "mayonnaise",
@@ -447,7 +621,11 @@
       "quantity": "1x 30 fl oz bottle ($2.97)",
       "price": 2.97,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "sandwiches": "full bottle"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "marshmallows": {
       "id": "marshmallows",
@@ -455,7 +633,11 @@
       "quantity": "2x 10 oz bags ($1.17 each, $2.34 total)",
       "price": 2.34,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "smores": "2 bags"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "hersheys-chocolate": {
       "id": "hersheys-chocolate",
@@ -463,7 +645,11 @@
       "quantity": "4x XL bars ($2.97 each, $11.88 total)",
       "price": 11.88,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "smores": "4 XL bars"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "graham-crackers": {
       "id": "graham-crackers",
@@ -471,7 +657,11 @@
       "quantity": "1x party size box ($6.94) — equivalent to 2 regular boxes",
       "price": 6.94,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "smores": "full party-size box"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "bacon": {
       "id": "bacon",
@@ -479,7 +669,11 @@
       "quantity": "1x 24 oz pack ($5.94)",
       "price": 5.94,
       "category": "Meat",
-      "notes": ""
+      "usedIn": {
+        "big-breakfast": "full pack"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "english-muffins": {
       "id": "english-muffins",
@@ -487,7 +681,11 @@
       "quantity": "2x 6-count packs = 12 total ($1.62 each, $3.24 total)",
       "price": 3.24,
       "category": "Dry",
-      "notes": ""
+      "usedIn": {
+        "big-breakfast": "12 total"
+      },
+      "notes": "",
+      "store": "Walmart"
     },
     "cinnamon-rolls": {
       "id": "cinnamon-rolls",
@@ -495,7 +693,23 @@
       "quantity": "TBD",
       "price": null,
       "category": "Dairy",
-      "notes": "Bonus/afterthought — just a little extra on the table."
+      "usedIn": {
+        "big-breakfast": "TBD"
+      },
+      "notes": "Bonus/afterthought — just a little extra on the table.",
+      "store": "Safeway"
+    },
+    "salad": {
+      "id": "salad",
+      "name": "Salad",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Produce",
+      "usedIn": {
+        "spaghetti": "side salad"
+      },
+      "notes": "",
+      "store": "Walmart"
     }
   },
   "categories": [
@@ -771,12 +985,6 @@
           "side": "Mashed Potato",
           "ingredients": [
             {
-              "itemId": "steak",
-              "amount": "1 per person (7 steaks)",
-              "use": "Main protein — one steak per person",
-              "prep": "Salt generously 30–60 min ahead. Grill or pan-sear over very high heat, ~3–4 min per side for medium-rare (130°F internal). Rest 5 min before cutting. Finish with a pat of butter."
-            },
-            {
               "itemId": "russet-potatoes",
               "amount": "full 5 lb bag (side)",
               "use": "Boiled and mashed into the side dish",
@@ -940,7 +1148,7 @@
         {
           "id": "spaghetti",
           "name": "Alfredo / Spaghetti / Buttered Noodles",
-          "side": "Garlic Bread",
+          "side": "Salad",
           "ingredients": [
             {
               "itemId": "spaghetti-pasta",
@@ -989,6 +1197,12 @@
               "amount": "~4 oz (~½ shaker)",
               "use": "Finishing cheese sprinkled over the pasta at the table",
               "prep": "Set the container on the table for self-serve. No prep needed."
+            },
+            {
+              "itemId": "salad",
+              "amount": "side salad",
+              "use": "Fresh salad served alongside the pasta",
+              "prep": "Toss greens with desired toppings and dressing. Serve cold."
             }
           ]
         },
@@ -1043,12 +1257,6 @@
               "amount": "TBD",
               "use": "The slider buns — soft and slightly sweet, perfect for pulled chicken",
               "prep": "Slice the whole slab of rolls horizontally without separating. Layer filling, then replace top. Optionally brush with butter and bake at 350°F for 5-8 min to warm through."
-            },
-            {
-              "itemId": "pulled-chicken",
-              "amount": "TBD",
-              "use": "The main protein filling — split into buffalo and BBQ batches",
-              "prep": "Heat in a pan over medium heat. Split into two portions: toss half with buffalo sauce, half with BBQ sauce. Simmer 2-3 min until coated and heated through."
             },
             {
               "itemId": "buffalo-sauce",
