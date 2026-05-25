@@ -3,17 +3,19 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import mealsData from '@/data/meals.json'
-import type { Category, Meal, StoreCategory } from '@/lib/types'
+import type { Category, Item, Meal, ShopItem, StoreCategory } from '@/lib/types'
 import { STORAGE_KEY } from '@/lib/utils'
 import CookView from '@/components/CookView'
 import ShopView from '@/components/ShopView'
-import { ListTodo, CookingPot } from 'lucide-react'
+import BudgetView from '@/components/BudgetView'
+import { ListTodo, CookingPot, DollarSign } from 'lucide-react'
 
 export default function Home() {
   const categories: Category[] = mealsData.categories as Category[]
+  const items = mealsData.items as Record<string, Item>
   const router = useRouter()
 
-  const [view, setView] = useState<'cook' | 'shop'>('shop')
+  const [view, setView] = useState<'cook' | 'shop' | 'budget'>('shop')
   const [activeCategoryIdx, setActiveCategoryIdx] = useState(0)
   const [activeShopIdx, setActiveShopIdx] = useState(0)
   const [checked, setChecked] = useState<Record<string, boolean>>({})
@@ -25,7 +27,7 @@ export default function Home() {
       if (stored) {
         const parsed = JSON.parse(stored)
         setChecked(parsed)
-        const allIds = categories.flatMap(cat => cat.meals.flatMap(m => m.ingredients.map(i => i.id)))
+        const allIds = Object.keys(items)
         const allDone = allIds.length > 0 && allIds.every(id => parsed[id])
         if (allDone) setView('cook')
       }
@@ -39,39 +41,46 @@ export default function Home() {
     } catch {}
   }, [checked])
 
-  // Build deduplicated shopping list grouped by store category
-  const shopList: Record<StoreCategory, { id: string; name: string; quantity: string; meals: string[]; mealEntries: { meal: string; quantity: string }[] }[]> = {
+  // Build shopping list from the items dictionary.
+  // Each item appears exactly once regardless of how many meals use it.
+  // We derive the "meals" and "mealEntries" by scanning categories.
+  const shopList: Record<StoreCategory, ShopItem[]> = {
     Produce: [], Meat: [], Dairy: [], Frozen: [], Dry: [],
   }
-  const seenIngredients = new Map<string, { id: string; name: string; quantities: string[]; meals: string[]; mealEntries: { meal: string; quantity: string }[]; category: string }>()
+
+  // Build a map of itemId -> list of {meal, amount} across all meals
+  const itemMealMap = new Map<string, { meal: string; amount: string }[]>()
   categories.forEach(cat => {
     cat.meals.forEach(meal => {
       meal.ingredients.forEach(ing => {
-        const key = ing.name.toLowerCase()
-        const perMealQty = ing.mealQuantity || ing.quantity || ''
-        if (seenIngredients.has(key)) {
-          const existing = seenIngredients.get(key)!
-          existing.meals.push(meal.name)
-          existing.mealEntries.push({ meal: meal.name, quantity: perMealQty })
-          // Only add quantity if it's distinct (avoids repeating identical strings)
-          if (ing.quantity && !existing.quantities.includes(ing.quantity)) {
-            existing.quantities.push(ing.quantity)
-          }
-        } else {
-          seenIngredients.set(key, { id: ing.id, name: ing.name, quantities: ing.quantity ? [ing.quantity] : [], meals: [meal.name], mealEntries: [{ meal: meal.name, quantity: perMealQty }], category: ing.category })
-        }
+        if (!itemMealMap.has(ing.itemId)) itemMealMap.set(ing.itemId, [])
+        itemMealMap.get(ing.itemId)!.push({ meal: meal.name, amount: ing.amount })
       })
     })
   })
-  seenIngredients.forEach(ing => {
-    const cat = ing.category as StoreCategory
-    if (shopList[cat]) shopList[cat].push({ ...ing, quantity: ing.quantities.join(' + ') })
+
+  // Add each item to the appropriate store category column
+  Object.values(items).forEach(item => {
+    const entries = itemMealMap.get(item.id) ?? []
+    const shopItem: ShopItem = {
+      id: item.id,
+      name: item.name,
+      quantity: item.quantity,
+      price: item.price,
+      category: item.category,
+      bringing: item.bringing,
+      meals: entries.map(e => e.meal),
+      mealEntries: entries.map(e => ({ meal: e.meal, quantity: e.amount })),
+    }
+    if (shopList[item.category]) {
+      shopList[item.category].push(shopItem)
+    }
   })
 
-  // Progress calculation
-  const allIngredients = categories.flatMap(cat => cat.meals.flatMap(m => m.ingredients))
-  const done = allIngredients.filter(i => checked[i.id]).length
-  const total = allIngredients.length
+  // Progress: count items checked vs total items
+  const allItemIds = Object.keys(items)
+  const done = allItemIds.filter(id => checked[id]).length
+  const total = allItemIds.length
   const pct = total > 0 ? (done / total) * 100 : 0
 
   function toggleIngredient(id: string) {
@@ -80,10 +89,6 @@ export default function Home() {
 
   function handleMealSelect(_catIdx: number, meal: Meal) {
     router.push(`/meal/${meal.id}`)
-  }
-
-  function handleToggleView() {
-    setView(v => v === 'shop' ? 'cook' : 'shop')
   }
 
   // Main view
@@ -109,25 +114,36 @@ export default function Home() {
         />
       )}
 
-      {/* Floating view toggle */}
+      {view === 'budget' && (
+        <BudgetView shopList={shopList} />
+      )}
+
+      {/* Floating view toggle — three individually-tappable tabs */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button
-          onClick={handleToggleView}
-          className="flex items-center h-8 rounded-xl p-1 gap-1 bg-white/55 backdrop-blur-[3px] shadow-float border border-white/40"
-        >
-          <div className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${view === 'shop' ? 'bg-[var(--layer-0)] text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`}>
-            <ListTodo size={14} className="flex-shrink-0" />
-            <span className={`overflow-hidden whitespace-nowrap transition-[max-width,opacity,padding-left] duration-300 ease-in-out [will-change:opacity,max-width] ${view === 'shop' ? 'max-w-[3rem] opacity-100 pl-1.5' : 'max-w-0 opacity-0 pl-0'}`}>
-              Shop
-            </span>
-          </div>
-          <div className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${view === 'cook' ? 'bg-[var(--layer-0)] text-gray-900 shadow-sm px-3 py-1' : 'text-gray-400 px-2 py-1'}`}>
-            <CookingPot size={14} className="flex-shrink-0" />
-            <span className={`overflow-hidden whitespace-nowrap transition-[max-width,opacity,padding-left] duration-300 ease-in-out [will-change:opacity,max-width] ${view === 'cook' ? 'max-w-[3rem] opacity-100 pl-1.5' : 'max-w-0 opacity-0 pl-0'}`}>
-              Cook
-            </span>
-          </div>
-        </button>
+        <div className="flex items-center h-8 rounded-xl p-1 gap-1 bg-white/55 backdrop-blur-[3px] shadow-float border border-white/40">
+          {([
+            { key: 'shop',   Icon: ListTodo,    label: 'Shop'   },
+            { key: 'budget', Icon: DollarSign,  label: 'Budget' },
+            { key: 'cook',   Icon: CookingPot,  label: 'Cook'   },
+          ] as const).map(({ key, Icon, label }) => (
+            <button
+              key={key}
+              onClick={() => setView(key)}
+              className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${
+                view === key
+                  ? 'bg-[var(--layer-0)] text-gray-900 shadow-sm px-3 py-1'
+                  : 'text-gray-400 px-2 py-1'
+              }`}
+            >
+              <Icon size={14} className="flex-shrink-0" />
+              <span className={`overflow-hidden whitespace-nowrap transition-[max-width,opacity,padding-left] duration-300 ease-in-out [will-change:opacity,max-width] ${
+                view === key ? 'max-w-[4rem] opacity-100 pl-1.5' : 'max-w-0 opacity-0 pl-0'
+              }`}>
+                {label}
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
     </main>
   )

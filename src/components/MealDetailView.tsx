@@ -2,12 +2,13 @@
 
 import { useRef, useState } from 'react'
 import { ArrowLeft, Info, ChefHat, Scale, Scissors, MoveLeft } from 'lucide-react'
-import type { Meal, Category, Ingredient } from '@/lib/types'
+import type { Meal, Category, Item, MealIngredient } from '@/lib/types'
 
 type Props = {
   meal: Meal
   cat: Category
   categories: Category[]
+  items: Record<string, Item>
   onBack: () => void
 }
 
@@ -18,18 +19,17 @@ function scrollCarouselTo(ref: React.RefObject<HTMLDivElement | null>, idx: numb
   if (child) child.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
 }
 
-export default function MealDetailView({ meal, cat, categories, onBack }: Props) {
+export default function MealDetailView({ meal, cat, categories, items, onBack }: Props) {
   const [activeIdx, setActiveIdx] = useState(0)
   const scrollRef = useRef<HTMLDivElement>(null)
 
-  // Build shared ingredient map
-  const ingredientMealMap = new Map<string, { mealName: string; quantity: string }[]>()
+  // Build a map of itemId -> meals that use it (for "also used in" section)
+  const itemMealMap = new Map<string, string[]>()
   categories.forEach(c => {
     c.meals.forEach(m => {
-      m.ingredients.forEach((ing: Ingredient) => {
-        const key = ing.name.toLowerCase()
-        if (!ingredientMealMap.has(key)) ingredientMealMap.set(key, [])
-        ingredientMealMap.get(key)!.push({ mealName: m.name, quantity: ing.quantity })
+      m.ingredients.forEach((ing: MealIngredient) => {
+        if (!itemMealMap.has(ing.itemId)) itemMealMap.set(ing.itemId, [])
+        itemMealMap.get(ing.itemId)!.push(m.name)
       })
     })
   })
@@ -45,7 +45,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
 
   return (
     <main className="flex flex-col h-screen overflow-hidden bg-[var(--layer-0)]">
-      {/* Header — your version, untouched */}
+      {/* Header */}
       <div className="relative flex-col items-center gap-4 px-6 pt-8 pb-4 bg-[var(--layer-1)]">
         <div className='absolute top-0 left-0 px-3 py-2 rounded-lg backdrop-blur-[3px]'>
           <button
@@ -82,15 +82,19 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
           className="flex gap-4 overflow-x-auto snap-x no-scrollbar pb-4 flex-1 min-h-0"
         >
           {meal.ingredients.map((ing, idx) => {
-            const sharedWith = (ingredientMealMap.get(ing.name.toLowerCase()) ?? [])
-              .filter(e => e.mealName !== meal.name)
+            const item = items[ing.itemId]
+            if (!item) return null
+
+            // Other meals that also reference this item
+            const alsoUsedIn = (itemMealMap.get(ing.itemId) ?? [])
+              .filter(mealName => mealName !== meal.name)
 
             return (
               <div
-                key={ing.id}
+                key={ing.itemId + '-' + idx}
                 className="snap-center flex-shrink-0 w-[calc(100vw-2rem)] max-w-sm rounded-2xl flex flex-col overflow-y-auto bg-[var(--layer-1)]"
               >
-                {/* Top: counter + name + quantity */}
+                {/* Top: counter + name + purchase info */}
                 <div className="px-5 pt-5 pb-4">
                   <span
                     className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full inline-block mb-3"
@@ -100,27 +104,22 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
                   </span>
 
                   <h2 className="text-2xl font-bold leading-tight text-gray-900 mb-2">
-                    {ing.name}
+                    {item.name}
                   </h2>
 
-                  {/* Total quantity */}
+                  {/* Purchase quantity */}
                   <div className="flex items-center gap-1.5">
                     <Scale size={12} className="text-gray-400 flex-shrink-0" />
-                    <span className="text-sm font-semibold text-gray-600">{ing.quantity}</span>
-                    {ing.mealQuantity && (
-                      <span className="text-xs text-gray-400 ml-0.5">total</span>
-                    )}
+                    <span className="text-sm font-semibold text-gray-600">{item.quantity}</span>
                   </div>
 
-                  {/* Per-meal allocation */}
-                  {ing.mealQuantity && (
-                    <div className="mt-2.5 rounded-xl px-3 py-2 bg-[var(--layer-2)]">
-                      <p className="text-xs text-gray-500 leading-snug">
-                        <span className="font-semibold text-gray-700">For this meal: </span>
-                        {ing.mealQuantity}
-                      </p>
-                    </div>
-                  )}
+                  {/* Amount used for this meal */}
+                  <div className="mt-2.5 rounded-xl px-3 py-2 bg-[var(--layer-2)]">
+                    <p className="text-xs text-gray-500 leading-snug">
+                      <span className="font-semibold text-gray-700">For this meal: </span>
+                      {ing.amount}
+                    </p>
+                  </div>
                 </div>
 
                 {/* Divider */}
@@ -146,30 +145,32 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
                   )}
 
                   {/* Bringing */}
-                  {ing.bringing && (
+                  {item.bringing && (
                     <div className="flex items-start gap-2 bg-emerald-50 rounded-xl px-3 py-2.5">
                       <span className="text-emerald-500 mt-0.5 flex-shrink-0">🎒</span>
                       <div className="text-xs text-emerald-700 leading-snug">
-                        <span className="font-semibold">{ing.bringing.who}</span> is bringing{' '}
-                        <span className="font-semibold">{ing.bringing.amount}</span>
-                        {ing.mealQuantity
-                          ? ' — split between meals as noted above'
-                          : ` — covers the full ${ing.quantity}`}
+                        <span className="font-semibold">{item.bringing.who}</span> is bringing{' '}
+                        <span className="font-semibold">{item.bringing.amount}</span>
                       </div>
                     </div>
                   )}
 
-                  {/* Shared with other meals */}
-                  {sharedWith.length > 0 && (
+                  {/* Item notes */}
+                  {item.notes && (
+                    <div className="flex items-start gap-2 bg-[var(--layer-2)] rounded-xl px-3 py-2.5">
+                      <Info size={12} className="text-gray-400 mt-0.5 flex-shrink-0" />
+                      <p className="text-xs text-gray-500 leading-snug">{item.notes}</p>
+                    </div>
+                  )}
+
+                  {/* Also used in other meals */}
+                  {alsoUsedIn.length > 0 && (
                     <div className="flex items-start gap-2 rounded-xl px-3 py-2.5 bg-[var(--layer-2)]">
                       <Info size={14} className="text-gray-400 mt-0.5 flex-shrink-0" />
                       <div className="text-xs text-gray-500">
                         <p className="font-semibold text-gray-600 mb-1">Also used in:</p>
-                        {sharedWith.map(e => (
-                          <p key={e.mealName} className="leading-snug">
-                            {e.mealName}
-                            {e.quantity ? <span className="text-gray-400"> — {e.quantity}</span> : null}
-                          </p>
+                        {alsoUsedIn.map(mealName => (
+                          <p key={mealName} className="leading-snug">{mealName}</p>
                         ))}
                       </div>
                     </div>
@@ -185,7 +186,7 @@ export default function MealDetailView({ meal, cat, categories, onBack }: Props)
         <div className="flex justify-center gap-1.5 pb-6">
           {meal.ingredients.map((ing, idx) => (
             <button
-              key={ing.id}
+              key={ing.itemId + '-dot-' + idx}
               onClick={() => {
                 setActiveIdx(idx)
                 scrollCarouselTo(scrollRef, idx)

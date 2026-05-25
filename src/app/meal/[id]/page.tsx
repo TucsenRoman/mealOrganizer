@@ -2,13 +2,14 @@
 
 import { useParams, useRouter } from 'next/navigation'
 import mealsData from '@/data/meals.json'
-import type { Category } from '@/lib/types'
+import type { Category, Item } from '@/lib/types'
 import MealDetailView from '@/components/MealDetailView'
 
 export default function MealPage() {
   const { id } = useParams<{ id: string }>()
   const router = useRouter()
   const categories: Category[] = mealsData.categories as Category[]
+  const items = mealsData.items as Record<string, Item>
 
   // Find the meal and its category across all categories
   let foundMeal = null
@@ -35,6 +36,7 @@ export default function MealPage() {
       meal={foundMeal}
       cat={foundCat}
       categories={categories}
+      items={items}
       onBack={() => router.back()}
     />
   )

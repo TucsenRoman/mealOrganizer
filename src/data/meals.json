@@ -1,4 +1,503 @@
 {
+  "items": {
+    "sausage-roll": {
+      "id": "sausage-roll",
+      "name": "Great Value Sausage Roll, 16 oz",
+      "quantity": "3x 16 oz rolls ($2.94 each, $8.82 total)",
+      "price": 8.82,
+      "category": "Meat",
+      "notes": ""
+    },
+    "eggs": {
+      "id": "eggs",
+      "name": "Eggs",
+      "quantity": "1x 18-count store carton ($2.97) + Kaitlyn's 2 dozen",
+      "price": 2.97,
+      "category": "Dairy",
+      "notes": "42 eggs total: 12 for Breakfast Burritos, 6 for French Toast, 24 for Big Breakfast.",
+      "bringing": { "who": "Kaitlyn", "amount": "2 dozen (from her chickens)" }
+    },
+    "burrito-tortillas": {
+      "id": "burrito-tortillas",
+      "name": "Great Value Burrito Flour Tortillas, 20 oz, 8 Count",
+      "quantity": "2x 8-count packs = 16 total ($2.12 each, $4.24 total)",
+      "price": 4.24,
+      "category": "Dry",
+      "notes": "Burrito size only — separate from taco tortillas."
+    },
+    "white-onion": {
+      "id": "white-onion",
+      "name": "White Onion",
+      "quantity": "2 onions (~$1.08 each, $2.16 total)",
+      "price": 2.16,
+      "category": "Produce",
+      "notes": "½ onion for Breakfast Burritos, ½ for Tacos, ½ for Burgers. Buy 2 total."
+    },
+    "bell-peppers-mixed": {
+      "id": "bell-peppers-mixed",
+      "name": "Bell Peppers (mixed colors)",
+      "quantity": "1x 3pack ($2.97)",
+      "price": 2.97,
+      "category": "Produce",
+      "notes": ""
+    },
+    "green-bell-pepper": {
+      "id": "green-bell-pepper",
+      "name": "Green Bell Pepper",
+      "quantity": "1 count ($0.86)",
+      "price": 0.86,
+      "category": "Produce",
+      "notes": ""
+    },
+    "fiesta-blend-cheese": {
+      "id": "fiesta-blend-cheese",
+      "name": "Great Value Fiesta Blend Shredded Cheese, 32 oz",
+      "quantity": "1x 32 oz bag ($6.92)",
+      "price": 6.92,
+      "category": "Dairy",
+      "notes": "~2 cups for Breakfast Burritos, ~2 cups for Tacos. One bag covers both meals."
+    },
+    "hashbrowns": {
+      "id": "hashbrowns",
+      "name": "Great Value Shredded Hash Browns, 26 oz",
+      "quantity": "1x 26 oz bag ($3.42)",
+      "price": 3.42,
+      "category": "Frozen",
+      "notes": ""
+    },
+    "white-bread": {
+      "id": "white-bread",
+      "name": "Great Value White Round Top Bread Loaf, 20 oz",
+      "quantity": "5 loaves ($1.48 each, $7.40 total)",
+      "price": 7.40,
+      "category": "Dry",
+      "notes": "1 loaf for French Toast, 1 for Big Breakfast, 1 for Grilled Cheese, 2 for Sandwiches."
+    },
+    "pancake-mix": {
+      "id": "pancake-mix",
+      "name": "Pancake & Waffle Mix",
+      "quantity": "1x 32 oz box ($1.98)",
+      "price": 1.98,
+      "category": "Dry",
+      "notes": ""
+    },
+    "eggo-waffles": {
+      "id": "eggo-waffles",
+      "name": "Eggo Homestyle Waffles, 29.6 oz, 24 Count",
+      "quantity": "1x 24-count box ($5.97)",
+      "price": 5.97,
+      "category": "Frozen",
+      "notes": ""
+    },
+    "fruit-mixed": {
+      "id": "fruit-mixed",
+      "name": "Fruit (mixed)",
+      "quantity": "5 lbs total",
+      "price": null,
+      "category": "Produce",
+      "notes": "3 lbs for Pancakes & Waffles, 2 lbs for Croissant Sandwiches."
+    },
+    "maple-syrup": {
+      "id": "maple-syrup",
+      "name": "Great Value Original Syrup, 24 fl oz",
+      "quantity": "1x 24 fl oz bottle ($2.36)",
+      "price": 2.36,
+      "category": "Dry",
+      "notes": ""
+    },
+    "croissants": {
+      "id": "croissants",
+      "name": "Marketside All Butter Whole Baked Croissants",
+      "quantity": "2x 6-count packs = 12 total ($9.96)",
+      "price": 9.96,
+      "category": "Dry",
+      "notes": ""
+    },
+    "black-forest-ham": {
+      "id": "black-forest-ham",
+      "name": "Great Value Black Forest Ham, Sliced, 32 oz",
+      "quantity": "1x 32 oz pouch ($9.42)",
+      "price": 9.42,
+      "category": "Meat",
+      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches."
+    },
+    "cheddar-sliced": {
+      "id": "cheddar-sliced",
+      "name": "Great Value Sharp Cheddar Deli Style Sliced Cheese, 8 oz, 12 Slices",
+      "quantity": "1x 8 oz pack, 12 slices ($3.34)",
+      "price": 3.34,
+      "category": "Dairy",
+      "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches."
+    },
+    "ground-beef-roll": {
+      "id": "ground-beef-roll",
+      "name": "80% Lean / 20% Fat Ground Beef Chuck, 5 lb Roll",
+      "quantity": "1x 5 lb roll ($32.43)",
+      "price": 32.43,
+      "category": "Meat",
+      "notes": "~1.5 lbs for Tacos, ~2 lbs for Burgers, ~1 lb for Spaghetti. 4.5 lbs used, 0.5 lb spare."
+    },
+    "chicken-bag-1": {
+      "id": "chicken-bag-1",
+      "name": "Great Value Boneless Skinless Chicken Breasts, 3 lb (Frozen)",
+      "quantity": "1x 3 lb bag ($9.47)",
+      "price": 9.47,
+      "category": "Meat",
+      "notes": "Split between Tacos (~1.5 lbs) and Spaghetti Alfredo (~1.5 lbs). Separate bag from Chicken Parm."
+    },
+    "chicken-bag-2": {
+      "id": "chicken-bag-2",
+      "name": "Great Value Boneless Skinless Chicken Breasts, 3 lb (Frozen)",
+      "quantity": "1x 3 lb bag ($9.47)",
+      "price": 9.47,
+      "category": "Meat",
+      "notes": "Used entirely for Chicken Parm. Separate bag from Tacos/Alfredo bag."
+    },
+    "taco-seasoning": {
+      "id": "taco-seasoning",
+      "name": "Great Value Taco Seasoning Mix, Original, 1 oz",
+      "quantity": "3x 1 oz packets ($0.47 each, $1.41 total)",
+      "price": 1.41,
+      "category": "Dry",
+      "notes": "2 packets for beef, 1 packet for chicken."
+    },
+    "taco-shells": {
+      "id": "taco-shells",
+      "name": "Taco Shells (hard)",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dry",
+      "notes": "On hold — 1 person prefers hard shells, group polling in progress."
+    },
+    "taco-tortillas": {
+      "id": "taco-tortillas",
+      "name": "Great Value Medium Soft Taco Flour Tortillas, 17.5 oz, 10 Count",
+      "quantity": "2x 10-count packs = 20 total ($1.98 each, $3.96 total)",
+      "price": 3.96,
+      "category": "Dry",
+      "notes": "Taco size only — separate from burrito tortillas."
+    },
+    "sour-cream": {
+      "id": "sour-cream",
+      "name": "Daisy Pure and Natural Sour Cream, 24 oz",
+      "quantity": "1x 24 oz tub ($3.34 rollback)",
+      "price": 3.34,
+      "category": "Dairy",
+      "notes": ""
+    },
+    "taco-sauce": {
+      "id": "taco-sauce",
+      "name": "Taco Sauce (mild/medium/hot)",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dry",
+      "notes": ""
+    },
+    "shredded-lettuce": {
+      "id": "shredded-lettuce",
+      "name": "Marketside Fresh Shredded Iceberg Lettuce, 16 oz",
+      "quantity": "1x 16 oz bag ($3.97)",
+      "price": 3.97,
+      "category": "Produce",
+      "notes": ""
+    },
+    "slicing-tomatoes": {
+      "id": "slicing-tomatoes",
+      "name": "Fresh Slicing Tomato",
+      "quantity": "2x 3-packs ($1.97 each, $3.94 total)",
+      "price": 3.94,
+      "category": "Produce",
+      "notes": "1 pack for Tacos, 1 pack for Burgers."
+    },
+    "steak": {
+      "id": "steak",
+      "name": "Steak",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Meat",
+      "notes": "Landon's pick."
+    },
+    "russet-potatoes": {
+      "id": "russet-potatoes",
+      "name": "Fresh Whole Russet Potatoes, 5 lb Bag",
+      "quantity": "1x 5 lb bag ($2.34)",
+      "price": 2.34,
+      "category": "Produce",
+      "notes": ""
+    },
+    "butter-box": {
+      "id": "butter-box",
+      "name": "Butter",
+      "quantity": "1x 4-stick box ($3.06)",
+      "price": 3.06,
+      "category": "Dairy",
+      "notes": "~2 sticks for Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti. One box covers all three."
+    },
+    "whole-milk": {
+      "id": "whole-milk",
+      "name": "Whole Milk",
+      "quantity": "1 gallon ($3.52)",
+      "price": 3.52,
+      "category": "Dairy",
+      "notes": "~1 cup for mashed potatoes. Remainder available for other uses."
+    },
+    "burger-buns": {
+      "id": "burger-buns",
+      "name": "Nature's Own Perfectly Crafted Brioche Style Hamburger Buns, 8 Count",
+      "quantity": "2x 8-count packs ($3.97 each rollback, $7.94 total)",
+      "price": 7.94,
+      "category": "Dry",
+      "notes": "Rollback price."
+    },
+    "dill-pickles": {
+      "id": "dill-pickles",
+      "name": "Vlasic Sandwich Dill Pickle Chips, 24 fl oz",
+      "quantity": "1x 24 fl oz jar ($2.67 rollback)",
+      "price": 2.67,
+      "category": "Dry",
+      "notes": "Rollback price — was $3.27."
+    },
+    "iceberg-lettuce": {
+      "id": "iceberg-lettuce",
+      "name": "Fresh Iceberg Lettuce Head",
+      "quantity": "1x head ($2.53)",
+      "price": 2.53,
+      "category": "Produce",
+      "notes": ""
+    },
+    "ketchup": {
+      "id": "ketchup",
+      "name": "Great Value Tomato Ketchup",
+      "quantity": "1x bottle (TBD)",
+      "price": null,
+      "category": "Dry",
+      "notes": ""
+    },
+    "yellow-mustard": {
+      "id": "yellow-mustard",
+      "name": "Great Value Yellow Mustard, 20 oz Squeeze Bottle",
+      "quantity": "1x 20 oz bottle ($0.98)",
+      "price": 0.98,
+      "category": "Dry",
+      "notes": "Shared between Burgers and Hiking Sandwiches."
+    },
+    "pepper-jack-cheese": {
+      "id": "pepper-jack-cheese",
+      "name": "Great Value Pepper Jack Deli Style Sliced Cheese, 8 oz, 12 Slices",
+      "quantity": "1x 8 oz pack, 12 slices ($1.67)",
+      "price": 1.67,
+      "category": "Dairy",
+      "notes": ""
+    },
+    "kraft-singles": {
+      "id": "kraft-singles",
+      "name": "Kraft Singles American Slices, 24 Count",
+      "quantity": "1x 24-count pack ($4.68)",
+      "price": 4.68,
+      "category": "Dairy",
+      "notes": "~7 slices for Burgers, ~14 slices for Grilled Cheese. One pack covers both."
+    },
+    "seasoned-fries": {
+      "id": "seasoned-fries",
+      "name": "Checkers & Rally's Famous Seasoned Fries",
+      "quantity": "2x 48 oz bags ($7.42 each, $14.84 total)",
+      "price": 14.84,
+      "category": "Frozen",
+      "notes": ""
+    },
+    "tomato-soup": {
+      "id": "tomato-soup",
+      "name": "Campbell's Condensed Tomato Soup, 10.75 oz Can (4 Pack)",
+      "quantity": "1x 4-pack ($4.78)",
+      "price": 4.78,
+      "category": "Dry",
+      "notes": "4 cans = ~8 servings for 7 people."
+    },
+    "penne-pasta": {
+      "id": "penne-pasta",
+      "name": "Great Value Penne Pasta, 16 oz",
+      "quantity": "2x 16 oz boxes ($0.98 each, $1.96 total)",
+      "price": 1.96,
+      "category": "Dry",
+      "notes": ""
+    },
+    "marinara-sauce": {
+      "id": "marinara-sauce",
+      "name": "Great Value Marinara Pasta Sauce, 23 oz",
+      "quantity": "2x 23 oz jars ($1.74 each, $3.48 total)",
+      "price": 3.48,
+      "category": "Dry",
+      "notes": "1 jar for Chicken Parm, 1 jar for Spaghetti."
+    },
+    "parmesan-shaker": {
+      "id": "parmesan-shaker",
+      "name": "Great Value Grated Parmesan Cheese, 8 oz Shaker",
+      "quantity": "1x 8 oz shaker ($2.98)",
+      "price": 2.98,
+      "category": "Dry",
+      "notes": "~4 oz for Chicken Parm, ~4 oz for Spaghetti. One shaker covers both."
+    },
+    "spaghetti-pasta": {
+      "id": "spaghetti-pasta",
+      "name": "Great Value Spaghetti Pasta, 1 lb, 4 Count",
+      "quantity": "1x 4-count pack ($3.97)",
+      "price": 3.97,
+      "category": "Dry",
+      "notes": ""
+    },
+    "alfredo-sauce": {
+      "id": "alfredo-sauce",
+      "name": "Great Value Classic Alfredo Pasta Sauce, 22 oz",
+      "quantity": "1x 22 oz jar ($2.48)",
+      "price": 2.48,
+      "category": "Dry",
+      "notes": ""
+    },
+    "garlic-bread": {
+      "id": "garlic-bread",
+      "name": "Great Value Garlic Texas Toast, 11.25 oz, 8 Count (Frozen)",
+      "quantity": "2x 8-count boxes ($1.97 each, $3.94 total)",
+      "price": 3.94,
+      "category": "Frozen",
+      "notes": "1 box for Chicken Parm, 1 box for Spaghetti."
+    },
+    "chicken-nuggets": {
+      "id": "chicken-nuggets",
+      "name": "Great Value Breaded Chicken Nuggets, 70 oz",
+      "quantity": "1x 70 oz bag ($11.93)",
+      "price": 11.93,
+      "category": "Frozen",
+      "notes": ""
+    },
+    "frozen-pizzas": {
+      "id": "frozen-pizzas",
+      "name": "Jack's Pepperoni Personal Pizza, 11.7 oz",
+      "quantity": "4x 2-pack ($2.87 each, $11.48 total) — 8 pizzas",
+      "price": 11.48,
+      "category": "Frozen",
+      "notes": "One per person, one spare."
+    },
+    "pizza-rolls": {
+      "id": "pizza-rolls",
+      "name": "Totino's Pepperoni Pizza Rolls, 63.5 oz, 130 Count",
+      "quantity": "1x 130-count bag ($10.67 rollback)",
+      "price": 10.67,
+      "category": "Frozen",
+      "notes": "Rollback price — was $11.87."
+    },
+    "corndogs": {
+      "id": "corndogs",
+      "name": "State Fair Classic Corn Dogs, 58.7 oz, 22 Count",
+      "quantity": "1x 22-count box ($12.48)",
+      "price": 12.48,
+      "category": "Frozen",
+      "notes": "Out of stock online — check in-store."
+    },
+    "hawaiian-rolls": {
+      "id": "hawaiian-rolls",
+      "name": "Hawaiian Rolls",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dry",
+      "notes": ""
+    },
+    "pulled-chicken": {
+      "id": "pulled-chicken",
+      "name": "Pulled Chicken",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Meat",
+      "notes": ""
+    },
+    "buffalo-sauce": {
+      "id": "buffalo-sauce",
+      "name": "Buffalo Sauce",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dry",
+      "notes": ""
+    },
+    "bbq-sauce": {
+      "id": "bbq-sauce",
+      "name": "BBQ Sauce",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dry",
+      "notes": ""
+    },
+    "slider-cheese": {
+      "id": "slider-cheese",
+      "name": "Cheese (for sliders)",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dairy",
+      "notes": ""
+    },
+    "turkey-breast": {
+      "id": "turkey-breast",
+      "name": "Great Value Fat-Free Turkey Breast, 16 oz Bag, Sliced",
+      "quantity": "1x 16 oz bag ($4.47 rollback)",
+      "price": 4.47,
+      "category": "Meat",
+      "notes": "Rollback price. Shared between Croissant Sandwiches and Hiking Sandwiches."
+    },
+    "mayonnaise": {
+      "id": "mayonnaise",
+      "name": "Great Value Mayonnaise, 30 fl oz",
+      "quantity": "1x 30 fl oz bottle ($2.97)",
+      "price": 2.97,
+      "category": "Dry",
+      "notes": ""
+    },
+    "marshmallows": {
+      "id": "marshmallows",
+      "name": "Marshmallows",
+      "quantity": "2x 10 oz bags ($1.17 each, $2.34 total)",
+      "price": 2.34,
+      "category": "Dry",
+      "notes": ""
+    },
+    "hersheys-chocolate": {
+      "id": "hersheys-chocolate",
+      "name": "Hershey's Milk Chocolate XL Bars, 4.4 oz",
+      "quantity": "4x XL bars ($2.97 each, $11.88 total)",
+      "price": 11.88,
+      "category": "Dry",
+      "notes": ""
+    },
+    "graham-crackers": {
+      "id": "graham-crackers",
+      "name": "Honey Maid Graham Crackers, Party Size, 28.8 oz",
+      "quantity": "1x party size box ($6.94) — equivalent to 2 regular boxes",
+      "price": 6.94,
+      "category": "Dry",
+      "notes": ""
+    },
+    "bacon": {
+      "id": "bacon",
+      "name": "Great Value Hickory Smoked Bacon, Mega Pack, 24 oz",
+      "quantity": "1x 24 oz pack ($5.94)",
+      "price": 5.94,
+      "category": "Meat",
+      "notes": ""
+    },
+    "english-muffins": {
+      "id": "english-muffins",
+      "name": "Great Value Original Fork Split English Muffins, 12 oz, 6 Count",
+      "quantity": "2x 6-count packs = 12 total ($1.62 each, $3.24 total)",
+      "price": 3.24,
+      "category": "Dry",
+      "notes": ""
+    },
+    "cinnamon-rolls": {
+      "id": "cinnamon-rolls",
+      "name": "Cinnamon Rolls",
+      "quantity": "TBD",
+      "price": null,
+      "category": "Dairy",
+      "notes": "Bonus/afterthought — just a little extra on the table."
+    }
+  },
   "categories": [
     {
       "id": "brunch",
@@ -12,82 +511,50 @@
           "side": "Hashbrowns",
           "ingredients": [
             {
-              "id": "bb-sausage",
-              "name": "Sausage",
-              "quantity": "3x 16 oz rolls (3 lbs)",
-              "category": "Meat",
-              "notes": "",
+              "itemId": "sausage-roll",
+              "amount": "all 3 lbs (full purchase)",
               "use": "Crumbled into the egg scramble filling",
               "prep": "Brown in a skillet over medium-high heat, breaking into crumbles. Drain grease before mixing with eggs."
             },
             {
-              "id": "bb-eggs",
-              "name": "Eggs",
-              "quantity": "12 eggs",
-              "category": "Dairy",
-              "notes": "Shared with French Toast and Big Breakfast. Kaitlyn bringing 2 dozen from her chickens + 1x18-count carton from store.",
+              "itemId": "eggs",
+              "amount": "12 eggs",
               "use": "Scrambled into the burrito filling",
-              "prep": "Crack into a bowl, whisk, season with salt & pepper. Cook in the same pan as sausage over medium-low heat.",
-              "mealQuantity": "12 eggs for burritos (6 reserved for French Toast, 24 reserved for Big Breakfast)",
-              "bringing": {
-                "who": "Kaitlyn",
-                "amount": "2 dozen (from her chickens)"
-              }
+              "prep": "Crack into a bowl, whisk, season with salt & pepper. Cook in the same pan as sausage over medium-low heat."
             },
             {
-              "id": "bb-tortillas",
-              "name": "Tortilla Shells",
-              "quantity": "3x packs (8-count, large size) = 24 total",
-              "category": "Dry",
-              "notes": "Shared with Tacos. Great Value large-size from Walmart.",
-              "use": "Burrito wraps — use the large flour tortillas",
-              "prep": "Warm on a dry skillet for 30 seconds per side or microwave wrapped in a damp paper towel for 30s.",
-              "mealQuantity": "~10 tortillas for burritos (10 remaining for Tacos, 4 extra)"
+              "itemId": "burrito-tortillas",
+              "amount": "16 total (full purchase)",
+              "use": "Burrito wraps — large flour tortillas",
+              "prep": "Warm on a dry skillet for 30 seconds per side or microwave wrapped in a damp paper towel for 30s."
             },
             {
-              "id": "bb-onion",
-              "name": "White Onion",
-              "quantity": "2 count",
-              "category": "Produce",
-              "notes": "Shared with Burgers, Tacos",
+              "itemId": "white-onion",
+              "amount": "½ onion",
               "use": "Sautéed into the burrito filling for flavor",
-              "prep": "Dice finely. Sauté in oil over medium heat until translucent, ~5 min, before adding sausage.",
-              "mealQuantity": "~½ onion diced for burritos"
+              "prep": "Dice finely. Sauté in oil over medium heat until translucent, ~5 min, before adding sausage."
             },
             {
-              "id": "bb-peppers-mixed",
-              "name": "Bell Peppers (mixed colors)",
-              "quantity": "1x3-count pack ($2.97)",
-              "category": "Produce",
-              "notes": "",
+              "itemId": "bell-peppers-mixed",
+              "amount": "all 3 peppers (full purchase)",
               "use": "Sautéed into the egg filling for color and crunch",
               "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
             },
             {
-              "id": "bb-peppers-green",
-              "name": "Green Bell Pepper",
-              "quantity": "1 count ($0.86)",
-              "category": "Produce",
-              "notes": "",
+              "itemId": "green-bell-pepper",
+              "amount": "1 pepper (full purchase)",
               "use": "Sautéed into the egg filling alongside the mixed peppers",
               "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
             },
             {
-              "id": "bb-cheese",
-              "name": "Great Value Fiesta Blend Shredded Cheese",
-              "quantity": "1x 32 oz bag ($6.92)",
-              "category": "Dairy",
-              "notes": "Shared with Tacos. Blend of Monterey Jack, cheddar, queso quesadilla, and asadero.",
+              "itemId": "fiesta-blend-cheese",
+              "amount": "~2 cups",
               "use": "Sprinkled over the hot filling inside the burrito before rolling",
-              "prep": "Sprinkle generously over filling. The residual heat will melt it.",
-              "mealQuantity": "~2 cups for burritos (~2 cups reserved for Tacos, plenty left over)"
+              "prep": "Sprinkle generously over filling. The residual heat will melt it."
             },
             {
-              "id": "bb-hashbrown",
-              "name": "Great Value Shredded Hash Browns",
-              "quantity": "1x 26 oz bag ($3.42)",
-              "category": "Frozen",
-              "notes": "",
+              "itemId": "hashbrowns",
+              "amount": "full bag (side dish)",
               "use": "Served as a side dish alongside the burritos",
               "prep": "Cook from frozen on a greased skillet over medium-high heat, ~4–5 min per side until golden and crispy. Season with salt."
             }
@@ -99,28 +566,16 @@
           "side": "Fruit",
           "ingredients": [
             {
-              "id": "ft-bread",
-              "name": "Bread",
-              "quantity": "1 loaf",
-              "category": "Dry",
-              "notes": "Shared with Sandwiches",
+              "itemId": "white-bread",
+              "amount": "1 loaf",
               "use": "Sliced and dipped in egg custard, then pan-fried",
-              "prep": "Use thick-cut slices (~¾ inch). Stale bread works best — soak each slice in custard for 20–30 sec per side.",
-              "mealQuantity": "1 loaf for French Toast (separate loaves bought for Sandwiches)"
+              "prep": "Use thick-cut slices (~¾ inch). Soak each slice in custard for 20–30 sec per side."
             },
             {
-              "id": "ft-eggs",
-              "name": "Eggs",
-              "quantity": "6 eggs",
-              "category": "Dairy",
-              "notes": "Shared with Breakfast Burritos and Big Breakfast. Kaitlyn bringing 2 dozen from her chickens + 1x18-count carton from store.",
+              "itemId": "eggs",
+              "amount": "6 eggs",
               "use": "Combined with milk to make the custard dip",
-              "prep": "Whisk eggs with a splash of milk, vanilla, cinnamon, and a pinch of salt. Pour into a shallow dish for dipping.",
-              "mealQuantity": "6 eggs for French Toast custard (12 reserved for Breakfast Burritos, 24 reserved for Big Breakfast)",
-              "bringing": {
-                "who": "Kaitlyn",
-                "amount": "2 dozen (from her chickens)"
-              }
+              "prep": "Whisk eggs with a splash of milk, vanilla, cinnamon, and a pinch of salt. Pour into a shallow dish for dipping."
             }
           ]
         },
@@ -130,49 +585,34 @@
           "side": null,
           "ingredients": [
             {
-              "id": "bb2-eggs",
-              "name": "Eggs",
-              "quantity": "24 eggs (6 leftover from Kaitlyn's 2 dozen + 1x18-count store carton)",
-              "category": "Dairy",
-              "notes": "Eggs, bacon/sausage, and toast",
+              "itemId": "eggs",
+              "amount": "24 eggs",
               "use": "Scrambled or fried to order for the whole group",
               "prep": "For scrambled: whisk with a splash of milk, cook over medium-low heat stirring slowly. For fried: crack directly into a buttered pan over low heat."
             },
             {
-              "id": "bb2-bacon",
-              "name": "Bacon",
-              "quantity": "1x 24 oz pack",
-              "category": "Meat",
-              "notes": "",
+              "itemId": "bacon",
+              "amount": "full pack (24 oz)",
               "use": "Served alongside eggs and toast",
               "prep": "Lay flat in a cold pan, heat to medium. Cook ~4 min per side until crispy. Drain on paper towels. Or bake at 400°F for 18–20 min on a sheet pan."
             },
             {
-              "id": "bb2-english-muffins",
-              "name": "English Muffins",
-              "quantity": "2x 6-count packs (12 total)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "english-muffins",
+              "amount": "12 total (full purchase)",
               "use": "Toasted and served alongside eggs and bacon",
-              "prep": "Split and toast until golden. Serve with butter."
+              "prep": "Fork split and toast until golden. Serve with butter."
             },
             {
-              "id": "bb2-bread",
-              "name": "Bread (for toast)",
-              "quantity": "1 loaf",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "white-bread",
+              "amount": "1 loaf",
               "use": "Toasted to serve alongside the eggs and meat",
               "prep": "Toast in a toaster or on a griddle with butter until golden. Serve with butter and jam if available."
             },
             {
-              "id": "bb2-rolls",
-              "name": "Cinnamon Rolls",
-              "quantity": "2 cans",
-              "category": "Dairy",
-              "notes": "Bonus/afterthought — just a little extra on the table",
+              "itemId": "cinnamon-rolls",
+              "amount": "TBD",
               "use": "Baked and set out as a sweet bonus alongside everything else",
-              "prep": "Preheat oven to 350°F (or as labeled). Place rolls in a greased pan with space between. Bake 12–15 min until golden. Drizzle included icing while warm."
+              "prep": "Preheat oven to 350°F (or as labeled). Place rolls in a greased pan. Bake 12–15 min until golden. Drizzle included icing while warm."
             }
           ]
         },
@@ -182,38 +622,26 @@
           "side": "Fruit",
           "ingredients": [
             {
-              "id": "pw-mix",
-              "name": "Pancake Mix",
-              "quantity": "1 box (32 oz)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "pancake-mix",
+              "amount": "full box",
               "use": "Batter base for the pancakes",
               "prep": "Follow box instructions — typically 1 cup mix + ¾ cup water. Don't over-mix; lumps are fine. Cook on a greased griddle over medium heat until bubbles form (~2 min), then flip."
             },
             {
-              "id": "pw-waffles",
-              "name": "Frozen Waffles",
-              "quantity": "2 boxes (10-count each)",
-              "category": "Frozen",
-              "notes": "",
-              "use": "Toaster waffles served alongside pancakes for variety",
+              "itemId": "eggo-waffles",
+              "amount": "full box (24 count)",
+              "use": "Toaster waffles served alongside pancakes for variety — ~3-4 people on the waffle side",
               "prep": "Toast from frozen in a toaster or toaster oven until golden and crispy, ~2 cycles. Serve immediately with syrup and fruit."
             },
             {
-              "id": "pw-fruit",
-              "name": "Fruit (mixed)",
-              "quantity": "3 lbs",
-              "category": "Produce",
-              "notes": "Side",
+              "itemId": "fruit-mixed",
+              "amount": "3 lbs (side)",
               "use": "Fresh fruit served as the side with pancakes and waffles",
               "prep": "Wash and slice as needed. No cooking required. Serve cold."
             },
             {
-              "id": "pw-syrup",
-              "name": "Maple Syrup",
-              "quantity": "2 bottles",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "maple-syrup",
+              "amount": "full bottle",
               "use": "Topping for pancakes and waffles",
               "prep": "Serve at room temp or warm briefly in a small saucepan. Set bottles on the table."
             }
@@ -225,40 +653,32 @@
           "side": "Fruit",
           "ingredients": [
             {
-              "id": "cs-croissants",
-              "name": "Marketside All Butter Whole Baked Croissants",
-              "quantity": "2x 6-count packs = 12 total ($9.96)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "croissants",
+              "amount": "12 total (full purchase)",
               "use": "The bread base for the sandwiches — slice and fill",
               "prep": "Slice horizontally. Optional: warm in oven at 300°F for 3–5 min for a crispy exterior. Layer with ham, cheese, and mustard/mayo."
             },
             {
-              "id": "cs-ham",
-              "name": "Ham",
-              "quantity": "2 packs",
-              "category": "Meat",
-              "notes": "Shared with Sandwiches",
+              "itemId": "black-forest-ham",
+              "amount": "~½ pouch",
               "use": "The main protein filling for the croissant sandwiches",
-              "prep": "Serve cold from the pack or warm briefly in a skillet over medium heat until edges curl slightly.",
-              "mealQuantity": "2 packs for croissant sandwiches (separate packs bought for Sandwiches)"
+              "prep": "Serve cold from the pack or warm briefly in a skillet over medium heat until edges curl slightly."
             },
             {
-              "id": "cs-cheddar",
-              "name": "Cheddar Cheese (sliced)",
-              "quantity": "1 pack",
-              "category": "Dairy",
-              "notes": "Shared with Burgers",
+              "itemId": "turkey-breast",
+              "amount": "~½ bag",
+              "use": "Turkey option for the croissant sandwiches",
+              "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
+            },
+            {
+              "itemId": "cheddar-sliced",
+              "amount": "~6 slices",
               "use": "Cheese layer in the croissant sandwich",
-              "prep": "Serve cold or let sit at room temp for 10 min for better flavor. Lay 1–2 slices on each sandwich.",
-              "mealQuantity": "~½ pack for croissant sandwiches (½ pack reserved for Burgers)"
+              "prep": "Serve cold or let sit at room temp for 10 min for better flavor. Lay 1–2 slices on each sandwich."
             },
             {
-              "id": "cs-fruit",
-              "name": "Fruit (mixed)",
-              "quantity": "2 lbs",
-              "category": "Produce",
-              "notes": "Side",
+              "itemId": "fruit-mixed",
+              "amount": "2 lbs (side)",
               "use": "Fresh fruit side dish alongside the sandwiches",
               "prep": "Wash and slice as needed. Serve cold."
             }
@@ -278,91 +698,70 @@
           "side": null,
           "ingredients": [
             {
-              "id": "t-hamburger",
-              "name": "Hamburger",
-              "quantity": "3 lbs",
-              "category": "Meat",
-              "notes": "Shared with Burgers",
-              "use": "Seasoned ground beef taco filling",
-              "prep": "Brown in a skillet over medium-high heat, drain fat. Add taco seasoning with 1/4 cup water, simmer 5 min until thickened.",
-              "mealQuantity": "3 lbs for tacos (separate 3 lbs bought for Burgers)"
+              "itemId": "ground-beef-roll",
+              "amount": "~1.5 lbs",
+              "use": "One of two taco proteins — seasoned ground beef filling",
+              "prep": "Brown in a skillet over medium-high heat, drain fat. Add 2 packets taco seasoning with ½ cup water, simmer 5 min until thickened."
             },
             {
-              "id": "t-taco-shells",
-              "name": "Taco Shells",
-              "quantity": "2x10 packs",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "chicken-bag-1",
+              "amount": "~1.5 lbs",
+              "use": "One of two taco proteins — seared and sliced chicken filling",
+              "prep": "Thaw overnight. Season with salt and pepper. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165°F internal. Rest 5 min, then slice thin. Add 1 packet taco seasoning + ¼ cup water, toss to coat and simmer 2-3 min."
+            },
+            {
+              "itemId": "taco-seasoning",
+              "amount": "3 packets total (2 for beef, 1 for chicken)",
+              "use": "Seasoning for both taco proteins — beef and chicken",
+              "prep": "Beef: after draining fat, add 2 packets + ½ cup water, simmer 5 min. Chicken: after searing, add 1 packet + ¼ cup water, toss to coat, simmer 2-3 min."
+            },
+            {
+              "itemId": "taco-shells",
+              "amount": "TBD",
               "use": "Hard shell option for tacos",
               "prep": "Warm in oven at 350°F for 3–5 min on a baking sheet. Stand upright in a baking dish to keep them from tipping."
             },
             {
-              "id": "t-tortillas",
-              "name": "Tortilla Shells",
-              "quantity": "3x packs (8-count, large size) = 24 total",
-              "category": "Dry",
-              "notes": "Shared with Burritos. Great Value large-size from Walmart.",
-              "use": "Soft shell option for tacos",
-              "prep": "Warm on a dry skillet 30 sec per side or microwave in a stack wrapped in a damp paper towel for 30s.",
-              "mealQuantity": "~10 tortillas for tacos (10 used for Breakfast Burritos, 4 extra)"
+              "itemId": "taco-tortillas",
+              "amount": "20 total (full purchase)",
+              "use": "Soft taco shells",
+              "prep": "Warm on a dry skillet 30 sec per side or microwave in a stack wrapped in a damp paper towel for 30s."
             },
             {
-              "id": "t-cheese",
-              "name": "Great Value Fiesta Blend Shredded Cheese",
-              "quantity": "1x 32 oz bag ($6.92)",
-              "category": "Dairy",
-              "notes": "Shared with Burritos. Same bag — Blend of Monterey Jack, cheddar, queso quesadilla, and asadero.",
+              "itemId": "fiesta-blend-cheese",
+              "amount": "~2 cups",
               "use": "Sprinkled over assembled tacos as a topping",
-              "prep": "Sprinkle directly onto tacos. No prep needed.",
-              "mealQuantity": "~2 cups for tacos (~2 cups used in Breakfast Burritos, plenty left over)"
+              "prep": "Sprinkle directly onto tacos. No prep needed."
             },
             {
-              "id": "t-sour-cream",
-              "name": "Sour Cream",
-              "quantity": "1x24 oz",
-              "category": "Dairy",
-              "notes": "",
+              "itemId": "sour-cream",
+              "amount": "full tub (side/topping)",
               "use": "Cooling topping dolloped on finished tacos",
               "prep": "Serve chilled straight from the container. Set out with a spoon for self-serve."
             },
             {
-              "id": "t-sauce",
-              "name": "Taco Sauce",
-              "quantity": "2-3 bottles (mixed spice levels)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "taco-sauce",
+              "amount": "TBD",
               "use": "Sauce/condiment — mild, medium, and hot options for the table",
               "prep": "Serve at room temp. Set all bottles out so everyone can pick their heat level."
             },
             {
-              "id": "t-lettuce",
-              "name": "Shredded Lettuce",
-              "quantity": "2 bags",
-              "category": "Produce",
-              "notes": "Shared with Burgers",
+              "itemId": "shredded-lettuce",
+              "amount": "full bag",
               "use": "Topping layer in tacos for crunch",
-              "prep": "No prep needed — bags come pre-shredded. Keep refrigerated until serving.",
-              "mealQuantity": "1 bag for tacos (1 bag reserved for Burgers)"
+              "prep": "No prep needed — bag comes pre-shredded. Keep refrigerated until serving."
             },
             {
-              "id": "t-tomato",
-              "name": "Tomato (whole, raw)",
-              "quantity": "2 lbs",
-              "category": "Produce",
-              "notes": "Shared with Burgers",
+              "itemId": "slicing-tomatoes",
+              "amount": "1x 3-pack",
               "use": "Diced fresh tomato topping for tacos",
-              "prep": "Dice into small cubes. Salt lightly and let sit 5 min to draw out juice, then drain before serving.",
-              "mealQuantity": "~1 lb diced for tacos (1 lb reserved for Burgers)"
+              "prep": "Dice into small cubes. Salt lightly and let sit 5 min to draw out juice, then drain before serving."
             },
             {
-              "id": "t-onion",
-              "name": "White Onion",
-              "quantity": "2 count",
-              "category": "Produce",
-              "notes": "Shared with Burgers, Burritos",
+              "itemId": "white-onion",
+              "amount": "½ onion",
               "use": "Raw diced onion topping for tacos",
-              "prep": "Dice finely. Serve raw as a topping. Optional: soak diced onion in cold water for 10 min to mellow sharpness.",
-              "mealQuantity": "~½ onion for tacos"
+              "prep": "Dice finely. Serve raw as a topping. Optional: soak diced onion in cold water for 10 min to mellow sharpness."
             }
           ]
         },
@@ -372,38 +771,26 @@
           "side": "Mashed Potato",
           "ingredients": [
             {
-              "id": "s-steak",
-              "name": "Steak",
-              "quantity": "7 count (~10 oz each, ~5 lbs total)",
-              "category": "Meat",
-              "notes": "",
+              "itemId": "steak",
+              "amount": "1 per person (7 steaks)",
               "use": "Main protein — one steak per person",
               "prep": "Salt generously 30–60 min ahead. Grill or pan-sear over very high heat, ~3–4 min per side for medium-rare (130°F internal). Rest 5 min before cutting. Finish with a pat of butter."
             },
             {
-              "id": "s-potato",
-              "name": "Potato (whole, raw)",
-              "quantity": "5 lbs",
-              "category": "Produce",
-              "notes": "For mashed potatoes",
+              "itemId": "russet-potatoes",
+              "amount": "full 5 lb bag (side)",
               "use": "Boiled and mashed into the side dish",
               "prep": "Peel and cube into 1-inch pieces. Boil in salted water ~15–20 min until fork-tender. Drain, mash with butter and warm milk. Season with salt and pepper."
             },
             {
-              "id": "s-butter",
-              "name": "Butter",
-              "quantity": "2 sticks",
-              "category": "Dairy",
-              "notes": "For mash + finishing steaks",
+              "itemId": "butter-box",
+              "amount": "~2 sticks",
               "use": "Mixed into mashed potatoes + used to baste and finish steaks",
               "prep": "1 stick into hot mash while still warm. Use remaining butter to baste steaks in the pan during the last 1–2 min of cooking."
             },
             {
-              "id": "s-milk",
-              "name": "Milk",
-              "quantity": "1 qt",
-              "category": "Dairy",
-              "notes": "For mash",
+              "itemId": "whole-milk",
+              "amount": "~1 cup",
               "use": "Warmed and stirred into mashed potatoes for creaminess",
               "prep": "Warm in a small saucepan or microwave (don't boil). Add gradually while mashing to reach your desired consistency."
             }
@@ -415,108 +802,70 @@
           "side": "Fries",
           "ingredients": [
             {
-              "id": "b-hamburger",
-              "name": "Hamburger",
-              "quantity": "3 lbs",
-              "category": "Meat",
-              "notes": "Shared with Tacos",
+              "itemId": "ground-beef-roll",
+              "amount": "~2 lbs",
               "use": "Formed into patties — the main protein",
-              "prep": "Form into 7 patties (~6–7 oz each). Season both sides with salt and pepper. Grill or pan-cook over high heat, ~3–4 min per side for medium. Don't press down with a spatula.",
-              "mealQuantity": "3 lbs for burgers (separate 3 lbs bought for Tacos)"
+              "prep": "Form into 7 patties (~4 oz / quarter pound each). Season both sides with salt and pepper. Grill or pan-cook over high heat, ~3–4 min per side for medium. Don't press down with a spatula."
             },
             {
-              "id": "b-buns",
-              "name": "Hamburger Buns",
-              "quantity": "2 packs (8-count each)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "burger-buns",
+              "amount": "14 buns (full purchase)",
               "use": "Bun for each burger — toast for best results",
               "prep": "Toast cut-side down on the grill or skillet with a little butter for ~1 min until golden."
             },
             {
-              "id": "b-pickles",
-              "name": "Pickles",
-              "quantity": "1x32 oz jar",
-              "category": "Dry",
-              "notes": "",
-              "use": "Classic burger topping — serve from the jar",
+              "itemId": "dill-pickles",
+              "amount": "full jar",
+              "use": "Classic burger topping — flat chips designed for sandwiches and burgers",
               "prep": "Drain jar before serving. Set out with tongs or a fork for self-serve."
             },
             {
-              "id": "b-tomato",
-              "name": "Tomato (whole, raw)",
-              "quantity": "2 lbs",
-              "category": "Produce",
-              "notes": "Shared with Tacos",
+              "itemId": "slicing-tomatoes",
+              "amount": "1x 3-pack",
               "use": "Sliced tomato topping for burgers",
-              "prep": "Slice into 1/4-inch rounds. Lay flat on a plate for self-serve.",
-              "mealQuantity": "~1 lb sliced for burgers (1 lb diced for Tacos)"
+              "prep": "Slice into 1/4-inch rounds. Lay flat on a plate for self-serve."
             },
             {
-              "id": "b-lettuce",
-              "name": "Shredded Lettuce",
-              "quantity": "2 bags",
-              "category": "Produce",
-              "notes": "Shared with Tacos",
-              "use": "Topping layer for burgers",
-              "prep": "No prep needed — bags come pre-shredded.",
-              "mealQuantity": "1 bag for burgers (1 bag for Tacos)"
+              "itemId": "iceberg-lettuce",
+              "amount": "1 head (full purchase)",
+              "use": "Whole leaf topping for burgers",
+              "prep": "Slice into rounds — 1 round per burger. Keep refrigerated until serving."
             },
             {
-              "id": "b-ketchup",
-              "name": "Ketchup & Mustard",
-              "quantity": "1 bottle each",
-              "category": "Dry",
-              "notes": "",
-              "use": "Classic condiments for the burger bar",
+              "itemId": "ketchup",
+              "amount": "full bottle",
+              "use": "Classic condiment for the burger bar",
               "prep": "Set out on the table at room temperature."
             },
             {
-              "id": "b-onion",
-              "name": "White Onion",
-              "quantity": "2 count",
-              "category": "Produce",
-              "notes": "Shared with Tacos, Burritos",
-              "use": "Sliced raw for the burger bar",
-              "prep": "Slice into thin rounds. Serve raw. For caramelized onions: cook in butter over low heat for 25-30 min stirring occasionally.",
-              "mealQuantity": "~1/2 onion sliced for burgers"
+              "itemId": "yellow-mustard",
+              "amount": "~half bottle",
+              "use": "Classic condiment for the burger bar",
+              "prep": "Set out on the table at room temperature."
             },
             {
-              "id": "b-pepperjack",
-              "name": "Pepperjack Cheese (sliced)",
-              "quantity": "1 pack",
-              "category": "Dairy",
-              "notes": "",
+              "itemId": "white-onion",
+              "amount": "½ onion",
+              "use": "Sliced raw for the burger bar",
+              "prep": "Slice into thin rounds. Serve raw. For caramelized onions: cook in butter over low heat for 25-30 min stirring occasionally."
+            },
+            {
+              "itemId": "pepper-jack-cheese",
+              "amount": "full pack (12 slices)",
               "use": "Spicy cheese option for burgers — melted on the patty",
               "prep": "Lay a slice on the patty 1 min before it comes off the heat. Cover pan/grill briefly to melt."
             },
             {
-              "id": "b-cheddar",
-              "name": "Cheddar Cheese (sliced)",
-              "quantity": "1 pack",
-              "category": "Dairy",
-              "notes": "Shared with Croissant Sandwiches",
-              "use": "Classic cheese option for burgers — melted on the patty",
-              "prep": "Lay a slice on the patty 1 min before it comes off heat. Cover briefly to melt.",
-              "mealQuantity": "~1/2 pack for burgers (1/2 pack used in Croissant Sandwiches)"
-            },
-            {
-              "id": "b-american",
-              "name": "American Cheese (sliced)",
-              "quantity": "1 pack",
-              "category": "Dairy",
-              "notes": "",
+              "itemId": "kraft-singles",
+              "amount": "~7 slices",
               "use": "Meltiest cheese option for burgers",
-              "prep": "Add to patty in the last minute of cooking. American melts the best of the three — great for a classic smash-style burger."
+              "prep": "Add to patty in the last minute of cooking. American melts the best — great for a classic smash-style burger."
             },
             {
-              "id": "b-fries",
-              "name": "Frozen Fries",
-              "quantity": "3 bags (28-32 oz each)",
-              "category": "Frozen",
-              "notes": "Side",
+              "itemId": "seasoned-fries",
+              "amount": "full purchase — 2 bags (side)",
               "use": "Baked fries served alongside the burgers",
-              "prep": "Preheat oven to 425F. Spread fries in a single layer on a baking sheet. Bake 20-25 min, flipping halfway. Season with salt immediately out of the oven."
+              "prep": "Preheat oven to 425°F. Spread fries in a single layer on a baking sheet. Bake 20-25 min, flipping halfway. Season with salt immediately out of the oven."
             }
           ]
         },
@@ -526,38 +875,26 @@
           "side": "Tomato Soup",
           "ingredients": [
             {
-              "id": "gc-bread",
-              "name": "Bread",
-              "quantity": "2 loaves",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "white-bread",
+              "amount": "1 loaf",
               "use": "The bread for grilled cheese — 2 slices per sandwich",
               "prep": "Use standard sandwich slices. Butter one side of each slice generously before placing butter-side-down in the pan."
             },
             {
-              "id": "gc-cheddar",
-              "name": "Cheddar Cheese (sliced)",
-              "quantity": "2 packs",
-              "category": "Dairy",
-              "notes": "",
-              "use": "Main cheese filling — layer 2-3 slices per sandwich",
-              "prep": "Stack slices in the center of bread. Cook on medium-low heat — low and slow ensures the cheese fully melts before the bread burns (~3-4 min per side)."
+              "itemId": "kraft-singles",
+              "amount": "~14 slices",
+              "use": "Main cheese filling — layer 2 slices per sandwich",
+              "prep": "Stack 2 slices in the center of bread. Cook on medium-low heat — low and slow ensures the cheese fully melts before the bread burns (~3-4 min per side)."
             },
             {
-              "id": "gc-butter",
-              "name": "Butter",
-              "quantity": "2 sticks",
-              "category": "Dairy",
-              "notes": "",
+              "itemId": "butter-box",
+              "amount": "~2 sticks",
               "use": "Spread on the outside of each bread slice for the golden crust",
               "prep": "Soften to room temp for easy spreading. Coat the outer faces evenly. Cook in a pan over medium-low heat until deep golden."
             },
             {
-              "id": "gc-soup",
-              "name": "Tomato Soup",
-              "quantity": "8 cans",
-              "category": "Dry",
-              "notes": "Side",
+              "itemId": "tomato-soup",
+              "amount": "4 cans — full purchase (side)",
               "use": "Served as the dipping side alongside the sandwiches",
               "prep": "Empty cans into a large pot. Add equal part milk (or water) and stir. Heat over medium, stirring frequently, until steaming. Do not boil."
             }
@@ -569,42 +906,34 @@
           "side": "Garlic Bread",
           "ingredients": [
             {
-              "id": "cp-chicken",
-              "name": "Breaded Chicken Cutlets",
-              "quantity": "3 lbs",
-              "category": "Meat",
-              "notes": "",
-              "use": "The main protein — bake, then top with sauce and cheese",
-              "prep": "Bake at 400F for 20-25 min until internal temp hits 165F and breading is golden. Top with marinara and a sprinkle of parm in the last 5 min of baking."
+              "itemId": "chicken-bag-2",
+              "amount": "full 3 lb bag",
+              "use": "The main protein — breaded, baked, then topped with marinara and parm",
+              "prep": "Thaw overnight. Pound to ~½ inch even thickness. Dredge in flour, then egg wash, then breadcrumb/parm mixture. Bake at 400°F for 20-25 min until 165°F internal and breading is golden. Add marinara and parm in the last 5 min."
             },
             {
-              "id": "cp-noodles",
-              "name": "Penne Noodles",
-              "quantity": "1 lb",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "penne-pasta",
+              "amount": "2 lbs (full purchase)",
               "use": "The pasta base served under or alongside the chicken",
               "prep": "Boil in well-salted water for ~10-12 min until al dente. Drain, toss with a ladleful of marinara to coat."
             },
             {
-              "id": "cp-sauce",
-              "name": "Marinara Sauce",
-              "quantity": "2x24 oz",
-              "category": "Dry",
-              "notes": "Shared with Spaghetti",
+              "itemId": "marinara-sauce",
+              "amount": "1 jar",
               "use": "Poured over the baked chicken and mixed with penne",
-              "prep": "Warm in a saucepan over medium heat, stirring occasionally. Spoon over chicken in the last 5 min of baking and toss with pasta.",
-              "mealQuantity": "2 jars for Chicken Parm (2 separate jars bought for Spaghetti)"
+              "prep": "Warm in a saucepan over medium heat, stirring occasionally. Spoon over chicken in the last 5 min of baking and toss with pasta."
             },
             {
-              "id": "cp-parm",
-              "name": "Parmesan Cheese",
-              "quantity": "1 container (8 oz)",
-              "category": "Dry",
-              "notes": "Shared with Spaghetti",
-              "use": "Sprinkled over the chicken and pasta to finish",
-              "prep": "Sprinkle generously over the top right before serving. Also set the container on the table for extra.",
-              "mealQuantity": "~1/2 container for Chicken Parm (1/2 container for Spaghetti)"
+              "itemId": "parmesan-shaker",
+              "amount": "~4 oz (~½ shaker)",
+              "use": "Sprinkled over the chicken and pasta to finish — also goes in the breading",
+              "prep": "Mix a few tablespoons into the breadcrumb coating. Sprinkle generously over the finished dish. Set the container on the table for extra."
+            },
+            {
+              "itemId": "garlic-bread",
+              "amount": "1 box — 8 count (side)",
+              "use": "The side dish served alongside",
+              "prep": "Bake from frozen at 375°F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it — it burns fast."
             }
           ]
         },
@@ -614,51 +943,52 @@
           "side": "Garlic Bread",
           "ingredients": [
             {
-              "id": "sp-noodles",
-              "name": "Spaghetti Noodles",
-              "quantity": "2 lbs",
-              "category": "Dry",
-              "notes": "",
-              "use": "The pasta base — make a big pot for the whole group",
-              "prep": "Boil in heavily salted water for ~9-11 min until al dente. Reserve 1 cup of pasta water before draining — helps loosen sauce. Toss with marinara or butter immediately."
+              "itemId": "spaghetti-pasta",
+              "amount": "4 lbs (full purchase)",
+              "use": "The pasta base for all three sauce options — make a big pot for the whole group",
+              "prep": "Boil in heavily salted water for ~9-11 min until al dente. Reserve 1 cup of pasta water before draining — helps loosen sauce. Toss with chosen sauce immediately."
             },
             {
-              "id": "sp-sauce",
-              "name": "Marinara Sauce",
-              "quantity": "2x24 oz",
-              "category": "Dry",
-              "notes": "Shared with Chicken Parm",
-              "use": "The red sauce option for the spaghetti",
-              "prep": "Warm in a pot over medium heat. Add reserved pasta water a splash at a time if too thick. Toss with drained pasta.",
-              "mealQuantity": "2 jars for Spaghetti (2 separate jars bought for Chicken Parm)"
+              "itemId": "marinara-sauce",
+              "amount": "1 jar",
+              "use": "Red sauce option — toss with spaghetti and top with ground beef",
+              "prep": "Warm in a pot over medium heat. Add reserved pasta water a splash at a time if too thick. Toss with drained pasta."
             },
             {
-              "id": "sp-meatballs",
-              "name": "Meat Balls",
-              "quantity": "3 lbs (1x48 oz bag)",
-              "category": "Frozen",
-              "notes": "",
-              "use": "Protein addition on top of or alongside the spaghetti",
-              "prep": "Add frozen meatballs directly to simmering marinara sauce and heat through, ~15-20 min. Or microwave in a covered dish with a splash of water for 5-7 min."
+              "itemId": "alfredo-sauce",
+              "amount": "full jar",
+              "use": "Alfredo sauce option — toss with spaghetti and top with sliced chicken",
+              "prep": "Warm in a small saucepan over medium-low heat, stirring frequently. Add a splash of pasta water to loosen if needed. Do not boil."
             },
             {
-              "id": "sp-garlic-bread",
-              "name": "Garlic Bread",
-              "quantity": "2x8 count",
-              "category": "Frozen",
-              "notes": "Side",
+              "itemId": "ground-beef-roll",
+              "amount": "~1 lb",
+              "use": "Browned and mixed into the marinara for the meat sauce track",
+              "prep": "Brown in a skillet over medium-high heat, breaking into crumbles. Drain fat. Add directly to simmering marinara and cook together for 5-10 min."
+            },
+            {
+              "itemId": "chicken-bag-1",
+              "amount": "~1.5 lbs",
+              "use": "Cooked and sliced on top for the chicken alfredo track",
+              "prep": "Thaw overnight in fridge. Season with salt, pepper, and garlic powder. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165°F internal. Rest 5 min then slice thin."
+            },
+            {
+              "itemId": "butter-box",
+              "amount": "2-3 tbsp",
+              "use": "Tossed with spaghetti and parmesan for the buttered noodles track",
+              "prep": "Toss hot drained pasta with 2-3 tbsp butter and a splash of pasta water. Add parmesan and toss until creamy. Season with salt and black pepper."
+            },
+            {
+              "itemId": "garlic-bread",
+              "amount": "1 box — 8 count (side)",
               "use": "The side dish served alongside the pasta",
-              "prep": "Bake from frozen at 375F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it — it burns fast."
+              "prep": "Bake from frozen at 375°F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it — it burns fast."
             },
             {
-              "id": "sp-parm",
-              "name": "Parmesan Cheese",
-              "quantity": "1 container (8 oz)",
-              "category": "Dry",
-              "notes": "Shared with Chicken Parm",
+              "itemId": "parmesan-shaker",
+              "amount": "~4 oz (~½ shaker)",
               "use": "Finishing cheese sprinkled over the pasta at the table",
-              "prep": "Set the container on the table for self-serve. No prep needed.",
-              "mealQuantity": "~1/2 container for Spaghetti (1/2 container for Chicken Parm)"
+              "prep": "Set the container on the table for self-serve. No prep needed."
             }
           ]
         },
@@ -669,49 +999,28 @@
           "notes": "Late night munchies",
           "ingredients": [
             {
-              "id": "ff-nuggets",
-              "name": "Chicken Nuggets",
-              "quantity": "4 lbs",
-              "category": "Frozen",
-              "notes": "",
+              "itemId": "chicken-nuggets",
+              "amount": "full bag (70 oz)",
               "use": "Late night snack — cook a batch whenever people get hungry",
-              "prep": "Bake at 400F for 12-15 min on a baking sheet, flipping once. Or air fry at 400F for 8-10 min. Serve with ketchup, ranch, or buffalo sauce."
+              "prep": "Bake at 400°F for 12-15 min on a baking sheet, flipping once. Or air fry at 400°F for 8-10 min. Serve with ketchup, ranch, or buffalo sauce."
             },
             {
-              "id": "ff-pizzas",
-              "name": "Pizzas",
-              "quantity": "7 count",
-              "category": "Frozen",
-              "notes": "",
-              "use": "Personal-sized pizzas for late night — one per person",
-              "prep": "Bake directly on the oven rack at 400F for 14-17 min until crust is crispy and cheese is bubbly. Let cool 2 min before cutting."
+              "itemId": "frozen-pizzas",
+              "amount": "8 pizzas (full purchase)",
+              "use": "Personal-sized pizzas for late night — one per person, one spare",
+              "prep": "Bake directly on the oven rack at 400°F for 14-17 min until crust is crispy and cheese is bubbly. Let cool 2 min before cutting."
             },
             {
-              "id": "ff-pizza-rolls",
-              "name": "Pizza Rolls",
-              "quantity": "2 bags",
-              "category": "Frozen",
-              "notes": "",
-              "use": "Shareable late night snack — cook a bag at a time",
-              "prep": "Bake at 425F for 13-15 min until golden. Let sit 2 min before eating — filling is extremely hot. Or microwave on a plate for 1:15, flip, then 1:15 more."
+              "itemId": "pizza-rolls",
+              "amount": "full bag (130 count)",
+              "use": "Shareable late night snack — cook a batch at a time",
+              "prep": "Bake at 425°F for 13-15 min until golden. Let sit 2 min before eating — filling is extremely hot. Or microwave on a plate for 1:15, flip, then 1:15 more."
             },
             {
-              "id": "ff-fish-sticks",
-              "name": "Fish Sticks",
-              "quantity": "1 bag",
-              "category": "Frozen",
-              "notes": "",
-              "use": "An extra late night option for fish stick fans",
-              "prep": "Bake at 425F for 15-17 min, flipping once. Serve with tartar sauce or ketchup."
-            },
-            {
-              "id": "ff-corndogs",
-              "name": "Corndogs",
-              "quantity": "1 box",
-              "category": "Frozen",
-              "notes": "",
+              "itemId": "corndogs",
+              "amount": "full box (22 count)",
               "use": "Late night crowd-pleaser — heat and serve",
-              "prep": "Bake at 375F for 16-18 min, turning once. Or microwave individually for 60-90 sec. Serve with mustard and ketchup."
+              "prep": "Bake at 375°F for 16-18 min, turning once. Or microwave individually for 60-90 sec. Serve with mustard and ketchup."
             }
           ]
         }
@@ -730,47 +1039,32 @@
           "notes": "Travel snack",
           "ingredients": [
             {
-              "id": "bs-rolls",
-              "name": "Hawaiian Rolls",
-              "quantity": "2 packs (12-count each)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "hawaiian-rolls",
+              "amount": "TBD",
               "use": "The slider buns — soft and slightly sweet, perfect for pulled chicken",
-              "prep": "Slice the whole slab of rolls horizontally without separating. Layer filling, then replace top. Optionally brush with butter and bake at 350F for 5-8 min to warm through."
+              "prep": "Slice the whole slab of rolls horizontally without separating. Layer filling, then replace top. Optionally brush with butter and bake at 350°F for 5-8 min to warm through."
             },
             {
-              "id": "bs-chicken",
-              "name": "Pulled Chicken",
-              "quantity": "2 lbs",
-              "category": "Meat",
-              "notes": "",
+              "itemId": "pulled-chicken",
+              "amount": "TBD",
               "use": "The main protein filling — split into buffalo and BBQ batches",
               "prep": "Heat in a pan over medium heat. Split into two portions: toss half with buffalo sauce, half with BBQ sauce. Simmer 2-3 min until coated and heated through."
             },
             {
-              "id": "bs-buffalo",
-              "name": "Buffalo Sauce",
-              "quantity": "1 bottle (12 oz)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "buffalo-sauce",
+              "amount": "TBD",
               "use": "Tossed with half the pulled chicken for the buffalo batch",
               "prep": "Mix into warm chicken in a pan or bowl. Use as much or as little as you want — taste as you go for heat level."
             },
             {
-              "id": "bs-bbq",
-              "name": "BBQ Sauce",
-              "quantity": "1 bottle (18 oz)",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "bbq-sauce",
+              "amount": "TBD",
               "use": "Tossed with the other half of chicken for the BBQ batch",
               "prep": "Mix into warm chicken in a pan. Simmer over medium heat for 2-3 min until sauce thickens slightly and coats the chicken."
             },
             {
-              "id": "bs-cheese",
-              "name": "Cheese",
-              "quantity": "1 pack",
-              "category": "Dairy",
-              "notes": "",
+              "itemId": "slider-cheese",
+              "amount": "TBD",
               "use": "Melted over the assembled sliders before serving",
               "prep": "Lay slices over filled sliders. If baking to warm: the cheese melts during the 5-8 min in the oven. Otherwise microwave assembled sliders for 30 sec."
             }
@@ -783,42 +1077,40 @@
           "notes": "Hiking snack",
           "ingredients": [
             {
-              "id": "sw-bread",
-              "name": "Bread",
-              "quantity": "4 loaves",
-              "category": "Dry",
-              "notes": "Shared with French Toast",
+              "itemId": "white-bread",
+              "amount": "2 loaves",
               "use": "The base for hiking sandwiches — make ahead the morning of",
-              "prep": "Lay out all slices assembly-line style. Spread condiments first, then layer meat and cheese. Wrap individual sandwiches in foil or plastic wrap and refrigerate until packing.",
-              "mealQuantity": "4 loaves for sandwiches (separate loaf bought for French Toast)"
+              "prep": "Lay out all slices assembly-line style. Spread condiments first, then layer meat and cheese. Wrap individual sandwiches in foil or plastic wrap and refrigerate until packing."
             },
             {
-              "id": "sw-ham",
-              "name": "Ham",
-              "quantity": "3 packs",
-              "category": "Meat",
-              "notes": "Shared with Croissant Sandwiches",
-              "use": "Main deli meat option for the hiking sandwiches",
-              "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until packing. Pack sandwiches in a cooler for the hike.",
-              "mealQuantity": "3 packs for hiking sandwiches (separate 2 packs bought for Croissant Sandwiches)"
+              "itemId": "black-forest-ham",
+              "amount": "~½ pouch",
+              "use": "Ham filling for hiking sandwiches",
+              "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
             },
             {
-              "id": "sw-turkey",
-              "name": "Turkey",
-              "quantity": "3 packs",
-              "category": "Meat",
-              "notes": "",
-              "use": "Second deli meat option for variety in the hiking sandwiches",
-              "prep": "Layer 2-3 slices per sandwich alongside or instead of ham."
+              "itemId": "turkey-breast",
+              "amount": "~½ bag",
+              "use": "Turkey filling for hiking sandwiches",
+              "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
             },
             {
-              "id": "sw-mustard-mayo",
-              "name": "Mustard & Mayo",
-              "quantity": "1 bottle each",
-              "category": "Dry",
-              "notes": "",
-              "use": "Condiments spread on the sandwiches before assembly",
-              "prep": "Spread on both inner faces of bread. Mustard on one side, mayo on the other is classic."
+              "itemId": "cheddar-sliced",
+              "amount": "~6 slices",
+              "use": "Cheese layer in hiking sandwiches",
+              "prep": "Lay 1–2 slices on each sandwich."
+            },
+            {
+              "itemId": "yellow-mustard",
+              "amount": "~half bottle",
+              "use": "Spread on sandwiches before assembly",
+              "prep": "Spread on one inner face of bread before layering meat and cheese."
+            },
+            {
+              "itemId": "mayonnaise",
+              "amount": "full bottle",
+              "use": "Spread on sandwiches before assembly",
+              "prep": "Spread on the other inner face of bread. Mustard on one side, mayo on the other is classic."
             }
           ]
         },
@@ -828,29 +1120,20 @@
           "side": null,
           "ingredients": [
             {
-              "id": "sm-marshmallows",
-              "name": "Marshmallows",
-              "quantity": "2 bags",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "marshmallows",
+              "amount": "2 bags — full purchase",
               "use": "Toasted over the campfire — the star of the s'more",
               "prep": "Skewer on a roasting stick. Hold over embers (not flames) rotating slowly for even browning. Pull away when golden and puffed. For the brave: light it on fire briefly then blow out."
             },
             {
-              "id": "sm-chocolate",
-              "name": "Hershey's Chocolate Bars",
-              "quantity": "6-8 bars",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "hersheys-chocolate",
+              "amount": "4 XL bars — full purchase",
               "use": "The chocolate layer — 1-2 squares per s'more",
               "prep": "Break bars into individual squares ahead of time. The heat from a freshly toasted marshmallow will melt the chocolate slightly when sandwiched."
             },
             {
-              "id": "sm-grahams",
-              "name": "Graham Crackers",
-              "quantity": "2 boxes",
-              "category": "Dry",
-              "notes": "",
+              "itemId": "graham-crackers",
+              "amount": "full party-size box",
               "use": "The outer shell — 2 crackers sandwich the chocolate and marshmallow",
               "prep": "Break along the scored lines into rectangles. Pre-stack each s'more kit: 1 cracker + 1-2 chocolate squares on the bottom, top cracker ready to sandwich."
             }
