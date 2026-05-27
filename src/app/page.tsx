@@ -8,7 +8,7 @@ import { STORAGE_KEY } from '@/lib/utils'
 import CookView from '@/components/CookView'
 import ShopView from '@/components/ShopView'
 import BudgetView from '@/components/BudgetView'
-import { ListTodo, CookingPot, DollarSign } from 'lucide-react'
+import { ListTodo, CookingPot, DollarSign, PiggyBank } from 'lucide-react'
 
 export default function Home() {
   const categories: Category[] = mealsData.categories as Category[]
@@ -117,19 +117,19 @@ export default function Home() {
 
       {/* Floating view toggle — three individually-tappable tabs */}
       <div className="fixed bottom-6 right-6 z-50">
-        <div className="flex items-center h-8 rounded-xl p-1 gap-1 bg-white/55 backdrop-blur-[3px] shadow-float border border-white/40">
+        <div className="flex items-center h-12 p-1 gap-1 rounded-full backdrop-blur-[3px] shadow-lg">
           {([
             { key: 'shop',   Icon: ListTodo,    label: 'Shop'   },
-            { key: 'budget', Icon: DollarSign,  label: 'Budget' },
             { key: 'cook',   Icon: CookingPot,  label: 'Cook'   },
+            { key: 'budget', Icon: PiggyBank,  label: 'Budget' },
           ] as const).map(({ key, Icon, label }) => (
             <button
               key={key}
               onClick={() => setView(key)}
-              className={`flex items-center h-6 rounded-lg text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${
+              className={`flex justify-center items-center px-3 py-1.5 h-full rounded-full text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${
                 view === key
-                  ? 'bg-[var(--layer-0)] text-gray-900 shadow-sm px-3 py-1'
-                  : 'text-gray-400 px-2 py-1'
+                  ? 'text-gray-600 backdrop-blur-3 shadow-inner'
+                  : 'text-gray-300'
               }`}
             >
               <Icon size={14} className="flex-shrink-0" />

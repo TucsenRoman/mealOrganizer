@@ -359,15 +359,15 @@
     },
     "whole-milk": {
       "id": "whole-milk",
-      "name": "Lucerne Whole Milk, 1 gallon",
-      "quantity": "1 gallon ($3.69)",
-      "price": 3.69,
+      "name": "Great Value Whole Vitamin D Milk, 1 gallon",
+      "quantity": "1 gallon ($3.32)",
+      "price": 3.32,
       "category": "Dairy",
       "usedIn": {
         "steaks": "~1 cup"
       },
       "notes": "~1 cup for mashed potatoes. Remainder available for other uses.",
-      "store": "Safeway"
+      "store": "Walmart"
     },
     "burger-buns": {
       "id": "burger-buns",
@@ -690,14 +690,14 @@
     "cinnamon-rolls": {
       "id": "cinnamon-rolls",
       "name": "Pillsbury Cinnamon Rolls with Icing, 8-count, 12.4 oz",
-      "quantity": "2x 8-count cans ($3.49 each, $6.98 total)",
-      "price": 6.98,
+      "quantity": "2x 8-count cans ($2.97 each, $5.94 total)",
+      "price": 5.94,
       "category": "Dairy",
       "usedIn": {
         "big-breakfast": "TBD"
       },
       "notes": "Bonus/afterthought — just a little extra on the table.",
-      "store": "Safeway"
+      "store": "Walmart"
     },
     "salad": {
       "id": "salad",
