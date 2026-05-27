@@ -5,7 +5,7 @@
 /* Layer system — layer-0 is the furthest back (lightest), layer-4 is the closest (darkest) */
 :root {
   --layer-0: #ffffff;
-  --layer-1: #f4f4f5;
+  --layer-1: #f6f6f7;
   --layer-2: #e4e4e7;
   --layer-3: #d4d4d8;
   --layer-4: #7d7d81;

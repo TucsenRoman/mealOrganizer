@@ -142,8 +142,10 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
                                   <p className="text-xs text-gray-400 tabular-nums">{meta}</p>
                                   <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full leading-none ${
                                     item.store === 'Safeway'
-                                      ? 'bg-red-100 text-red-500'
-                                      : 'bg-blue-100 text-blue-500'
+                                      ? 'bg-red-100 text-red-700'
+                                      : item.store === 'Walmart'
+                                        ? 'bg-blue-100 text-blue-500'
+                                        : 'bg-purple-100 text-purple-500'
                                   }`}>
                                     {item.store}
                                   </span>
@@ -204,9 +206,6 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
             className="relative w-full bg-[var(--layer-0)] rounded-t-3xl shadow-float px-5 pt-5 pb-10"
             onClick={e => e.stopPropagation()}
           >
-            {/* Handle */}
-            <div className="w-10 h-1 rounded-full bg-[var(--layer-3)] mx-auto mb-5" />
-
             {/* Item name + price */}
             <div className="mb-4">
               <p className="text-base font-bold text-gray-900 leading-snug">{popup.name}</p>
@@ -238,12 +237,12 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
             </div>
 
             {/* Close button */}
-            <button
+            {/* <button
               onClick={() => setPopup(null)}
-              className="absolute top-5 right-5 w-7 h-7 rounded-full bg-[var(--layer-2)] flex items-center justify-center active:scale-95 transition-transform"
+              className="absolute -top-8 right-2 w-7 h-7 rounded-full bg-[var(--layer-2)] flex items-center justify-center active:scale-95 transition-transform"
             >
               <X size={13} className="text-gray-500" />
-            </button>
+            </button> */}
           </div>
         </div>
       )}

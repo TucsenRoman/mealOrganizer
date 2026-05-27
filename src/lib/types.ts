@@ -8,7 +8,7 @@ export type Item = {
   category: StoreCategory
   usedIn: Record<string, string>  // mealId -> amount used in that meal
   notes: string
-  store: 'Walmart' | 'Safeway'
+  store: 'Walmart' | 'Safeway' | 'Pre-Trip'
   bringing?: { who: string; amount: string } | null
 }
 
@@ -42,7 +42,7 @@ export type ShopItem = {
   quantity: string
   price: number | null
   category: StoreCategory
-  store: 'Walmart' | 'Safeway'
+  store: 'Walmart' | 'Safeway' | 'Pre-Trip'
   bringing?: { who: string; amount: string } | null
   meals: string[]
   mealEntries: { meal: string; quantity: string }[]

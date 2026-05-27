@@ -8,7 +8,7 @@ import { STORAGE_KEY } from '@/lib/utils'
 import CookView from '@/components/CookView'
 import ShopView from '@/components/ShopView'
 import BudgetView from '@/components/BudgetView'
-import { ListTodo, CookingPot, DollarSign, PiggyBank } from 'lucide-react'
+import { ListTodo, CookingPot, DollarSign, PiggyBank, Settings } from 'lucide-react'
 
 export default function Home() {
   const categories: Category[] = mealsData.categories as Category[]
@@ -115,9 +115,16 @@ export default function Home() {
         <BudgetView shopList={shopList} />
       )}
 
+      {/* SETTINGS ~For theme switching. */}
+      {/* <div className="fixed bottom-4 left-2 z-50">
+        <div className="flex justify-center items-center w-8 h-8 rounded-xl border border-[var(--layer-1)] text-gray-400">
+          <Settings size={18}/>
+        </div>
+      </div> */}
+
       {/* Floating view toggle — three individually-tappable tabs */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <div className="flex items-center h-12 p-1 gap-1 rounded-full backdrop-blur-[3px] shadow-lg">
+      <div className="fixed bottom-2 left-1/2 -translate-x-1/2 z-50">
+        <div className="flex items-center p-1 gap-1 h-12 rounded-full backdrop-blur-[3px] shadow-lg">
           {([
             { key: 'shop',   Icon: ListTodo,    label: 'Shop'   },
             { key: 'cook',   Icon: CookingPot,  label: 'Cook'   },
@@ -128,8 +135,8 @@ export default function Home() {
               onClick={() => setView(key)}
               className={`flex justify-center items-center px-3 py-1.5 h-full rounded-full text-sm font-semibold overflow-hidden transition-[background-color,color,box-shadow,padding] duration-300 ease-in-out ${
                 view === key
-                  ? 'text-gray-600 backdrop-blur-3 shadow-inner'
-                  : 'text-gray-300'
+                  ? 'text-gray-600 backdrop-blur-3 shadow-[var(--layer-2)] shadow-inner'
+                  : 'text-gray-400'
               }`}
             >
               <Icon size={14} className="flex-shrink-0" />
