@@ -2,7 +2,7 @@
   "items": {
     "sausage-roll": {
       "id": "sausage-roll",
-      "name": "Signature SELECT Country Style Pork Sausage Roll, 16 oz",
+      "name": "Country Style Pork Sausage Roll, 16 oz",
       "quantity": "3x 16 oz rolls ($3.99 each, $11.97 total)",
       "price": 11.97,
       "category": "Meat",
@@ -16,19 +16,15 @@
     "eggs": {
       "id": "eggs",
       "name": "Eggs",
-      "quantity": "1x 18-count store carton ($2.97) + Kaitlyn's 2 dozen",
-      "price": 2.97,
+      "quantity": "2x 18-count store cartons ($2.97 each, $5.94 total)",
+      "price": 5.94,
       "category": "Dairy",
       "usedIn": {
         "breakfast-burritos": "12 eggs",
         "french-toast": "6 eggs",
-        "big-breakfast": "24 eggs"
+        "big-breakfast": "18 eggs"
       },
-      "notes": "42 eggs total: 12 for Breakfast Burritos, 6 for French Toast, 24 for Big Breakfast.",
-      "bringing": {
-        "who": "Kaitlyn",
-        "amount": "2 dozen (from her chickens)"
-      },
+      "notes": "36 eggs total: 12 for Breakfast Burritos, 6 for French Toast, 18 for Big Breakfast. Not getting eggs from Kaitlyn — need to buy 2 cartons instead of 1. Venison bacon fills out Big Breakfast.",
       "store": "Walmart",
       "comparePrice": 2.99
     },
@@ -41,7 +37,7 @@
       "usedIn": {
         "breakfast-burritos": "16 total"
       },
-      "notes": "Burrito size only \u2014 separate from taco tortillas.",
+      "notes": "Burrito size only — separate from taco tortillas.",
       "store": "Walmart"
     },
     "white-onion": {
@@ -51,11 +47,11 @@
       "price": 1.98,
       "category": "Produce",
       "usedIn": {
-        "breakfast-burritos": "\u00bd onion",
-        "tacos": "\u00bd onion",
-        "burgers": "\u00bd onion"
+        "breakfast-burritos": "½ onion",
+        "tacos": "½ onion",
+        "burgers": "½ onion"
       },
-      "notes": "\u00bd onion for Breakfast Burritos, \u00bd for Tacos, \u00bd for Burgers. Buy 2 total.",
+      "notes": "½ onion for Breakfast Burritos, ½ for Tacos, ½ for Burgers. Buy 2 total.",
       "store": "Safeway"
     },
     "bell-peppers-mixed": {
@@ -97,7 +93,7 @@
     },
     "hashbrowns": {
       "id": "hashbrowns",
-      "name": "Signature SELECT Shredded Country Hash Browns, 30 oz",
+      "name": "Shredded Country Hash Browns, 30 oz",
       "quantity": "1x 30 oz bag ($3.99)",
       "price": 3.99,
       "category": "Frozen",
@@ -152,7 +148,7 @@
     "fruit-mixed": {
       "id": "fruit-mixed",
       "name": "Fruit (mixed)",
-      "quantity": "5 lbs total (2 lb strawberries + 2.25 lb grapes + extras) \u2014 price TBD at Safeway",
+      "quantity": "5 lbs total (2 lb strawberries + 2.25 lb grapes + extras) — price TBD at Safeway",
       "price": null,
       "category": "Produce",
       "usedIn": {
@@ -164,15 +160,16 @@
     },
     "maple-syrup": {
       "id": "maple-syrup",
-      "name": "Great Value Original Syrup, 24 fl oz",
-      "quantity": "1x 24 fl oz bottle ($2.36)",
-      "price": 2.36,
+      "name": "Maple Syrup",
+      "quantity": "Brought from home",
+      "price": 0,
       "category": "Dry",
       "usedIn": {
-        "pancakes-waffles": "full bottle"
+        "pancakes-waffles": "full bottle",
+        "steaks": "optional glaze"
       },
-      "notes": "",
-      "store": "Walmart"
+      "notes": "Brought from home.",
+      "store": "Home"
     },
     "croissants": {
       "id": "croissants",
@@ -188,13 +185,13 @@
     },
     "black-forest-ham": {
       "id": "black-forest-ham",
-      "name": "Bar-S Deli Style Ham, Sliced, 32 oz",
+      "name": "Deli Ham, Sliced, 32 oz",
       "quantity": "1x 32 oz pouch (~$8.59)",
       "price": 8.59,
       "category": "Meat",
       "usedIn": {
-        "croissant-sandwiches": "~\u00bd pouch",
-        "sandwiches": "~\u00bd pouch"
+        "croissant-sandwiches": "~½ pouch",
+        "sandwiches": "~½ pouch"
       },
       "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches.",
       "store": "Safeway",
@@ -216,8 +213,8 @@
     },
     "ground-beef-roll": {
       "id": "ground-beef-roll",
-      "name": "Signature SELECT Ground Beef 80/20 Chub",
-      "quantity": "5 lb chub ($7.49/lb, $37.45 total)",
+      "name": "Ground Beef 80/20 Chub",
+      "quantity": "5lb chub ($7.49/lb, $37.45 total)",
       "price": 37.45,
       "category": "Meat",
       "usedIn": {
@@ -231,10 +228,10 @@
     },
     "chicken-bag-1": {
       "id": "chicken-bag-1",
-      "name": "Signature Select Frozen Chicken Breasts Value Pack, 3.5 lb",
+      "name": "Frozen Chicken Breasts, 3.5 lb",
       "quantity": "1x 3.5 lb value pack ($13.97)",
       "price": 13.97,
-      "category": "Meat",
+      "category": "Frozen",
       "usedIn": {
         "tacos": "~1.5 lbs",
         "spaghetti": "~1.5 lbs"
@@ -288,7 +285,7 @@
       "usedIn": {
         "tacos": "20 total"
       },
-      "notes": "Taco size only \u2014 separate from burrito tortillas.",
+      "notes": "Taco size only — separate from burrito tortillas.",
       "store": "Walmart"
     },
     "sour-cream": {
@@ -350,7 +347,7 @@
       "usedIn": {
         "steaks": "full 5 lb bag"
       },
-      "notes": "",
+      "notes": "Used for mashed potatoes with Ham Steaks.",
       "store": "Safeway"
     },
     "butter-box": {
@@ -362,9 +359,10 @@
       "usedIn": {
         "steaks": "~2 sticks",
         "grilled-cheese": "~2 sticks",
-        "spaghetti": "2-3 tbsp"
+        "spaghetti": "2-3 tbsp",
+        "porkchops-night": "2-3 tbsp"
       },
-      "notes": "~2 sticks for Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti. One box covers all three.",
+      "notes": "~2 sticks for Ham Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti, 2-3 tbsp for Porkchops. One box covers all.",
       "store": "Safeway",
       "comparePrice": 3.5
     },
@@ -403,7 +401,7 @@
       "usedIn": {
         "burgers": "full jar"
       },
-      "notes": "Rollback price \u2014 was $3.27.",
+      "notes": "Rollback price — was $3.27.",
       "store": "Walmart"
     },
     "iceberg-lettuce": {
@@ -425,7 +423,8 @@
       "price": 1.94,
       "category": "Dry",
       "usedIn": {
-        "burgers": "full bottle"
+        "burgers": "full bottle",
+        "brats": "as desired"
       },
       "notes": "",
       "store": "Walmart"
@@ -438,9 +437,10 @@
       "category": "Dry",
       "usedIn": {
         "burgers": "~half bottle",
-        "sandwiches": "~half bottle"
+        "sandwiches": "~half bottle",
+        "brats": "as desired"
       },
-      "notes": "Shared between Burgers and Hiking Sandwiches.",
+      "notes": "Shared between Burgers, Brats, and Hiking Sandwiches.",
       "store": "Walmart"
     },
     "pepper-jack-cheese": {
@@ -476,9 +476,9 @@
       "price": 9.98,
       "category": "Frozen",
       "usedIn": {
-        "burgers": "full purchase"
+        "burgers": "2 bags (full purchase)"
       },
-      "notes": "",
+      "notes": "Both bags with Burgers.",
       "store": "Safeway",
       "comparePrice": 9.04
     },
@@ -572,7 +572,7 @@
     },
     "garlic-bread": {
       "id": "garlic-bread",
-      "name": "Signature SELECT Garlic Toast, 8-count, 11.25 oz",
+      "name": "Garlic Toast, 8-count, 11.25 oz",
       "quantity": "2x 8-count boxes ($3.79 each, $7.58 total)",
       "price": 7.58,
       "category": "Frozen",
@@ -599,16 +599,16 @@
     },
     "frozen-pizzas": {
       "id": "frozen-pizzas",
-      "name": "Signature SELECT Rising Crust Pepperoni Pizza, 30.5 oz",
-      "quantity": "2x 30.5 oz pizzas ($4.99 each, $9.98 total)",
-      "price": 9.98,
+      "name": "Frozen Pizzas",
+      "quantity": "TBD",
+      "price": 4.99,
       "category": "Frozen",
       "usedIn": {
-        "frozen-foods": "8 pizzas"
+        "frozen-foods": "frozen-pizzas"
       },
-      "notes": "One per person, one spare.",
+      "notes": "One per person?",
       "store": "Safeway",
-      "comparePrice": 8.92
+      "comparePrice": 3.99
     },
     "pizza-rolls": {
       "id": "pizza-rolls",
@@ -619,32 +619,32 @@
       "usedIn": {
         "frozen-foods": "full bag"
       },
-      "notes": "Rollback price \u2014 was $11.87.",
+      "notes": "Rollback price — was $11.87.",
       "store": "Safeway",
       "comparePrice": 10.67
     },
     "corndogs": {
       "id": "corndogs",
-      "name": "State Fair Classic Corn Dogs, 58.7 oz, 22 Count",
+      "name": "Corn Dogs",
       "quantity": "1x 12-count box ($11.99)",
       "price": 11.99,
       "category": "Frozen",
       "usedIn": {
         "frozen-foods": "full box"
       },
-      "notes": "Out of stock online \u2014 check in-store.",
+      "notes": "Out of stock online — check in-store.",
       "store": "Safeway",
       "comparePrice": 12.48
     },
     "turkey-breast": {
       "id": "turkey-breast",
-      "name": "Signature SELECT Oven Roasted Turkey Breast, Sliced, 16 oz",
+      "name": "Deli Turkey, 16 oz",
       "quantity": "1x 16 oz bag (~$5.49)",
       "price": 5.49,
       "category": "Meat",
       "usedIn": {
-        "croissant-sandwiches": "~\u00bd bag",
-        "sandwiches": "~\u00bd bag"
+        "croissant-sandwiches": "~½ bag",
+        "sandwiches": "~½ bag"
       },
       "notes": "Rollback price. Shared between Croissant Sandwiches and Hiking Sandwiches.",
       "store": "Safeway",
@@ -689,7 +689,7 @@
     "graham-crackers": {
       "id": "graham-crackers",
       "name": "Honey Maid Graham Crackers, Party Size, 28.8 oz",
-      "quantity": "1x party size box ($6.94) \u2014 equivalent to 2 regular boxes",
+      "quantity": "1x party size box ($6.94) — equivalent to 2 regular boxes",
       "price": 6.94,
       "category": "Dry",
       "usedIn": {
@@ -697,19 +697,6 @@
       },
       "notes": "",
       "store": "Walmart"
-    },
-    "bacon": {
-      "id": "bacon",
-      "name": "Signature SELECT Hickory Smoked Bacon Thick Cut, 24 oz",
-      "quantity": "1x 24 oz pack (~$8.99)",
-      "price": 8.99,
-      "category": "Meat",
-      "usedIn": {
-        "big-breakfast": "full pack"
-      },
-      "notes": "",
-      "store": "Safeway",
-      "comparePrice": 5.94
     },
     "english-muffins": {
       "id": "english-muffins",
@@ -732,7 +719,7 @@
       "usedIn": {
         "big-breakfast": "TBD"
       },
-      "notes": "Bonus/afterthought \u2014 just a little extra on the table.",
+      "notes": "Bonus/afterthought — just a little extra on the table.",
       "store": "Safeway",
       "comparePrice": 6.48
     },
@@ -747,13 +734,112 @@
       },
       "notes": "",
       "store": "Safeway"
+    },
+    "ham-steaks": {
+      "id": "ham-steaks",
+      "name": "Ham Steaks",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "steaks": "full amount"
+      },
+      "notes": "Brought from home. Pan-sear or grill. Optional maple syrup glaze.",
+      "store": "Home"
+    },
+    "venison-bacon": {
+      "id": "venison-bacon",
+      "name": "Venison Bacon",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "big-breakfast": "featured protein",
+        "breakfast-burritos": "optional add-in"
+      },
+      "notes": "Brought from home. Leaner than pork bacon — cook low and slow so it doesn't dry out.",
+      "store": "Home"
+    },
+    "brats-regular": {
+      "id": "brats-regular",
+      "name": "Brats (Regular)",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "brats": "full amount",
+        "big-breakfast": "grilled alongside venison bacon"
+      },
+      "notes": "Brought from home. Split between Big Breakfast and Brat Night — make sure you have enough for both.",
+      "store": "Home"
+    },
+    "brats-maple": {
+      "id": "brats-maple",
+      "name": "Brats (Maple)",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "brats": "full amount",
+        "big-breakfast": "grilled alongside venison bacon"
+      },
+      "notes": "Brought from home. Split between Big Breakfast and Brat Night. Maple caramelizes fast on the grill — watch for burning.",
+      "store": "Home"
+    },
+    "porkchops": {
+      "id": "porkchops",
+      "name": "Porkchops",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "porkchops-night": "full amount"
+      },
+      "notes": "Brought from home. No meal planned yet.",
+      "store": "Home"
+    },
+    "ribs": {
+      "id": "ribs",
+      "name": "Ribs",
+      "quantity": "Brought from home",
+      "price": 0,
+      "category": "Meat",
+      "usedIn": {
+        "ribs-night": "full rack"
+      },
+      "notes": "Brought from home. Low and slow in the oven, finish on the grill with BBQ sauce.",
+      "store": "Home"
+    },
+    "brat-buns": {
+      "id": "brat-buns",
+      "name": "Brat / Hot Dog Buns",
+      "quantity": "2x 8-count packs (~$1.98 each, ~$3.96 total)",
+      "price": 3.96,
+      "category": "Dry",
+      "usedIn": {
+        "brats": "16 buns"
+      },
+      "notes": "Standard brat or hot dog buns — 2 packs covers 7+ people.",
+      "store": "Walmart"
+    },
+    "bbq-sauce": {
+      "id": "bbq-sauce",
+      "name": "BBQ Sauce",
+      "quantity": "1x 18 oz bottle (~$1.98)",
+      "price": 1.98,
+      "category": "Dry",
+      "usedIn": {
+        "ribs-night": "full bottle"
+      },
+      "notes": "For ribs (On Deck).",
+      "store": "Walmart"
     }
   },
   "categories": [
     {
       "id": "brunch",
       "label": "Brunch",
-      "emoji": "\ud83c\udf73",
+      "emoji": "🍳",
       "color": "#d9a472",
       "meals": [
         {
@@ -768,6 +854,12 @@
               "prep": "Brown in a skillet over medium-high heat, breaking into crumbles. Drain grease before mixing with eggs."
             },
             {
+              "itemId": "venison-bacon",
+              "amount": "optional add-in",
+              "use": "Crumbled alongside sausage for extra flavor and a wild game twist",
+              "prep": "Cook in a cold skillet over medium-low heat, 3–4 min per side until crispy. Chop or crumble and mix into the filling."
+            },
+            {
               "itemId": "eggs",
               "amount": "12 eggs",
               "use": "Scrambled into the burrito filling",
@@ -776,26 +868,26 @@
             {
               "itemId": "burrito-tortillas",
               "amount": "16 total (full purchase)",
-              "use": "Burrito wraps \u2014 large flour tortillas",
+              "use": "Burrito wraps — large flour tortillas",
               "prep": "Warm on a dry skillet for 30 seconds per side or microwave wrapped in a damp paper towel for 30s."
             },
             {
               "itemId": "white-onion",
-              "amount": "\u00bd onion",
-              "use": "Saut\u00e9ed into the burrito filling for flavor",
-              "prep": "Dice finely. Saut\u00e9 in oil over medium heat until translucent, ~5 min, before adding sausage."
+              "amount": "½ onion",
+              "use": "Sautéed into the burrito filling for flavor",
+              "prep": "Dice finely. Sauté in oil over medium heat until translucent, ~5 min, before adding sausage."
             },
             {
               "itemId": "bell-peppers-mixed",
               "amount": "all 3 peppers (full purchase)",
-              "use": "Saut\u00e9ed into the egg filling for color and crunch",
-              "prep": "Slice into thin strips or dice. Saut\u00e9 with onion over medium heat until softened, ~5\u20137 min."
+              "use": "Sautéed into the egg filling for color and crunch",
+              "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
             },
             {
               "itemId": "green-bell-pepper",
               "amount": "1 pepper (full purchase)",
-              "use": "Saut\u00e9ed into the egg filling alongside the mixed peppers",
-              "prep": "Slice into thin strips or dice. Saut\u00e9 with onion over medium heat until softened, ~5\u20137 min."
+              "use": "Sautéed into the egg filling alongside the mixed peppers",
+              "prep": "Slice into thin strips or dice. Sauté with onion over medium heat until softened, ~5–7 min."
             },
             {
               "itemId": "fiesta-blend-cheese",
@@ -807,7 +899,7 @@
               "itemId": "hashbrowns",
               "amount": "full bag (side dish)",
               "use": "Served as a side dish alongside the burritos",
-              "prep": "Cook from frozen on a greased skillet over medium-high heat, ~4\u20135 min per side until golden and crispy. Season with salt."
+              "prep": "Cook from frozen on a greased skillet over medium-high heat, ~4–5 min per side until golden and crispy. Season with salt."
             }
           ]
         },
@@ -820,7 +912,7 @@
               "itemId": "white-bread",
               "amount": "1 loaf",
               "use": "Sliced and dipped in egg custard, then pan-fried",
-              "prep": "Use thick-cut slices (~\u00be inch). Soak each slice in custard for 20\u201330 sec per side."
+              "prep": "Use thick-cut slices (~¾ inch). Soak each slice in custard for 20–30 sec per side."
             },
             {
               "itemId": "eggs",
@@ -836,21 +928,33 @@
           "side": null,
           "ingredients": [
             {
+              "itemId": "venison-bacon",
+              "amount": "full amount (brought from home)",
+              "use": "Featured protein — serve sliced alongside eggs and toast",
+              "prep": "Cook in a cold skillet over medium-low heat (don't start hot — venison bacon is lean and dries out fast). Cook 3–4 min per side until edges crisp up. Drain on paper towels."
+            },
+            {
+              "itemId": "brats-regular",
+              "amount": "some (split with Brat Night)",
+              "use": "Grilled alongside the venison bacon for a full meat spread",
+              "prep": "Grill over medium heat ~15 min, turning frequently, until 160°F internal. Slice on the bias and serve family-style."
+            },
+            {
+              "itemId": "brats-maple",
+              "amount": "some (split with Brat Night)",
+              "use": "Sweet counterpart to the regular brats — great at breakfast",
+              "prep": "Same as regular brats. Watch for sugar burning — keep heat at medium and turn often."
+            },
+            {
               "itemId": "eggs",
-              "amount": "24 eggs",
+              "amount": "18 eggs",
               "use": "Scrambled or fried to order for the whole group",
               "prep": "For scrambled: whisk with a splash of milk, cook over medium-low heat stirring slowly. For fried: crack directly into a buttered pan over low heat."
             },
             {
-              "itemId": "bacon",
-              "amount": "full pack (24 oz)",
-              "use": "Served alongside eggs and toast",
-              "prep": "Lay flat in a cold pan, heat to medium. Cook ~4 min per side until crispy. Drain on paper towels. Or bake at 400\u00b0F for 18\u201320 min on a sheet pan."
-            },
-            {
               "itemId": "english-muffins",
               "amount": "12 total (full purchase)",
-              "use": "Toasted and served alongside eggs and bacon",
+              "use": "Toasted and served alongside eggs and venison bacon",
               "prep": "Fork split and toast until golden. Serve with butter."
             },
             {
@@ -863,7 +967,7 @@
               "itemId": "cinnamon-rolls",
               "amount": "TBD",
               "use": "Baked and set out as a sweet bonus alongside everything else",
-              "prep": "Preheat oven to 350\u00b0F (or as labeled). Place rolls in a greased pan. Bake 12\u201315 min until golden. Drizzle included icing while warm."
+              "prep": "Preheat oven to 350°F (or as labeled). Place rolls in a greased pan. Bake 12–15 min until golden. Drizzle included icing while warm."
             }
           ]
         },
@@ -876,12 +980,12 @@
               "itemId": "pancake-mix",
               "amount": "full box",
               "use": "Batter base for the pancakes",
-              "prep": "Follow box instructions \u2014 typically 1 cup mix + \u00be cup water. Don't over-mix; lumps are fine. Cook on a greased griddle over medium heat until bubbles form (~2 min), then flip."
+              "prep": "Follow box instructions — typically 1 cup mix + ¾ cup water. Don't over-mix; lumps are fine. Cook on a greased griddle over medium heat until bubbles form (~2 min), then flip."
             },
             {
               "itemId": "eggo-waffles",
               "amount": "full box (24 count)",
-              "use": "Toaster waffles served alongside pancakes for variety \u2014 ~3-4 people on the waffle side",
+              "use": "Toaster waffles served alongside pancakes for variety — ~3-4 people on the waffle side",
               "prep": "Toast from frozen in a toaster or toaster oven until golden and crispy, ~2 cycles. Serve immediately with syrup and fruit."
             },
             {
@@ -892,9 +996,9 @@
             },
             {
               "itemId": "maple-syrup",
-              "amount": "full bottle",
+              "amount": "full bottle (brought from home)",
               "use": "Topping for pancakes and waffles",
-              "prep": "Serve at room temp or warm briefly in a small saucepan. Set bottles on the table."
+              "prep": "Serve at room temp or warm briefly in a small saucepan. Set on the table."
             }
           ]
         },
@@ -906,18 +1010,18 @@
             {
               "itemId": "croissants",
               "amount": "12 total (full purchase)",
-              "use": "The bread base for the sandwiches \u2014 slice and fill",
-              "prep": "Slice horizontally. Optional: warm in oven at 300\u00b0F for 3\u20135 min for a crispy exterior. Layer with ham, cheese, and mustard/mayo."
+              "use": "The bread base for the sandwiches — slice and fill",
+              "prep": "Slice horizontally. Optional: warm in oven at 300°F for 3–5 min for a crispy exterior. Layer with ham, cheese, and mustard/mayo."
             },
             {
               "itemId": "black-forest-ham",
-              "amount": "~\u00bd pouch",
+              "amount": "~½ pouch",
               "use": "The main protein filling for the croissant sandwiches",
               "prep": "Serve cold from the pack or warm briefly in a skillet over medium heat until edges curl slightly."
             },
             {
               "itemId": "turkey-breast",
-              "amount": "~\u00bd bag",
+              "amount": "~½ bag",
               "use": "Turkey option for the croissant sandwiches",
               "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
             },
@@ -925,7 +1029,7 @@
               "itemId": "cheddar-sliced",
               "amount": "~6 slices",
               "use": "Cheese layer in the croissant sandwich",
-              "prep": "Serve cold or let sit at room temp for 10 min for better flavor. Lay 1\u20132 slices on each sandwich."
+              "prep": "Serve cold or let sit at room temp for 10 min for better flavor. Lay 1–2 slices on each sandwich."
             },
             {
               "itemId": "fruit-mixed",
@@ -940,7 +1044,7 @@
     {
       "id": "dinner",
       "label": "Dinner",
-      "emoji": "\ud83c\udf7d\ufe0f",
+      "emoji": "🍽️",
       "color": "#96aba0",
       "meals": [
         {
@@ -951,26 +1055,26 @@
             {
               "itemId": "ground-beef-roll",
               "amount": "~1.5 lbs",
-              "use": "One of two taco proteins \u2014 seasoned ground beef filling",
-              "prep": "Brown in a skillet over medium-high heat, drain fat. Add 2 packets taco seasoning with \u00bd cup water, simmer 5 min until thickened."
+              "use": "One of two taco proteins — seasoned ground beef filling",
+              "prep": "Brown in a skillet over medium-high heat, drain fat. Add 2 packets taco seasoning with ½ cup water, simmer 5 min until thickened."
             },
             {
               "itemId": "chicken-bag-1",
               "amount": "~1.5 lbs",
-              "use": "One of two taco proteins \u2014 seared and sliced chicken filling",
-              "prep": "Thaw overnight. Season with salt and pepper. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165\u00b0F internal. Rest 5 min, then slice thin. Add 1 packet taco seasoning + \u00bc cup water, toss to coat and simmer 2-3 min."
+              "use": "One of two taco proteins — seared and sliced chicken filling",
+              "prep": "Thaw overnight. Season with salt and pepper. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165°F internal. Rest 5 min, then slice thin. Add 1 packet taco seasoning + ¼ cup water, toss to coat and simmer 2-3 min."
             },
             {
               "itemId": "taco-seasoning",
               "amount": "3 packets total (2 for beef, 1 for chicken)",
-              "use": "Seasoning for both taco proteins \u2014 beef and chicken",
-              "prep": "Beef: after draining fat, add 2 packets + \u00bd cup water, simmer 5 min. Chicken: after searing, add 1 packet + \u00bc cup water, toss to coat, simmer 2-3 min."
+              "use": "Seasoning for both taco proteins — beef and chicken",
+              "prep": "Beef: after draining fat, add 2 packets + ½ cup water, simmer 5 min. Chicken: after searing, add 1 packet + ¼ cup water, toss to coat, simmer 2-3 min."
             },
             {
               "itemId": "taco-shells",
               "amount": "TBD",
               "use": "Hard shell option for tacos",
-              "prep": "Warm in oven at 350\u00b0F for 3\u20135 min on a baking sheet. Stand upright in a baking dish to keep them from tipping."
+              "prep": "Warm in oven at 350°F for 3–5 min on a baking sheet. Stand upright in a baking dish to keep them from tipping."
             },
             {
               "itemId": "taco-tortillas",
@@ -993,14 +1097,14 @@
             {
               "itemId": "taco-sauce",
               "amount": "TBD",
-              "use": "Sauce/condiment \u2014 mild, medium, and hot options for the table",
+              "use": "Sauce/condiment — mild, medium, and hot options for the table",
               "prep": "Serve at room temp. Set all bottles out so everyone can pick their heat level."
             },
             {
               "itemId": "shredded-lettuce",
               "amount": "full bag",
               "use": "Topping layer in tacos for crunch",
-              "prep": "No prep needed \u2014 bag comes pre-shredded. Keep refrigerated until serving."
+              "prep": "No prep needed — bag comes pre-shredded. Keep refrigerated until serving."
             },
             {
               "itemId": "slicing-tomatoes",
@@ -1010,7 +1114,7 @@
             },
             {
               "itemId": "white-onion",
-              "amount": "\u00bd onion",
+              "amount": "½ onion",
               "use": "Raw diced onion topping for tacos",
               "prep": "Dice finely. Serve raw as a topping. Optional: soak diced onion in cold water for 10 min to mellow sharpness."
             }
@@ -1018,26 +1122,38 @@
         },
         {
           "id": "steaks",
-          "name": "Steaks",
+          "name": "Ham Steaks",
           "side": "Mashed Potato",
           "ingredients": [
+            {
+              "itemId": "ham-steaks",
+              "amount": "full amount (brought from home)",
+              "use": "The main protein — pan-seared or grilled ham steaks",
+              "prep": "Pat dry with paper towels. Score the fat edge to prevent curling. Sear in a hot skillet with butter over medium-high heat, ~3–4 min per side until caramelized and heated through. Optional: brush with maple syrup in the last minute for a sweet glaze."
+            },
             {
               "itemId": "russet-potatoes",
               "amount": "full 5 lb bag (side)",
               "use": "Boiled and mashed into the side dish",
-              "prep": "Peel and cube into 1-inch pieces. Boil in salted water ~15\u201320 min until fork-tender. Drain, mash with butter and warm milk. Season with salt and pepper."
+              "prep": "Peel and cube into 1-inch pieces. Boil in salted water ~15–20 min until fork-tender. Drain, mash with butter and warm milk. Season with salt and pepper."
             },
             {
               "itemId": "butter-box",
               "amount": "~2 sticks",
-              "use": "Mixed into mashed potatoes + used to baste and finish steaks",
-              "prep": "1 stick into hot mash while still warm. Use remaining butter to baste steaks in the pan during the last 1\u20132 min of cooking."
+              "use": "Mixed into mashed potatoes + used to sear the ham steaks",
+              "prep": "1 stick into hot mash while still warm. Use butter in the pan when searing ham steaks."
             },
             {
               "itemId": "whole-milk",
               "amount": "~1 cup",
               "use": "Warmed and stirred into mashed potatoes for creaminess",
               "prep": "Warm in a small saucepan or microwave (don't boil). Add gradually while mashing to reach your desired consistency."
+            },
+            {
+              "itemId": "maple-syrup",
+              "amount": "optional glaze",
+              "use": "Brushed onto ham steaks in the last minute of cooking for a sweet caramelized crust",
+              "prep": "Brush lightly on one side of ham steak in the last 60 seconds. Let it bubble and stick before flipping."
             }
           ]
         },
@@ -1049,19 +1165,19 @@
             {
               "itemId": "ground-beef-roll",
               "amount": "~2 lbs",
-              "use": "Formed into patties \u2014 the main protein",
-              "prep": "Form into 7 patties (~4 oz / quarter pound each). Season both sides with salt and pepper. Grill or pan-cook over high heat, ~3\u20134 min per side for medium. Don't press down with a spatula."
+              "use": "Formed into patties — the main protein",
+              "prep": "Form into 7 patties (~4 oz / quarter pound each). Season both sides with salt and pepper. Grill or pan-cook over high heat, ~3–4 min per side for medium. Don't press down with a spatula."
             },
             {
               "itemId": "burger-buns",
               "amount": "14 buns (full purchase)",
-              "use": "Bun for each burger \u2014 toast for best results",
+              "use": "Bun for each burger — toast for best results",
               "prep": "Toast cut-side down on the grill or skillet with a little butter for ~1 min until golden."
             },
             {
               "itemId": "dill-pickles",
               "amount": "full jar",
-              "use": "Classic burger topping \u2014 flat chips designed for sandwiches and burgers",
+              "use": "Classic burger topping — flat chips designed for sandwiches and burgers",
               "prep": "Drain jar before serving. Set out with tongs or a fork for self-serve."
             },
             {
@@ -1074,7 +1190,7 @@
               "itemId": "iceberg-lettuce",
               "amount": "1 head (full purchase)",
               "use": "Whole leaf topping for burgers",
-              "prep": "Slice into rounds \u2014 1 round per burger. Keep refrigerated until serving."
+              "prep": "Slice into rounds — 1 round per burger. Keep refrigerated until serving."
             },
             {
               "itemId": "ketchup",
@@ -1090,27 +1206,64 @@
             },
             {
               "itemId": "white-onion",
-              "amount": "\u00bd onion",
+              "amount": "½ onion",
               "use": "Sliced raw for the burger bar",
               "prep": "Slice into thin rounds. Serve raw. For caramelized onions: cook in butter over low heat for 25-30 min stirring occasionally."
             },
             {
               "itemId": "pepper-jack-cheese",
               "amount": "full pack (12 slices)",
-              "use": "Spicy cheese option for burgers \u2014 melted on the patty",
+              "use": "Spicy cheese option for burgers — melted on the patty",
               "prep": "Lay a slice on the patty 1 min before it comes off the heat. Cover pan/grill briefly to melt."
             },
             {
               "itemId": "kraft-singles",
               "amount": "~7 slices",
               "use": "Meltiest cheese option for burgers",
-              "prep": "Add to patty in the last minute of cooking. American melts the best \u2014 great for a classic smash-style burger."
+              "prep": "Add to patty in the last minute of cooking. American melts the best — great for a classic smash-style burger."
             },
             {
               "itemId": "seasoned-fries",
-              "amount": "full purchase \u2014 2 bags (side)",
+              "amount": "2 bags (full purchase, side)",
               "use": "Baked fries served alongside the burgers",
-              "prep": "Preheat oven to 425\u00b0F. Spread fries in a single layer on a baking sheet. Bake 20-25 min, flipping halfway. Season with salt immediately out of the oven."
+              "prep": "Preheat oven to 425°F. Spread fries in a single layer on a baking sheet. Bake 20-25 min, flipping halfway. Season with salt immediately out of the oven."
+            }
+          ]
+        },
+        {
+          "id": "brats",
+          "name": "Brat Night",
+          "side": null,
+          "ingredients": [
+            {
+              "itemId": "brats-regular",
+              "amount": "full amount (brought from home)",
+              "use": "Classic grilled brats — the savory option",
+              "prep": "Grill over medium heat, turning frequently, ~15–20 min until internal temp hits 160°F and casing is slightly charred. Optional: simmer in beer + sliced onion for 20 min before grilling for extra flavor."
+            },
+            {
+              "itemId": "brats-maple",
+              "amount": "full amount (brought from home)",
+              "use": "Sweet maple brats — grill alongside the regular batch",
+              "prep": "Same method as regular brats. The maple sugar in the casing caramelizes on the grill — watch for flare-ups and keep heat at medium."
+            },
+            {
+              "itemId": "brat-buns",
+              "amount": "16 buns (full purchase)",
+              "use": "Bun for each brat",
+              "prep": "Toast cut-side down on the grill for ~1 min until lightly golden."
+            },
+            {
+              "itemId": "yellow-mustard",
+              "amount": "as desired",
+              "use": "Classic brat condiment",
+              "prep": "Set out at table temperature — no prep needed."
+            },
+            {
+              "itemId": "ketchup",
+              "amount": "as desired",
+              "use": "Optional condiment for brats",
+              "prep": "Set out on the table at room temperature."
             }
           ]
         },
@@ -1122,14 +1275,14 @@
             {
               "itemId": "white-bread",
               "amount": "1 loaf",
-              "use": "The bread for grilled cheese \u2014 2 slices per sandwich",
+              "use": "The bread for grilled cheese — 2 slices per sandwich",
               "prep": "Use standard sandwich slices. Butter one side of each slice generously before placing butter-side-down in the pan."
             },
             {
               "itemId": "kraft-singles",
               "amount": "~14 slices",
-              "use": "Main cheese filling \u2014 layer 2 slices per sandwich",
-              "prep": "Stack 2 slices in the center of bread. Cook on medium-low heat \u2014 low and slow ensures the cheese fully melts before the bread burns (~3-4 min per side)."
+              "use": "Main cheese filling — layer 2 slices per sandwich",
+              "prep": "Stack 2 slices in the center of bread. Cook on medium-low heat — low and slow ensures the cheese fully melts before the bread burns (~3-4 min per side)."
             },
             {
               "itemId": "butter-box",
@@ -1139,7 +1292,7 @@
             },
             {
               "itemId": "tomato-soup",
-              "amount": "4 cans \u2014 full purchase (side)",
+              "amount": "4 cans — full purchase (side)",
               "use": "Served as the dipping side alongside the sandwiches",
               "prep": "Empty cans into a large pot. Add equal part milk (or water) and stir. Heat over medium, stirring frequently, until steaming. Do not boil."
             }
@@ -1153,8 +1306,8 @@
             {
               "itemId": "chicken-bag-2",
               "amount": "2 full bags (~3.6 lbs)",
-              "use": "Pre-breaded flat breast patties \u2014 the main protein, already cooked and breaded",
-              "prep": "Bake from frozen at 400\u00b0F for 15-18 min until heated through and crispy. Pull out, spoon marinara over each piece, pile on mozzarella and parm, then bake another 5 min until cheese is melted and bubbly."
+              "use": "Pre-breaded flat breast patties — the main protein, already cooked and breaded",
+              "prep": "Bake from frozen at 400°F for 15-18 min until heated through and crispy. Pull out, spoon marinara over each piece, pile on mozzarella and parm, then bake another 5 min until cheese is melted and bubbly."
             },
             {
               "itemId": "mozzarella-shredded",
@@ -1176,15 +1329,15 @@
             },
             {
               "itemId": "parmesan-shaker",
-              "amount": "~4 oz (~\u00bd shaker)",
-              "use": "Sprinkled over the chicken and pasta to finish \u2014 also goes in the breading",
+              "amount": "~4 oz (~½ shaker)",
+              "use": "Sprinkled over the chicken and pasta to finish — also goes in the breading",
               "prep": "Mix a few tablespoons into the breadcrumb coating. Sprinkle generously over the finished dish. Set the container on the table for extra."
             },
             {
               "itemId": "garlic-bread",
-              "amount": "1 box \u2014 8 count (side)",
+              "amount": "1 box — 8 count (side)",
               "use": "The side dish served alongside",
-              "prep": "Bake from frozen at 375\u00b0F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it \u2014 it burns fast."
+              "prep": "Bake from frozen at 375°F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it — it burns fast."
             }
           ]
         },
@@ -1196,19 +1349,19 @@
             {
               "itemId": "spaghetti-pasta",
               "amount": "4 lbs (full purchase)",
-              "use": "The pasta base for all three sauce options \u2014 make a big pot for the whole group",
-              "prep": "Boil in heavily salted water for ~9-11 min until al dente. Reserve 1 cup of pasta water before draining \u2014 helps loosen sauce. Toss with chosen sauce immediately."
+              "use": "The pasta base for all three sauce options — make a big pot for the whole group",
+              "prep": "Boil in heavily salted water for ~9-11 min until al dente. Reserve 1 cup of pasta water before draining — helps loosen sauce. Toss with chosen sauce immediately."
             },
             {
               "itemId": "marinara-sauce",
               "amount": "1 jar",
-              "use": "Red sauce option \u2014 toss with spaghetti and top with ground beef",
+              "use": "Red sauce option — toss with spaghetti and top with ground beef",
               "prep": "Warm in a pot over medium heat. Add reserved pasta water a splash at a time if too thick. Toss with drained pasta."
             },
             {
               "itemId": "alfredo-sauce",
               "amount": "full jar",
-              "use": "Alfredo sauce option \u2014 toss with spaghetti and top with sliced chicken",
+              "use": "Alfredo sauce option — toss with spaghetti and top with sliced chicken",
               "prep": "Warm in a small saucepan over medium-low heat, stirring frequently. Add a splash of pasta water to loosen if needed. Do not boil."
             },
             {
@@ -1221,7 +1374,7 @@
               "itemId": "chicken-bag-1",
               "amount": "~1.5 lbs",
               "use": "Cooked and sliced on top for the chicken alfredo track",
-              "prep": "Thaw overnight in fridge. Season with salt, pepper, and garlic powder. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165\u00b0F internal. Rest 5 min then slice thin."
+              "prep": "Thaw overnight in fridge. Season with salt, pepper, and garlic powder. Pan-sear in oil over medium-high heat, ~5-6 min per side until 165°F internal. Rest 5 min then slice thin."
             },
             {
               "itemId": "butter-box",
@@ -1231,13 +1384,13 @@
             },
             {
               "itemId": "garlic-bread",
-              "amount": "1 box \u2014 8 count (side)",
+              "amount": "1 box — 8 count (side)",
               "use": "The side dish served alongside the pasta",
-              "prep": "Bake from frozen at 375\u00b0F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it \u2014 it burns fast."
+              "prep": "Bake from frozen at 375°F for 8-10 min (wrapped in foil), then open foil for last 2-3 min to crisp up. Watch it — it burns fast."
             },
             {
               "itemId": "parmesan-shaker",
-              "amount": "~4 oz (~\u00bd shaker)",
+              "amount": "~4 oz (~½ shaker)",
               "use": "Finishing cheese sprinkled over the pasta at the table",
               "prep": "Set the container on the table for self-serve. No prep needed."
             },
@@ -1254,7 +1407,7 @@
     {
       "id": "snacks",
       "label": "Snacks",
-      "emoji": "\ud83c\udf7f",
+      "emoji": "🍿",
       "color": "#d4909a",
       "meals": [
         {
@@ -1265,13 +1418,13 @@
           "ingredients": [
             {
               "itemId": "chicken-nuggets",
-              "amount": "full bag (70 oz)",
+              "amount": "big bag  ",
               "use": "Late night snack — cook a batch whenever people get hungry",
               "prep": "Bake at 400°F for 12-15 min on a baking sheet, flipping once. Or air fry at 400°F for 8-10 min. Serve with ketchup, ranch, or buffalo sauce."
             },
             {
               "itemId": "frozen-pizzas",
-              "amount": "8 pizzas (full purchase)",
+              "amount": "TBD",
               "use": "Personal-sized pizzas for late night — one per person, one spare",
               "prep": "Bake directly on the oven rack at 400°F for 14-17 min until crust is crispy and cheese is bubbly. Let cool 2 min before cutting."
             },
@@ -1290,38 +1443,6 @@
           ]
         },
         {
-          "id": "buffalo-sliders",
-          "name": "Buffalo Chicken / BBQ Pork Sliders",
-          "side": null,
-          "notes": "Travel snack",
-          "ingredients": [
-            {
-              "itemId": "hawaiian-rolls",
-              "amount": "TBD",
-              "use": "The slider buns \u2014 soft and slightly sweet, perfect for pulled chicken",
-              "prep": "Slice the whole slab of rolls horizontally without separating. Layer filling, then replace top. Optionally brush with butter and bake at 350\u00b0F for 5-8 min to warm through."
-            },
-            {
-              "itemId": "buffalo-sauce",
-              "amount": "TBD",
-              "use": "Tossed with half the pulled chicken for the buffalo batch",
-              "prep": "Mix into warm chicken in a pan or bowl. Use as much or as little as you want \u2014 taste as you go for heat level."
-            },
-            {
-              "itemId": "bbq-sauce",
-              "amount": "TBD",
-              "use": "Tossed with the other half of chicken for the BBQ batch",
-              "prep": "Mix into warm chicken in a pan. Simmer over medium heat for 2-3 min until sauce thickens slightly and coats the chicken."
-            },
-            {
-              "itemId": "slider-cheese",
-              "amount": "TBD",
-              "use": "Melted over the assembled sliders before serving",
-              "prep": "Lay slices over filled sliders. If baking to warm: the cheese melts during the 5-8 min in the oven. Otherwise microwave assembled sliders for 30 sec."
-            }
-          ]
-        },
-        {
           "id": "sandwiches",
           "name": "Sandwiches",
           "side": null,
@@ -1330,18 +1451,18 @@
             {
               "itemId": "white-bread",
               "amount": "2 loaves",
-              "use": "The base for hiking sandwiches \u2014 make ahead the morning of",
+              "use": "The base for hiking sandwiches — make ahead the morning of",
               "prep": "Lay out all slices assembly-line style. Spread condiments first, then layer meat and cheese. Wrap individual sandwiches in foil or plastic wrap and refrigerate until packing."
             },
             {
               "itemId": "black-forest-ham",
-              "amount": "~\u00bd pouch",
+              "amount": "~½ pouch",
               "use": "Ham filling for hiking sandwiches",
               "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
             },
             {
               "itemId": "turkey-breast",
-              "amount": "~\u00bd bag",
+              "amount": "~½ bag",
               "use": "Turkey filling for hiking sandwiches",
               "prep": "Layer 2-3 slices per sandwich. Keep refrigerated until assembling."
             },
@@ -1349,7 +1470,7 @@
               "itemId": "cheddar-sliced",
               "amount": "~6 slices",
               "use": "Cheese layer in hiking sandwiches",
-              "prep": "Lay 1\u20132 slices on each sandwich."
+              "prep": "Lay 1–2 slices on each sandwich."
             },
             {
               "itemId": "yellow-mustard",
@@ -1372,21 +1493,69 @@
           "ingredients": [
             {
               "itemId": "marshmallows",
-              "amount": "2 bags \u2014 full purchase",
-              "use": "Toasted over the campfire \u2014 the star of the s'more",
+              "amount": "2 bags — full purchase",
+              "use": "Toasted over the campfire — the star of the s'more",
               "prep": "Skewer on a roasting stick. Hold over embers (not flames) rotating slowly for even browning. Pull away when golden and puffed. For the brave: light it on fire briefly then blow out."
             },
             {
               "itemId": "hersheys-chocolate",
-              "amount": "4 XL bars \u2014 full purchase",
-              "use": "The chocolate layer \u2014 1-2 squares per s'more",
+              "amount": "4 XL bars — full purchase",
+              "use": "The chocolate layer — 1-2 squares per s'more",
               "prep": "Break bars into individual squares ahead of time. The heat from a freshly toasted marshmallow will melt the chocolate slightly when sandwiched."
             },
             {
               "itemId": "graham-crackers",
               "amount": "full party-size box",
-              "use": "The outer shell \u2014 2 crackers sandwich the chocolate and marshmallow",
+              "use": "The outer shell — 2 crackers sandwich the chocolate and marshmallow",
               "prep": "Break along the scored lines into rectangles. Pre-stack each s'more kit: 1 cracker + 1-2 chocolate squares on the bottom, top cracker ready to sandwich."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "on-deck",
+      "label": "On Deck",
+      "emoji": "🥩",
+      "color": "#a89070",
+      "meals": [
+        {
+          "id": "porkchops-night",
+          "name": "Porkchops",
+          "side": null,
+          "notes": "Brought from home. Decide day-of when to make these.",
+          "ingredients": [
+            {
+              "itemId": "porkchops",
+              "amount": "full amount (brought from home)",
+              "use": "Main protein — grill or pan-sear",
+              "prep": "Pat dry. Season with salt, pepper, and garlic powder. Sear in butter over medium-high heat, ~3–4 min per side until 145°F internal. Rest 5 min before serving."
+            },
+            {
+              "itemId": "butter-box",
+              "amount": "2-3 tbsp",
+              "use": "For searing in the pan",
+              "prep": "Add butter to a hot pan over medium-high heat before adding porkchops."
+            }
+          ]
+        },
+        {
+          "id": "ribs-night",
+          "name": "Ribs",
+          "side": null,
+          "notes": "Brought from home. Low and slow — plan 3+ hours. Worth it.",
+          "ingredients": [
+            {
+              "itemId": "ribs",
+              "amount": "full rack (brought from home)",
+              "use": "Main protein — oven low & slow, finish on the grill",
+              "prep": "Remove membrane from bone side. Season with salt and pepper. Wrap in foil. Bake at 300°F for 2.5–3 hours until tender. Unwrap, brush with BBQ sauce, grill or broil 5–10 min per side until caramelized."
+            },
+            {
+              "itemId": "bbq-sauce",
+              "amount": "as needed",
+              "use": "Glaze for finishing on the grill",
+              "prep": "Brush generously on both sides after unwrapping. Grill or broil 5–10 min until caramelized and sticky."
             }
           ]
         }

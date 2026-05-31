@@ -47,6 +47,11 @@ export default function Home() {
     cat.meals.forEach(meal => { mealNameMap[meal.id] = meal.name })
   })
 
+  // Collect on-deck meal IDs so we can exclude their exclusive items from the shop list
+  const onDeckMealIds = new Set<string>(
+    categories.find(c => c.id === 'on-deck')?.meals.map(m => m.id) ?? []
+  )
+
   // Build shopping list from the items dictionary.
   // Each item appears exactly once. mealEntries comes directly from item.usedIn.
   const shopList: Record<StoreCategory, ShopItem[]> = {
@@ -54,6 +59,13 @@ export default function Home() {
   }
 
   Object.values(items).forEach(item => {
+    // Items brought from home don't need to be purchased
+    if (item.store === 'Home') return
+
+    // Items used exclusively in on-deck meals don't belong on the shop list
+    const usedInIds = Object.keys(item.usedIn ?? {})
+    if (usedInIds.length > 0 && usedInIds.every(id => onDeckMealIds.has(id))) return
+
     const mealEntries = Object.entries(item.usedIn ?? {}).map(([mealId, amount]) => ({
       meal: mealNameMap[mealId] ?? mealId,
       quantity: amount,
