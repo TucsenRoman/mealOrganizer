@@ -65,6 +65,7 @@ export default function Home() {
       price: item.price,
       category: item.category,
       store: item.store,
+      comparePrice: item.comparePrice ?? null,
       bringing: item.bringing,
       meals: mealEntries.map(e => e.meal),
       mealEntries,

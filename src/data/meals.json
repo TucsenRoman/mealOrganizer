@@ -10,7 +10,8 @@
         "breakfast-burritos": "all 3 lbs"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 8.82
     },
     "eggs": {
       "id": "eggs",
@@ -28,7 +29,8 @@
         "who": "Kaitlyn",
         "amount": "2 dozen (from her chickens)"
       },
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 2.99
     },
     "burrito-tortillas": {
       "id": "burrito-tortillas",
@@ -103,7 +105,8 @@
         "breakfast-burritos": "full bag"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 3.96
     },
     "white-bread": {
       "id": "white-bread",
@@ -118,7 +121,8 @@
         "sandwiches": "2 loaves"
       },
       "notes": "1 loaf for French Toast, 1 for Big Breakfast, 1 for Grilled Cheese, 2 for Sandwiches.",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 12.45
     },
     "pancake-mix": {
       "id": "pancake-mix",
@@ -142,7 +146,8 @@
         "pancakes-waffles": "full box"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 5.97
     },
     "fruit-mixed": {
       "id": "fruit-mixed",
@@ -192,7 +197,8 @@
         "sandwiches": "~\u00bd pouch"
       },
       "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 8.48
     },
     "cheddar-sliced": {
       "id": "cheddar-sliced",
@@ -205,7 +211,8 @@
         "sandwiches": "~6 slices"
       },
       "notes": "Shared between Croissant Sandwiches and Hiking Sandwiches.",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 3.99
     },
     "ground-beef-roll": {
       "id": "ground-beef-roll",
@@ -219,7 +226,8 @@
         "spaghetti": "~1 lb"
       },
       "notes": "~1.5 lbs for Tacos, ~2 lbs for Burgers, ~1 lb for Spaghetti. 4.5 lbs used, 0.5 lb spare.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 32.43
     },
     "chicken-bag-1": {
       "id": "chicken-bag-1",
@@ -232,18 +240,19 @@
         "spaghetti": "~1.5 lbs"
       },
       "notes": "Split between Tacos (~1.5 lbs) and Spaghetti Alfredo (~1.5 lbs). Separate bag from Chicken Parm.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 11.05
     },
     "chicken-bag-2": {
       "id": "chicken-bag-2",
-      "name": "Signature Select Frozen Chicken Breasts Value Pack, 3.5 lb",
-      "quantity": "1x 3.5 lb value pack ($13.97)",
-      "price": 13.97,
-      "category": "Meat",
+      "name": "PERDUE Frozen Fully Cooked Breaded Chicken Breast Patties, 28.8 oz",
+      "quantity": "2x 28.8 oz bags ($9.49 each, $18.98 total)",
+      "price": 18.98,
+      "category": "Frozen",
       "usedIn": {
-        "chicken-parm": "full 3 lb bag"
+        "chicken-parm": "2 full bags (~3.6 lbs)"
       },
-      "notes": "Used entirely for Chicken Parm. Separate bag from Tacos/Alfredo bag.",
+      "notes": "Pre-breaded flat patties — best shape for chicken parm. 2 bags feeds 7 people. Fully cooked, just bake and top.",
       "store": "Safeway"
     },
     "taco-seasoning": {
@@ -261,13 +270,13 @@
     "taco-shells": {
       "id": "taco-shells",
       "name": "Taco Shells (hard)",
-      "quantity": "2x 12-count boxes (5.8 oz each)",
-      "price": 6.66,
+      "quantity": "1x 12-count box (5.8 oz, ~$2.50)",
+      "price": 2.5,
       "category": "Dry",
       "usedIn": {
-        "tacos": "TBD"
+        "tacos": "small amount"
       },
-      "notes": "On hold \u2014 1 person prefers hard shells, group polling in progress.",
+      "notes": "Small box for the few who prefer hard shells.",
       "store": "Walmart"
     },
     "taco-tortillas": {
@@ -292,7 +301,8 @@
         "tacos": "full tub"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 3.48
     },
     "taco-sauce": {
       "id": "taco-sauce",
@@ -355,7 +365,8 @@
         "spaghetti": "2-3 tbsp"
       },
       "notes": "~2 sticks for Steaks, ~2 sticks for Grilled Cheese, 2-3 tbsp for Spaghetti. One box covers all three.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 3.5
     },
     "whole-milk": {
       "id": "whole-milk",
@@ -367,7 +378,8 @@
         "steaks": "~1 cup"
       },
       "notes": "~1 cup for mashed potatoes. Remainder available for other uses.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 3.48
     },
     "burger-buns": {
       "id": "burger-buns",
@@ -379,7 +391,8 @@
         "burgers": "14 buns"
       },
       "notes": "Rollback price.",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 6.98
     },
     "dill-pickles": {
       "id": "dill-pickles",
@@ -453,7 +466,8 @@
         "grilled-cheese": "~14 slices"
       },
       "notes": "~7 slices for Burgers, ~14 slices for Grilled Cheese. One pack covers both.",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 5.49
     },
     "seasoned-fries": {
       "id": "seasoned-fries",
@@ -465,7 +479,8 @@
         "burgers": "full purchase"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 9.04
     },
     "tomato-soup": {
       "id": "tomato-soup",
@@ -489,7 +504,8 @@
         "chicken-parm": "2 lbs"
       },
       "notes": "",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 3.98
     },
     "marinara-sauce": {
       "id": "marinara-sauce",
@@ -502,7 +518,8 @@
         "spaghetti": "1 jar"
       },
       "notes": "1 jar for Chicken Parm, 1 jar for Spaghetti.",
-      "store": "Walmart"
+      "store": "Walmart",
+      "comparePrice": 4.98
     },
     "parmesan-shaker": {
       "id": "parmesan-shaker",
@@ -515,6 +532,18 @@
         "spaghetti": "~4 oz"
       },
       "notes": "~4 oz for Chicken Parm, ~4 oz for Spaghetti. One shaker covers both.",
+      "store": "Walmart"
+    },
+    "mozzarella-shredded": {
+      "id": "mozzarella-shredded",
+      "name": "Great Value Shredded Mozzarella Cheese, 16 oz",
+      "quantity": "1x 16 oz bag (~$3.97)",
+      "price": 3.97,
+      "category": "Dairy",
+      "usedIn": {
+        "chicken-parm": "full bag"
+      },
+      "notes": "Melted over the chicken in the last few minutes of baking.",
       "store": "Walmart"
     },
     "spaghetti-pasta": {
@@ -552,7 +581,8 @@
         "spaghetti": "1 box"
       },
       "notes": "1 box for Chicken Parm, 1 box for Spaghetti.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 3.94
     },
     "chicken-nuggets": {
       "id": "chicken-nuggets",
@@ -564,7 +594,8 @@
         "frozen-foods": "full bag"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 12.84
     },
     "frozen-pizzas": {
       "id": "frozen-pizzas",
@@ -576,7 +607,8 @@
         "frozen-foods": "8 pizzas"
       },
       "notes": "One per person, one spare.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 8.92
     },
     "pizza-rolls": {
       "id": "pizza-rolls",
@@ -588,7 +620,8 @@
         "frozen-foods": "full bag"
       },
       "notes": "Rollback price \u2014 was $11.87.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 10.67
     },
     "corndogs": {
       "id": "corndogs",
@@ -600,7 +633,8 @@
         "frozen-foods": "full box"
       },
       "notes": "Out of stock online \u2014 check in-store.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 12.48
     },
     "turkey-breast": {
       "id": "turkey-breast",
@@ -613,7 +647,8 @@
         "sandwiches": "~\u00bd bag"
       },
       "notes": "Rollback price. Shared between Croissant Sandwiches and Hiking Sandwiches.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 4.24
     },
     "mayonnaise": {
       "id": "mayonnaise",
@@ -673,7 +708,8 @@
         "big-breakfast": "full pack"
       },
       "notes": "",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 5.94
     },
     "english-muffins": {
       "id": "english-muffins",
@@ -697,7 +733,8 @@
         "big-breakfast": "TBD"
       },
       "notes": "Bonus/afterthought \u2014 just a little extra on the table.",
-      "store": "Safeway"
+      "store": "Safeway",
+      "comparePrice": 6.48
     },
     "salad": {
       "id": "salad",
@@ -1115,9 +1152,15 @@
           "ingredients": [
             {
               "itemId": "chicken-bag-2",
-              "amount": "full 3 lb bag",
-              "use": "The main protein \u2014 breaded, baked, then topped with marinara and parm",
-              "prep": "Thaw overnight. Pound to ~\u00bd inch even thickness. Dredge in flour, then egg wash, then breadcrumb/parm mixture. Bake at 400\u00b0F for 20-25 min until 165\u00b0F internal and breading is golden. Add marinara and parm in the last 5 min."
+              "amount": "2 full bags (~3.6 lbs)",
+              "use": "Pre-breaded flat breast patties \u2014 the main protein, already cooked and breaded",
+              "prep": "Bake from frozen at 400\u00b0F for 15-18 min until heated through and crispy. Pull out, spoon marinara over each piece, pile on mozzarella and parm, then bake another 5 min until cheese is melted and bubbly."
+            },
+            {
+              "itemId": "mozzarella-shredded",
+              "amount": "full bag",
+              "use": "Melted over the chicken in the last few minutes of baking",
+              "prep": "Scatter generously over chicken after adding marinara, in the last 5 min of baking. Broil for 1-2 min at the end for a bubbly, golden top."
             },
             {
               "itemId": "penne-pasta",

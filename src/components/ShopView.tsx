@@ -236,6 +236,50 @@ export default function ShopView({ shopList, checked, onToggle, initialIdx, onId
               ))}
             </div>
 
+            {/* Price comparison */}
+            {popup.comparePrice != null && popup.price != null && (popup.store === 'Safeway' || popup.store === 'Walmart') && (() => {
+              const otherStore = popup.store === 'Safeway' ? 'Walmart' : 'Safeway'
+              const thisPrice = popup.price!
+              const otherPrice = popup.comparePrice!
+              const savings = Math.abs(thisPrice - otherPrice)
+              const cheaperStore = thisPrice <= otherPrice ? popup.store : otherStore
+              const rows: { store: 'Safeway' | 'Walmart'; price: number }[] = [
+                { store: popup.store as 'Safeway' | 'Walmart', price: thisPrice },
+                { store: otherStore, price: otherPrice },
+              ]
+              return (
+                <>
+                  <div className="h-px bg-[var(--layer-2)] mt-1 mb-3" />
+                  <p className="text-xs font-semibold text-gray-400 tracking-wider uppercase mb-2">Price Compare</p>
+                  <div className="flex flex-col gap-1.5">
+                    {rows.map(({ store, price }) => {
+                      const isCheaper = store === cheaperStore
+                      return (
+                        <div key={store} className={`flex items-center justify-between rounded-xl px-3 py-2.5 ${isCheaper ? 'bg-green-50' : 'bg-[var(--layer-1)]'}`}>
+                          <div className="flex items-center gap-2">
+                            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${store === 'Safeway' ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-500'}`}>
+                              {store}
+                            </span>
+                            {store === popup.store && (
+                              <span className="text-[10px] text-gray-400">current</span>
+                            )}
+                          </div>
+                          <div className="flex items-center gap-2">
+                            {isCheaper && savings > 0.01 && (
+                              <span className="text-[10px] font-semibold text-green-600">saves ${savings.toFixed(2)}</span>
+                            )}
+                            <span className={`text-sm font-bold tabular-nums ${isCheaper ? 'text-green-700' : 'text-gray-400'}`}>
+                              ${price.toFixed(2)}
+                            </span>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </>
+              )
+            })()}
+
             {/* Close button */}
             {/* <button
               onClick={() => setPopup(null)}
