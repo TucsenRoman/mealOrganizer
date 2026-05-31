@@ -1249,6 +1249,14 @@
             }
           ]
         },
+      ]
+    },
+    {
+      "id": "snacks",
+      "label": "Snacks",
+      "emoji": "\ud83c\udf7f",
+      "color": "#d4909a",
+      "meals": [
         {
           "id": "frozen-foods",
           "name": "Frozen Foods",
@@ -1258,37 +1266,29 @@
             {
               "itemId": "chicken-nuggets",
               "amount": "full bag (70 oz)",
-              "use": "Late night snack \u2014 cook a batch whenever people get hungry",
-              "prep": "Bake at 400\u00b0F for 12-15 min on a baking sheet, flipping once. Or air fry at 400\u00b0F for 8-10 min. Serve with ketchup, ranch, or buffalo sauce."
+              "use": "Late night snack — cook a batch whenever people get hungry",
+              "prep": "Bake at 400°F for 12-15 min on a baking sheet, flipping once. Or air fry at 400°F for 8-10 min. Serve with ketchup, ranch, or buffalo sauce."
             },
             {
               "itemId": "frozen-pizzas",
               "amount": "8 pizzas (full purchase)",
-              "use": "Personal-sized pizzas for late night \u2014 one per person, one spare",
-              "prep": "Bake directly on the oven rack at 400\u00b0F for 14-17 min until crust is crispy and cheese is bubbly. Let cool 2 min before cutting."
+              "use": "Personal-sized pizzas for late night — one per person, one spare",
+              "prep": "Bake directly on the oven rack at 400°F for 14-17 min until crust is crispy and cheese is bubbly. Let cool 2 min before cutting."
             },
             {
               "itemId": "pizza-rolls",
               "amount": "full bag (130 count)",
-              "use": "Shareable late night snack \u2014 cook a batch at a time",
-              "prep": "Bake at 425\u00b0F for 13-15 min until golden. Let sit 2 min before eating \u2014 filling is extremely hot. Or microwave on a plate for 1:15, flip, then 1:15 more."
+              "use": "Shareable late night snack — cook a batch at a time",
+              "prep": "Bake at 425°F for 13-15 min until golden. Let sit 2 min before eating — filling is extremely hot. Or microwave on a plate for 1:15, flip, then 1:15 more."
             },
             {
               "itemId": "corndogs",
               "amount": "full box (22 count)",
-              "use": "Late night crowd-pleaser \u2014 heat and serve",
-              "prep": "Bake at 375\u00b0F for 16-18 min, turning once. Or microwave individually for 60-90 sec. Serve with mustard and ketchup."
+              "use": "Late night crowd-pleaser — heat and serve",
+              "prep": "Bake at 375°F for 16-18 min, turning once. Or microwave individually for 60-90 sec. Serve with mustard and ketchup."
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "snacks",
-      "label": "Snacks",
-      "emoji": "\ud83c\udf7f",
-      "color": "#d4909a",
-      "meals": [
+        },
         {
           "id": "buffalo-sliders",
           "name": "Buffalo Chicken / BBQ Pork Sliders",
